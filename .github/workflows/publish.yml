@@ -118,14 +118,12 @@ jobs:
           for arch in win-x86 win-x64 win-arm64; do
             dotnet publish -c Release -r $arch /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true /p:SelfContained=false /p:Version=${{ needs.time.outputs.sv }}
             mv ./bin/Release/net8.0/$arch/publish/YMCL.Desktop.exe ./bin/Release/net8.0/$arch/publish/YMCL.Desktop.win.${arch#win-}.portable.exe
-            cd ./bin/Release/net8.0/$arch
-            cd ../../../..
           done
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: linux-windows-artifacts
-          path: YMCL.Main/YMCL.Desktop/bin/Release/net8.0/*portable.exe
+          path: YMCL.Main/YMCL.Desktop/bin/Release/net8.0/*.exe
           retention-days: 1
 
   win:
