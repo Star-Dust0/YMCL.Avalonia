@@ -33,9 +33,12 @@ jobs:
         run: |
           echo "Version: ${{ steps.date.outputs.time }}"
 
-  linux:
+  linux-appimage:
     runs-on: ubuntu-22.04
     needs: time
+    strategy:
+      matrix:
+        arch: [x64, arm, arm64]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -48,18 +51,27 @@ jobs:
           dotnet tool install -g KuiperZone.PupNet --version 1.8.0
           sudo apt-get update -qq
           sudo apt-get install -y fuse
-      - name: Build AppImage (x64)
+      - name: Build AppImage (${{ matrix.arch }})
         run: |
           cd ./YMCL.Main/YMCL.Desktop
-          sudo pupnet --runtime linux-x64 --kind appimage -o YMCL.Desktop.linux.x64.AppImage -y --app-version ${{ needs.time.outputs.y }}.${{ needs.time.outputs.md }}.${{ needs.time.outputs.hm }}
-      - name: Build AppImage (ARM)
-        run: |
-          cd ./YMCL.Main/YMCL.Desktop
-          sudo pupnet --runtime linux-arm --kind appimage -o YMCL.Desktop.linux.arm.AppImage -y --app-version ${{ needs.time.outputs.y }}.${{ needs.time.outputs.md }}.${{ needs.time.outputs.hm }}
-      - name: Build AppImage (ARM64)
-        run: |
-          cd ./YMCL.Main/YMCL.Desktop
-          sudo pupnet --runtime linux-arm64 --kind appimage -o YMCL.Desktop.linux.arm64.AppImage -y --app-version ${{ needs.time.outputs.y }}.${{ needs.time.outputs.md }}.${{ needs.time.outputs.hm }}
+          sudo pupnet --runtime linux-${{ matrix.arch }} --kind appimage -o YMCL.Desktop.linux.${{ matrix.arch }}.AppImage -y --app-version ${{ needs.time.outputs.y }}.${{ needs.time.outputs.md }}.${{ needs.time.outputs.hm }}
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-appimage-${{ matrix.arch }}
+          path: YMCL.Main/YMCL.Desktop/Deploy/OUT/*
+          retention-days: 1
+
+  linux-macos-windows:
+    runs-on: ubuntu-22.04
+    needs: time
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Write Version
+        run: echo "${{ needs.time.outputs.v }}" > ./YMCL.Main/YMCL/Public/Texts/DateTime.txt
       - name: Build macOS App (x64)
         run: |
           cd ./YMCL.Main/YMCL.Desktop
@@ -81,15 +93,16 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: linux-artifacts
-          path: |
-            YMCL.Main/YMCL.Desktop/Deploy/OUT/*
-            YMCL.Main/YMCL.Desktop/bin/Release/net8.0/*.zip
+          name: linux-macos-windows-artifacts
+          path: YMCL.Main/YMCL.Desktop/bin/Release/net8.0/*.zip
           retention-days: 1
 
   win:
     runs-on: windows-latest
     needs: time
+    strategy:
+      matrix:
+        arch: [x64, x86, arm64]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -104,30 +117,28 @@ jobs:
       - name: Write Version
         run: echo "${{ needs.time.outputs.v }}" > ./YMCL.Main/YMCL/Public/Texts/DateTime.txt
         shell: bash
-      - name: Build Installers
+      - name: Build Installer (${{ matrix.arch }})
         run: |
           cd ./YMCL.Main/YMCL.Desktop
-          pupnet -r win-x64 -k setup -y -o YMCL.Desktop.win.x64.installer.exe --app-version ${{ needs.time.outputs.y }}.${{ needs.time.outputs.md }}.${{ needs.time.outputs.hm }}
-          pupnet -r win-x86 -k setup -y -o YMCL.Desktop.win.x86.installer.exe --app-version ${{ needs.time.outputs.y }}.${{ needs.time.outputs.md }}.${{ needs.time.outputs.hm }}
-          pupnet -r win-arm64 -k setup -y -o YMCL.Desktop.win.arm64.installer.exe --app-version ${{ needs.time.outputs.y }}.${{ needs.time.outputs.md }}.${{ needs.time.outputs.hm }}
+          pupnet -r win-${{ matrix.arch }} -k setup -y -o YMCL.Desktop.win.${{ matrix.arch }}.installer.exe --app-version ${{ needs.time.outputs.y }}.${{ needs.time.outputs.md }}.${{ needs.time.outputs.hm }}
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: win-artifacts
+          name: win-artifacts-${{ matrix.arch }}
           path: ./YMCL.Main/YMCL.Desktop/Deploy/OUT/*
           retention-days: 1
 
   mac:
-    needs: [linux, win, time]
+    needs: [linux-appimage, linux-macos-windows, win, time]
     runs-on: macos-latest
     steps:
-      - name: Download Linux Artifacts
+      - name: Download macOS App
         uses: actions/download-artifact@v4
         with:
-          name: linux-artifacts
+          name: linux-macos-windows-artifacts
           path: ./YMCL.Release/
       - name: Extract macOS App
-        run: unzip -n ./YMCL.Release/bin/Release/net8.0/YMCL.Desktop.osx.mac.x64.app.zip -d ./app.x64
+        run: unzip -n ./YMCL.Release/YMCL.Desktop.osx.mac.x64.app.zip -d ./app.x64
       - name: Create DMG (x64)
         uses: L-Super/create-dmg-actions@v1.0.3
         with:
@@ -141,7 +152,7 @@ jobs:
           retention-days: 1
 
   publish:
-    needs: [linux, win, mac, time]
+    needs: [linux-appimage, linux-macos-windows, win, mac, time]
     runs-on: ubuntu-latest
     steps:
       - name: Generate Release Date
@@ -160,7 +171,7 @@ jobs:
         with:
           repo_token: "${{ secrets.TOKEN }}"
           title: "v${{ needs.time.outputs.v }}"
-          automatic_release_tag: "AutoPublish-${{ steps.gdate.outputs.date }}"
+          automatic_release_tag: "AutoPublish"
           prerelease: false
           files: |
             YMCL.Release/**/*.exe
