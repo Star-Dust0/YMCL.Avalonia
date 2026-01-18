@@ -2,235 +2,237 @@
 <html lang="zh-CN">
 
 <head>
-  <meta name="keywords" content="YMCL,ymcl,Yu Minecraft Launcher,呆鱼,Minecraft Launcher,我的世界启动器" />
-  <meta name="description" content="Yu Minecraft Launcher(YMCL)官网!" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./YMCL-Icon.ico" type="image/x-icon" />
-  <title>Yu Minecraft Launcher · YMCL</title>
-  <link rel="stylesheet" href="hero.css" />
-  <link rel="stylesheet" href="function.css" />
-  <meta name="referrer" content="no-referrer">
-  <link rel="stylesheet" href="public.css" />
-  <link rel="stylesheet" href="nav.css" />
-  <link rel="stylesheet" href="main.css" />
-  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-  <script>LA.init({ id: "Kqedlvz2C7T8YuVc", ck: "Kqedlvz2C7T8YuVc", autoTrack: true, hashMode: true })</script>
-  <script defer src="https://umami.yik.at/script.js" data-website-id="96330e31-e20f-4db6-b525-decc0d3478d4"></script>
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="57d43297-3528-4c75-959d-9b8e0c4bb0ae"></script>
-  <script src="./nav.js"></script>
-  <script src="./iconfont.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMCL - Yu Minecraft Launcher</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="content-container">
-  <div class="nav-area" id="navbar">
-    <div class="nav-container">
-      <nav class="navbar nav">
-        <div class="list-root">
-          <a class="nav-a title-l" style="float: left" href="/">Yu Minecraft Launcher</a>
-          <a class="nav-a title-s" style="float: left" href="/">YMCL</a>
-          <div class="pc-nav-ul" style="float: right">
-            <a class="nav-a nav-pc-a-jump" href="javascript:loadPage('home')">主页</a>
-            <a class="nav-a nav-pc-a-jump" href="javascript:loadPage('download')">下载</a>
-            <a class="nav-a nav-pc-a-jump" href="javascript:window.open('https://afdian.com/a/Yeppioo')">爱发电</a>
-            <!-- <a class="nav-a nav-pc-a-jump" href="javascript:window.open('https://support.qq.com/products/542108/faqs-more/')">常见问题</a> -->
-            <a class="nav-a nav-pc-a-jump"
-              href="javascript:window.open('https://support.qq.com/products/542108/')">意见反馈</a>
-            <a class="nav-a nav-pc-a-jump"
-              href="javascript:window.open('https://github.com/Yeppioo/YMCL.Avalonia')">源代码仓库</a>
-          </div>
-          <a class="nav-a nav-pc-a-jump mobile-nav-open-menu" id="menu-btn" style="float: right"
-            href="javascript:ToggleMobileMenu();"><img height="22px" src="../menu.svg" alt="btn" /></a>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="https://raw.githubusercontent.com/yiikooo/YMCL.Avalonia/refs/heads/main/Assets/Icon.Border.png"
+                    alt="YMCL Logo" class="logo">
+                <span class="brand-text">YMCL</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">功能</a></li>
+                <li><a href="#download">下载</a></li>
+                <li><a href="https://github.com/yiikooo/YMCL.Avalonia" target="_blank" class="github-link">GitHub</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-      <div class="mobile-nav-ul-container" id="menu" style="top: -350px">
-        <ul class="mobile-nav-ul">
-          <li class="nav-item active">
-            <a class="nav-a" href="javascript:loadPage('home')">主页</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-a" href="javascript:loadPage('download')">下载</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-a" href="javascript:window.open('https://afdian.com/a/Yeppioo')">爱发电</a>
-          </li>
-          <!-- <li class="nav-item">
-                <a class="nav-a" href="javascript:window.open('https://support.qq.com/products/542108/faqs-more/')">常见问题</a>
-              </li> -->
-          <li class="nav-item">
-            <a class="nav-a" href="javascript:window.open('https://support.qq.com/products/542108/')">意见反馈</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-a" href="javascript:window.open('https://github.com/Yeppioo/YMCL.Avalonia')">源代码仓库</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <header style="height: 100vh">
-    <div class="main-div">
-      <main>
-        <div>
-          <label>
-            Yu Minecraft Launcher
-            <a type="button" id="DownloadButton" href="javascript:loadPage('download')">立即下载</a>
-          </label>
-          <img src="./YMCL-Icon.svg" alt="logo" id="BigLogo" />
-        </div>
-      </main>
-    </div>
-    <div id="1" class="header-hero bg_cover d-lg-flex align-items-center page-round">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-      <div class="shape shape-4"></div>
-      <div class="shape shape-5"></div>
-      <div class="shape shape-6"></div>
-    </div>
-    <div class="header-shape-1"></div>
-    <div class="header-shape-2">
-      <img src="./header-shape-2.svg" alt="shape" />
-    </div>
-  </header>
-  <div class="function-area">
-    <div class="container">
-      <div class="card">
-        <h4>简洁的界面</h4>
-        <img src="./img/1.png" alt="FunctionPicture" />
-      </div>
-      <div class="card">
-        <h4>详细的设置</h4>
-        <img src="./img/2.png" alt="FunctionPicture" />
-      </div>
-      <div class="card">
-        <h4>便捷地下载</h4>
-        <img src="./img/4.png" alt="FunctionPicture" />
-      </div>
-      <div class="card">
-        <h4>更好的任务管理</h4>
-        <img src="./img/5.png" alt="FunctionPicture" />
-      </div>
-      <div class="card">
-        <h4>轻松地检索</h4>
-        <img src="./img/3.png" alt="FunctionPicture" />
-      </div>
-      <div class="card">
-        <h4>好听的音乐</h4>
-        <img src="./img/6.png" alt="FunctionPicture" />
-      </div>
-    </div>
-  </div>
-  <div class="open-source">
-    <div class="text">
-      <h2 style="text-align: center;">⛏️ Yu Minecraft Launcher 🐳</h2>
-      <p>免费、跨平台、完全开源的 Minecraft 启动器</p>
-      <object
-        style="margin-bottom: 20px;box-shadow: 0 0 20px 11px rgba(56, 66, 77, 0.1);max-width: 442px;width: calc(100vw - 20px);height: 109px;"
-        type="image/svg+xml"
-        data="https://gh-card.dev/repos/Yeppioo/YMCL.Avalonia.svg?fullname=&link_target=_blank"></object>
-      <div class="shields">
-        <a href="/download/">
-          <img
-            src="https://img.shields.io/github/v/release/Yeppioo/YMCL.Avalonia?logo=github&style=for-the-badge&color=007ec6&label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC"
-            alt="Latest" />
-        </a>
-        <a href="https://github.com/Yeppioo/YMCL.Avalonia">
-          <img
-            src="https://img.shields.io/github/downloads/Yeppioo/YMCL.Avalonia/total?logo=github&label=%E4%B8%8B%E8%BD%BD%E9%87%8F&style=for-the-badge&color=44cc11"
-            alt="Downloads" />
-        </a>
-        <a href="https://github.com/Yeppioo/YMCL.Avalonia">
-          <img
-            src="https://img.shields.io/github/stars/Yeppioo/YMCL.Avalonia?logo=github&label=Star&style=for-the-badge"
-            alt="Star" />
-        </a>
-        <a href="https://github.com/Yeppioo/YMCL.Avalonia">
-          <img
-            src="https://img.shields.io/badge/GPL%203.0%20License%20-%20?logo=github&label=%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE&style=for-the-badge&color=ff7a35"
-            alt="License" />
-        </a>
-      </div>
-      <p>Yu Minecraft Launcher 是一个跨平台 Minecraft 启动器，支持 Windows，MacOS，Linux 等操作系统，兼容 x64、Arm 架构。</p>
-      <p style="margin: 5px 30px;">Ymcl 使用 <a href="/license" target="_blank" rel="noopener noreferrer">GPL - 3.0
-          License</a>
-        开放源代码，在使用源代码时要遵守开源协议哦~ ヾ(≧▽≦*)o</p>
-    </div>
-  </div>
-  <div class="afd-btn-root">
-    <a href="https://afdian.com/a/Yeppioo" target="_blank" rel="noopener noreferrer"><img
-        src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png" alt="Afd"></a>
-  </div>
-  <footer id="6" class="footer-area">
-    <div class="footer-shape shape-1"></div>
-    <div class="footer-shape shape-2"></div>
-    <div class="footer-shape shape-3"></div>
-    <div class="footer-shape shape-4"></div>
-    <div class="footer-shape shape-5"></div>
-    <div class="footer-shape shape-6"></div>
-    <div class="footer-shape shape-7"></div>
-    <div class="footer-shape shape-8">
-      <svg xmlns="http://www.w3.org/2000/svg" width="119.496" height="96.771" viewBox="0 0 119.496 96.771"
-        class="svg replaced-svg">
-        <g id="Group_173" data-name="Group 173" transform="translate(-1768.066 -254.709)">
-          <path id="Path_83" data-name="Path 83"
-            d="M1614.942,311.638s11.066-20.12,26.156-11.066,21.126-1.006,24.144-13.078,16.1-12.072,27.163-9.054,26.156,1.006,26.156-15.09"
-            transform="translate(154 -8.641)" fill="none" stroke="#6f0298" stroke-width="2" opacity="0.55"></path>
-          <path id="Path_84" data-name="Path 84"
-            d="M1614.942,311.638s11.066-20.12,26.156-11.066,21.126-1.006,24.144-13.078,16.1-12.072,27.163-9.054,26.156,1.006,26.156-15.09"
-            transform="translate(164 15.359)" fill="none" stroke="#eba31a" stroke-width="2" opacity="0.55"></path>
-          <path id="Path_85" data-name="Path 85"
-            d="M1614.942,311.638s11.066-20.12,26.156-11.066,21.126-1.006,24.144-13.078,16.1-12.072,27.163-9.054,26.156,1.006,26.156-15.09"
-            transform="translate(168 39.359)" fill="none" stroke="#0797e6" stroke-width="2" opacity="0.55"></path>
-        </g>
-      </svg>
-    </div>
+    </nav>
 
-    <div class="footer-widget">
-      <div class="container">
-        <div class="footer-link-wrapper">
-          <h4>⛏️ Yu Minecraft Launcher 🐳</h4>
-          <div class="footer-icon">
-            <svg class="icon" aria-hidden="true">
-              <a href="https://www.bilibili.com/video/BV1Fi3YemExi" target="_blank" rel="noopener noreferrer">
-                <use xlink:href="#icon-bofang"></use>
-              </a>
-            </svg>
-            <svg class="icon" aria-hidden="true">
-              <a href="javascript:alert('→ 475032328 ←')">
-                <use xlink:href="#icon-QQ"></use>
-              </a>
-            </svg>
-            <svg class="icon" aria-hidden="true"><a href="/">
-                <use xlink:href="#icon-liulanqi"></use>
-              </a>
-            </svg>
-            <svg class="icon" aria-hidden="true"><a href="https://github.com/Yeppioo/YMCL.Avalonia" target="_blank"
-                rel="noopener noreferrer">
-                <use xlink:href="#icon-github"></use>
-              </a>
-            </svg>
-          </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Yu Minecraft Launcher</h1>
+                <p class="hero-subtitle">免费、跨平台、完全开源的 Minecraft 启动器</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">立即下载</a>
+                    <a href="https://github.com/yiikooo/YMCL.Avalonia" target="_blank"
+                        class="btn btn-secondary">GitHub</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://raw.githubusercontent.com/yiikooo/YMCL.Avalonia/refs/heads/main/Assets/Icon.Border.png"
+                    alt="YMCL">
+            </div>
         </div>
-        <div class="footer-link-wrapper">
-          <h4>联系我们 🐳</h4>
-          <ul class="link">
-            <a href="javascript:alert('→ 840673183 ←')">🐧 企鹅</a>
-            <a href="https://support.qq.com/products/542108/" target="_blank" rel="noopener noreferrer">🐇
-              兔小巢反馈</a>
-            <a href="javascript:alert('→ 840673183@qq.com ←')">✉️ Email</a>
-          </ul>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>核心功能</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Mod 管理</h3>
+                    <p>轻松安装、管理和切换 Mod，享受无限的游戏可能性</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>自动安装</h3>
+                    <p>一键安装 Forge、NeoForge、Fabric、Quilt、OptiFine 等加载器</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>游戏自定义</h3>
+                    <p>灵活配置游戏参数和启动选项，优化游戏体验</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>界面自定义</h3>
+                    <p>个性化启动器外观和主题，打造独特风格</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>多账户支持</h3>
+                    <p>管理多个游戏账户，轻松切换不同身份</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>跨平台同步</h3>
+                    <p>在 Windows、Linux、macOS 间无缝切换</p>
+                </div>
+            </div>
         </div>
-        <div class="footer-link-wrapper">
-          <h4>友情链接 🐣</h4>
-          <ul class="link">
-            <a href="https://mohen.wiki/" target="_blank" rel="noopener noreferrer">📦 StarLight</a>
-          </ul>
+    </section>
+
+    <!-- Platform Support Section -->
+    <section class="platforms">
+        <div class="container">
+            <h2>平台支持</h2>
+            <div class="platform-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>架构</th>
+                            <th>Windows</th>
+                            <th>Linux</th>
+                            <th>macOS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>x64</td>
+                            <td class="support-yes">✅</td>
+                            <td class="support-yes">✅</td>
+                            <td class="support-yes">✅</td>
+                        </tr>
+                        <tr>
+                            <td>x86</td>
+                            <td class="support-yes">✅</td>
+                            <td class="support-no">❌</td>
+                            <td class="support-no">❌</td>
+                        </tr>
+                        <tr>
+                            <td>ARM64</td>
+                            <td class="support-partial">❔</td>
+                            <td class="support-partial">❔</td>
+                            <td class="support-no">❌</td>
+                        </tr>
+                        <tr>
+                            <td>ARM32</td>
+                            <td class="support-no">❌</td>
+                            <td class="support-partial">❔</td>
+                            <td class="support-no">❌</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div>
-      <p class="copyright">Copyright © 2025 <a href="http://yeppioo.vip" target="_blank"
-          rel="noopener noreferrer">Yeppioo</a>. All rights
-        reserved.</p>
-    </div>
-  </footer>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2>下载最新版本</h2>
+            <p class="download-subtitle">选择适合你系统的版本</p>
+
+            <div class="download-grid">
+                <div class="download-card">
+                    <div class="platform-icon">🪟</div>
+                    <h3>Windows</h3>
+                    <p class="system-req">Windows 10 或更高版本</p>
+                    <div class="download-buttons">
+                        <a href="https://github.com/yiikooo/YMCL.Avalonia/releases" target="_blank"
+                            class="btn btn-download">x64 安装程序</a>
+                        <a href="https://github.com/yiikooo/YMCL.Avalonia/releases" target="_blank"
+                            class="btn btn-download">x86 便携版</a>
+                    </div>
+                </div>
+
+                <div class="download-card">
+                    <div class="platform-icon">🐧</div>
+                    <h3>Linux</h3>
+                    <p class="system-req">Ubuntu 20.04 LTS 或更高版本</p>
+                    <div class="download-buttons">
+                        <a href="https://github.com/yiikooo/YMCL.Avalonia/releases" target="_blank"
+                            class="btn btn-download">x64 AppImage</a>
+                        <a href="https://github.com/yiikooo/YMCL.Avalonia/releases" target="_blank"
+                            class="btn btn-download">ARM64 AppImage</a>
+                    </div>
+                </div>
+
+                <div class="download-card">
+                    <div class="platform-icon">🍎</div>
+                    <h3>macOS</h3>
+                    <p class="system-req">macOS 10.15 或更高版本</p>
+                    <div class="download-buttons">
+                        <a href="https://github.com/yiikooo/YMCL.Avalonia/releases" target="_blank"
+                            class="btn btn-download">x64 DMG</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="github-release-link">
+                <p>查看所有版本和更新日志</p>
+                <a href="https://github.com/yiikooo/YMCL.Avalonia/releases" target="_blank" class="btn btn-primary">前往
+                    GitHub Releases</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <div class="stat-number" id="downloads">-</div>
+                <div class="stat-label">总下载量</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="stars">-</div>
+                <div class="stat-label">GitHub Stars</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">支持平台</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">GPL 3.0</div>
+                <div class="stat-label">开源协议</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>关于</h4>
+                    <p>YMCL 是一个现代化的跨平台 Minecraft 启动器，采用 Avalonia UI 框架开发。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>链接</h4>
+                    <ul>
+                        <li><a href="https://github.com/yiikooo/YMCL.Avalonia" target="_blank">GitHub</a></li>
+                        <li><a href="https://github.com/yiikooo/YMCL.Avalonia/releases" target="_blank">Releases</a>
+                        </li>
+                        <li><a href="https://github.com/yiikooo/YMCL.Avalonia/issues" target="_blank">Issues</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>社区</h4>
+                    <ul>
+                        <li>QQ 群：475032328</li>
+                        <li><a href="https://github.com/yiikooo/YMCL.Avalonia/discussions" target="_blank">讨论区</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 YMCL. Licensed under GPL 3.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

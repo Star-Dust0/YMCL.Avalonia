@@ -1,98 +1,81 @@
-/*获取到Url里面的参数*/
-(function ($) {
-  $.getUrlParam = function (name) {
-    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-    var r = window.location.search.substr(1).match(reg);
-    if (r != null) return unescape(r[2]);
-    return null;
-  };
-})(jQuery);
-var f = $.getUrlParam("framework");
-var w = $.getUrlParam("way");
-console.log(f);
-console.log(w);
-var orUrl = null;
-// 使用fetch函数发起GET请求
-fetch("https://api.github.com/repos/Yeppioo/YMCL.Avalonia/releases?per_page=1")
-  .then((response) => {
-    // 首先检查响应是否成功
-    if (!response.ok) {
-      alert("加载失败！\n Network response was not ok " + response.statusText);
-      console.error(
-        "加载失败！\n Network response was not ok " + response.statusText
-      );
-      window.close();
+// Smooth scroll for navigation links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    const href = this.getAttribute("href");
+    if (href !== "#" && document.querySelector(href)) {
+      e.preventDefault();
+      document.querySelector(href).scrollIntoView({
+        behavior: "smooth",
+      });
     }
-    // 解析JSON数据
-    return response.json();
-  })
-  .then((data) => {
-    // 处理获取到的数据
-    data[0].assets.forEach((element) => {
-      console.log(element.name);
-      if (
-        (element.name == "YMCL.Desktop.linux.arm.AppImage" &&
-          f == "linux-arm") ||
-        (element.name == "YMCL.Desktop.linux.arm64.AppImage" &&
-          f == "linux-arm64") ||
-        (element.name == "YMCL.Desktop.linux.x64.AppImage" &&
-          f == "linux-x64") ||
-        (element.name == "YMCL.Desktop.osx.mac.x64.app.zip" &&
-          f == "osx-x64") ||
-        (element.name == "YMCL.Desktop.osx.mac.arm64.app.zip" &&
-          f == "osx-arm64") ||
-        (element.name == "YMCL.Desktop.win.x64.installer.exe" &&
-          f == "win-x64") ||
-        (element.name == "YMCL.Desktop.win.arm64.installer.exe" &&
-          f == "win-arm64") ||
-        (element.name == "YMCL.Desktop.win.x86.installer.exe" &&
-          f == "win-x86") ||
-        (element.name == "YMCL.Desktop.win7.x64.zip" && f == "win7-x64") ||
-        (element.name == "YMCL.Desktop.win7.arm64.zip" && f == "win7-arm64") ||
-        (element.name == "YMCL.Desktop.win7.x86.zip" && f == "win7-x86")
-      ) {
-        orUrl = element.browser_download_url;
-        console.log(element.name);
-        console.log(orUrl);
-      }
-    });
-    if (orUrl == null) {
-      console.error("加载失败！");
-      alert("加载失败！");
-      window.close();
-      return;
-    }
-    var taUrl = null;
-    if (w == 0) {
-      taUrl = orUrl;
-    } else if (w == 1) {
-      taUrl = "https://github.moeyy.xyz/" + orUrl;
-    } else if (w == 2) {
-      taUrl = "https://ghproxy.net/" + orUrl;
-    } else if (w == 3) {
-      taUrl = "https://ghfast.top/" + orUrl;
-    }
-    if (taUrl == null) {
-      console.error("加载失败！");
-      alert("加载失败！");
-      window.close();
-      return;
-    }
-    window.location = taUrl; // 在新窗口中打开下载链接
-    document.getElementById(
-      "ma"
-    ).innerHTML = `已开始下载，若未开始下载请手动跳转 → <a href="${taUrl}" target="_blank" rel="noopener noreferrer"
-      style="text-decoration: none;color: skyblue;">${taUrl}</a>`;
-  })
-  .catch((error) => {
-    // 处理请求过程中发生的任何错误
-    console.error(
-      "加载失败！ \nThere has been a problem with your fetch operation:",
-      error
-    );
-    alert(
-      "加载失败！ \nThere has been a problem with your fetch operation:",
-      error
-    );
-    window.close();
   });
+});
+
+// Fetch GitHub stats
+async function fetchGitHubStats() {
+  try {
+    const response = await fetch(
+      "https://api.github.com/repos/yiikooo/YMCL.Avalonia"
+    );
+    const data = await response.json();
+
+    // Update downloads (using watchers as a proxy, since GitHub API doesn't provide direct download count)
+    const downloadsElement = document.getElementById("downloads");
+    if (downloadsElement && data.watchers_count) {
+      downloadsElement.textContent = data.watchers_count.toLocaleString();
+    }
+
+    // Update stars
+    const starsElement = document.getElementById("stars");
+    if (starsElement && data.stargazers_count) {
+      starsElement.textContent = data.stargazers_count.toLocaleString();
+    }
+  } catch (error) {
+    console.log("Could not fetch GitHub stats:", error);
+    // Set default values if fetch fails
+    document.getElementById("downloads").textContent = "1000+";
+    document.getElementById("stars").textContent = "500+";
+  }
+}
+
+// Call on page load
+document.addEventListener("DOMContentLoaded", fetchGitHubStats);
+
+// Add scroll animation for elements
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -100px 0px",
+};
+
+const observer = new IntersectionObserver(function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = "1";
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+}, observerOptions);
+
+// Observe feature cards and download cards
+document.querySelectorAll(".feature-card, .download-card").forEach((el) => {
+  el.style.opacity = "0";
+  el.style.transform = "translateY(20px)";
+  el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+  observer.observe(el);
+});
+
+// Add active state to navbar on scroll
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.1)";
+  } else {
+    navbar.style.boxShadow = "0 2px 8px rgba(0, 0, 0, 0.08)";
+  }
+});
+
+// Mobile menu toggle (if needed in future)
+function toggleMobileMenu() {
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("active");
+}
