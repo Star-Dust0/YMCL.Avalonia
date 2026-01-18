@@ -142,7 +142,7 @@ jobs:
       - name: Install Inno Setup
         uses: ConorMacBride/install-package@v1
         with:
-          choco: innosetup=6.7.0
+          choco: innosetup --version 6.7.0
       - name: Apply Chinese Localization
         run: Copy-Item "./Assets/Default.isl" "C:\Program Files (x86)\Inno Setup 6\Default.isl" -Force
       - name: Install PupNet
