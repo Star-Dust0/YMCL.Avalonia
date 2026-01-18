@@ -1,658 +1,402 @@
-﻿<UserControl
-    d:DesignHeight="450"
-    d:DesignWidth="800"
-    mc:Ignorable="d"
-    x:Class="YMCL.Views.Main.Pages.About"
-    xmlns="https://github.com/avaloniaui"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:properties="clr-namespace:YMCL.Public.Langs"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <ScrollViewer>
-        <StackPanel Margin="10" Spacing="10">
-            <Border
-                Background="{DynamicResource 1x}"
-                CornerRadius="{DynamicResource MainCornerRadius}"
-                Opacity="{DynamicResource MainOpacity}"
-                Padding="6.5">
-                <Grid>
-                    <Image
-                        Height="34"
-                        HorizontalAlignment="Left"
-                        Margin="8,0,0,0"
-                        VerticalAlignment="Center"
-                        Width="35">
-                        <Image.Source>
-                            <DrawingImage>
-                                <DrawingImage.Drawing>
-                                    <DrawingGroup>
-                                        <DrawingGroup.Children>
-                                            <DrawingGroup>
-                                                <DrawingGroup.Children>
-                                                    <GeometryDrawing Brush="#FFFFFFFF">
-                                                        <GeometryDrawing.Geometry>
-                                                            <PathGeometry Figures="M201.88,88.66C209.19,85.86 217.37,84.67 225.12,85.82 223.55,85.7 221.98,85.59 220.42,85.5 224.07,99.93 229.41,113.92 233.28,128.31 211.57,123.75 189.99,118.53 168.36,113.61 179.53,105.29 190.62,96.84 201.88,88.66z" />
-                                                        </GeometryDrawing.Geometry>
-                                                    </GeometryDrawing>
-                                                </DrawingGroup.Children>
-                                            </DrawingGroup>
-                                            <DrawingGroup>
-                                                <DrawingGroup.Children>
-                                                    <GeometryDrawing Brush="#FF9EEEFF">
-                                                        <GeometryDrawing.Geometry>
-                                                            <PathGeometry Figures="M233.28,128.31C229.41,113.92 224.07,99.93 220.42,85.5 221.98,85.59 223.55,85.7 225.12,85.82 233.6,86.54 240.49,92.04 246.81,97.24 278.8,122.53 310.35,148.37 342,174.07 346.48,177.91 351.49,181.2 355.1,185.96 363.08,195.81 372.17,205.4 376.23,217.67 384.52,237.15 393.51,256.32 402.52,275.46 404.82,279.52 404.95,284.26 405.65,288.76 406.02,292.47 406,296.26 405.12,299.91 405.15,299.19 405.2,297.76 405.22,297.04 348.15,241.11 291.08,185.18 234.01,129.25 233.82,129.01 233.46,128.54 233.28,128.31z" />
-                                                        </GeometryDrawing.Geometry>
-                                                    </GeometryDrawing>
-                                                </DrawingGroup.Children>
-                                            </DrawingGroup>
-                                            <DrawingGroup>
-                                                <DrawingGroup.Children>
-                                                    <GeometryDrawing Brush="#FFBAFFD4">
-                                                        <GeometryDrawing.Geometry>
-                                                            <PathGeometry Figures="M150.56,113.73C156.42,112.74 162.54,112.06 168.36,113.61 189.99,118.53 211.57,123.75 233.28,128.31 233.46,128.54 233.82,129.01 234.01,129.25 233.37,139.16 234.1,149.1 233.54,159.01 233.35,198.56 232.72,238.11 232.52,277.66 232.52,280.3 232.5,282.95 232.48,285.6 184.13,252.88 135.97,219.87 87.79,186.9L87.6,186.22C92.38,177.72 98.1,169.71 103.35,161.47 111.77,148.97 120.03,136.29 129.71,124.71 134.76,118.3 142.73,115.1 150.56,113.73z" />
-                                                        </GeometryDrawing.Geometry>
-                                                    </GeometryDrawing>
-                                                </DrawingGroup.Children>
-                                            </DrawingGroup>
-                                            <DrawingGroup>
-                                                <DrawingGroup.Children>
-                                                    <GeometryDrawing Brush="#FF0071FF">
-                                                        <GeometryDrawing.Geometry>
-                                                            <PathGeometry Figures="M234.01,129.25C291.08,185.18 348.15,241.11 405.22,297.04 405.2,297.76 405.15,299.19 405.12,299.91 404.71,304.98 402.84,309.9 399.92,314.06 396.76,318.62 391.71,321.23 387.18,324.2 371.53,333.83 355.43,342.73 339.17,351.28 328.74,354.22 317.26,354.71 306.94,351 300.5,348.76 295.65,343.78 290.94,339.09 273.72,321.95 257.13,304.2 240.48,286.5 237.91,283.48 234.84,280.88 232.52,277.66 232.72,238.11 233.35,198.56 233.54,159.01 234.1,149.1 233.37,139.16 234.01,129.25z" />
-                                                        </GeometryDrawing.Geometry>
-                                                    </GeometryDrawing>
-                                                </DrawingGroup.Children>
-                                            </DrawingGroup>
-                                            <DrawingGroup>
-                                                <DrawingGroup.Children>
-                                                    <GeometryDrawing Brush="#FF00CFFF">
-                                                        <GeometryDrawing.Geometry>
-                                                            <PathGeometry Figures="M87.19,186.92L87.79,186.9C135.97,219.87 184.13,252.88 232.48,285.6 200.37,307.05 168.61,329.04 136.6,350.63 129.1,354.32 120.39,355.52 112.13,354.4 104.19,353.28 98.09,347.68 92,342.96 73.4,327.58 55.6,311.24 37.96,294.77 32.82,285.18 32.55,272.79 38.26,263.34 49.72,242.8 62.85,223.25 75.76,203.61 79.62,198.08 82.99,192.2 87.19,186.92z" />
-                                                        </GeometryDrawing.Geometry>
-                                                    </GeometryDrawing>
-                                                </DrawingGroup.Children>
-                                            </DrawingGroup>
-                                        </DrawingGroup.Children>
-                                        <DrawingGroup.ClipGeometry>
-                                            <RectangleGeometry Rect="0,0,440,440" />
-                                        </DrawingGroup.ClipGeometry>
-                                    </DrawingGroup>
-                                </DrawingImage.Drawing>
-                            </DrawingImage>
-                        </Image.Source>
-                    </Image>
-                    <Grid Margin="50,0,0,0">
-                        <TextBlock
-                            FontFamily="{StaticResource Font}"
-                            FontSize="17"
-                            FontWeight="Thin"
-                            Foreground="{DynamicResource TextColor}"
-                            HorizontalAlignment="Left"
-                            Margin="0,-15,0,0"
-                            VerticalAlignment="Center"
-                            x:Name="Version" />
-                        <Label
-                            Content=" - By DaiYu"
-                            FontFamily="{DynamicResource Font}"
-                            FontSize="12"
-                            Foreground="{DynamicResource GrayColor}"
-                            HorizontalAlignment="Left"
-                            Margin="0,20,0,0"
-                            Name="AuthorLabel"
-                            VerticalAlignment="Center" />
-                    </Grid>
-                    <Button
-                        Classes="Primary"
-                        Content="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.CheckUpdate}"
-                        FontFamily="{DynamicResource Font}"
-                        Foreground="White"
-                        Height="30.5"
-                        HorizontalAlignment="Right"
-                        Margin="200,0,9,0"
-                        Theme="{DynamicResource SolidButton}"
-                        x:Name="CheckUpdateBtn" />
-                </Grid>
+﻿<UserControl d:DesignHeight="450" d:DesignWidth="800" mc:Ignorable="d" x:Class="YMCL.Views.Main.Pages.About" xmlns="https://github.com/avaloniaui" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:properties="clr-namespace:YMCL.Public.Langs" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ScrollViewer>
+    <StackPanel Margin="10" Spacing="10">
+      <Border Background="{DynamicResource 1x}" CornerRadius="{DynamicResource MainCornerRadius}" Opacity="{DynamicResource MainOpacity}" Padding="6.5">
+        <Grid>
+          <Image Height="34" HorizontalAlignment="Left" Margin="8,0,0,0" VerticalAlignment="Center" Width="35">
+            <Image.Source>
+              <DrawingImage>
+                <DrawingImage.Drawing>
+                  <DrawingGroup>
+                    <DrawingGroup.Children>
+                      <DrawingGroup>
+                        <DrawingGroup.Children>
+                          <GeometryDrawing Brush="#FFFFFFFF">
+                            <GeometryDrawing.Geometry>
+                              <PathGeometry Figures="M201.88,88.66C209.19,85.86 217.37,84.67 225.12,85.82 223.55,85.7 221.98,85.59 220.42,85.5 224.07,99.93 229.41,113.92 233.28,128.31 211.57,123.75 189.99,118.53 168.36,113.61 179.53,105.29 190.62,96.84 201.88,88.66z" />
+                            </GeometryDrawing.Geometry>
+                          </GeometryDrawing>
+                        </DrawingGroup.Children>
+                      </DrawingGroup>
+                      <DrawingGroup>
+                        <DrawingGroup.Children>
+                          <GeometryDrawing Brush="#FF9EEEFF">
+                            <GeometryDrawing.Geometry>
+                              <PathGeometry Figures="M233.28,128.31C229.41,113.92 224.07,99.93 220.42,85.5 221.98,85.59 223.55,85.7 225.12,85.82 233.6,86.54 240.49,92.04 246.81,97.24 278.8,122.53 310.35,148.37 342,174.07 346.48,177.91 351.49,181.2 355.1,185.96 363.08,195.81 372.17,205.4 376.23,217.67 384.52,237.15 393.51,256.32 402.52,275.46 404.82,279.52 404.95,284.26 405.65,288.76 406.02,292.47 406,296.26 405.12,299.91 405.15,299.19 405.2,297.76 405.22,297.04 348.15,241.11 291.08,185.18 234.01,129.25 233.82,129.01 233.46,128.54 233.28,128.31z" />
+                            </GeometryDrawing.Geometry>
+                          </GeometryDrawing>
+                        </DrawingGroup.Children>
+                      </DrawingGroup>
+                      <DrawingGroup>
+                        <DrawingGroup.Children>
+                          <GeometryDrawing Brush="#FFBAFFD4">
+                            <GeometryDrawing.Geometry>
+                              <PathGeometry Figures="M150.56,113.73C156.42,112.74 162.54,112.06 168.36,113.61 189.99,118.53 211.57,123.75 233.28,128.31 233.46,128.54 233.82,129.01 234.01,129.25 233.37,139.16 234.1,149.1 233.54,159.01 233.35,198.56 232.72,238.11 232.52,277.66 232.52,280.3 232.5,282.95 232.48,285.6 184.13,252.88 135.97,219.87 87.79,186.9L87.6,186.22C92.38,177.72 98.1,169.71 103.35,161.47 111.77,148.97 120.03,136.29 129.71,124.71 134.76,118.3 142.73,115.1 150.56,113.73z" />
+                            </GeometryDrawing.Geometry>
+                          </GeometryDrawing>
+                        </DrawingGroup.Children>
+                      </DrawingGroup>
+                      <DrawingGroup>
+                        <DrawingGroup.Children>
+                          <GeometryDrawing Brush="#FF0071FF">
+                            <GeometryDrawing.Geometry>
+                              <PathGeometry Figures="M234.01,129.25C291.08,185.18 348.15,241.11 405.22,297.04 405.2,297.76 405.15,299.19 405.12,299.91 404.71,304.98 402.84,309.9 399.92,314.06 396.76,318.62 391.71,321.23 387.18,324.2 371.53,333.83 355.43,342.73 339.17,351.28 328.74,354.22 317.26,354.71 306.94,351 300.5,348.76 295.65,343.78 290.94,339.09 273.72,321.95 257.13,304.2 240.48,286.5 237.91,283.48 234.84,280.88 232.52,277.66 232.72,238.11 233.35,198.56 233.54,159.01 234.1,149.1 233.37,139.16 234.01,129.25z" />
+                            </GeometryDrawing.Geometry>
+                          </GeometryDrawing>
+                        </DrawingGroup.Children>
+                      </DrawingGroup>
+                      <DrawingGroup>
+                        <DrawingGroup.Children>
+                          <GeometryDrawing Brush="#FF00CFFF">
+                            <GeometryDrawing.Geometry>
+                              <PathGeometry Figures="M87.19,186.92L87.79,186.9C135.97,219.87 184.13,252.88 232.48,285.6 200.37,307.05 168.61,329.04 136.6,350.63 129.1,354.32 120.39,355.52 112.13,354.4 104.19,353.28 98.09,347.68 92,342.96 73.4,327.58 55.6,311.24 37.96,294.77 32.82,285.18 32.55,272.79 38.26,263.34 49.72,242.8 62.85,223.25 75.76,203.61 79.62,198.08 82.99,192.2 87.19,186.92z" />
+                            </GeometryDrawing.Geometry>
+                          </GeometryDrawing>
+                        </DrawingGroup.Children>
+                      </DrawingGroup>
+                    </DrawingGroup.Children>
+                    <DrawingGroup.ClipGeometry>
+                      <RectangleGeometry Rect="0,0,440,440" />
+                    </DrawingGroup.ClipGeometry>
+                  </DrawingGroup>
+                </DrawingImage.Drawing>
+              </DrawingImage>
+            </Image.Source>
+          </Image>
+          <Grid Margin="50,0,0,0">
+            <TextBlock FontFamily="{StaticResource Font}" FontSize="17" FontWeight="Thin" Foreground="{DynamicResource TextColor}" HorizontalAlignment="Left" Margin="0,-15,0,0" VerticalAlignment="Center" x:Name="Version" />
+            <Label Content=" - By DaiYu" FontFamily="{DynamicResource Font}" FontSize="12" Foreground="{DynamicResource GrayColor}" HorizontalAlignment="Left" Margin="0,20,0,0" Name="AuthorLabel" VerticalAlignment="Center" />
+          </Grid>
+          <Button Classes="Primary" Content="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.CheckUpdate}" FontFamily="{DynamicResource Font}" Foreground="White" Height="30.5" HorizontalAlignment="Right" Margin="200,0,9,0" Theme="{DynamicResource SolidButton}" x:Name="CheckUpdateBtn" />
+        </Grid>
 
-            </Border>
-            <Border
-                Background="{DynamicResource 1x}"
-                CornerRadius="{DynamicResource MainCornerRadius}"
-                Opacity="{DynamicResource MainOpacity}"
-                Padding="6.5">
-                <StackPanel Margin="5" Spacing="5">
-                    <Border
-                        Background="{DynamicResource 2x}"
-                        CornerRadius="{DynamicResource MainCornerRadius}"
-                        Padding="8">
-                        <DockPanel>
-                            <Image
-                                DockPanel.Dock="Left"
-                                Height="24"
-                                HorizontalAlignment="Left"
-                                Margin="7,0,0,0"
-                                Width="24">
-                                <Image.Source>
-                                    <DrawingImage>
-                                        <DrawingImage.Drawing>
-                                            <GeometryDrawing Brush="{DynamicResource TextColor}">
-                                                <GeometryDrawing.Geometry>
-                                                    <PathGeometry Figures="M521.5,256C509.8330078125,264 498.5830078125,271.8330078125 487.75,279.5 476.9169921875,287.1669921875 465.75,294 454.25,300 442.75,306 430.6669921875,310.8330078125 418,314.5 405.3330078125,318.1669921875 391.6669921875,320 377,320L64,320 64,800C64,813 66.5,825.3330078125 71.5,837 76.5,848.6669921875 83.41670227050781,858.9169921875 92.25,867.75 101.08300018310547,876.5830078125 111.33300018310547,883.5 123,888.5 134.66700744628906,893.5 147,896 160,896L864,896C877,896 889.3330078125,893.5 901,888.5 912.6669921875,883.5 922.9169921875,876.5830078125 931.75,867.75 940.5830078125,858.9169921875 947.5,848.6669921875 952.5,837 957.5,825.3330078125 960,813 960,800L960,352C960,339 957.5,326.6669921875 952.5,315 947.5,303.3330078125 940.5830078125,293.0830078125 931.75,284.25 922.9169921875,275.4169921875 912.6669921875,268.5 901,263.5 889.3330078125,258.5 877,256 864,256L521.5,256z M160,128C147,128 134.66700744628906,130.5 123,135.5 111.33300018310547,140.5 101.08300018310547,147.41700744628906 92.25,156.25 83.41670227050781,165.08299255371094 76.5,175.33299255371094 71.5,187 66.5,198.66700744628906 64,211 64,224L64,256 377,256C386,256 394.3330078125,254.83299255371094 402,252.5 409.6669921875,250.16700744628906 417.1669921875,247.08299255371094 424.5,243.25 431.8330078125,239.41700744628906 438.8330078125,235.16700744628906 445.5,230.5 452.1669921875,225.83299255371094 459,221 466,216 458.3330078125,205.66700744628906 450.8330078125,195.25 443.5,184.75 436.1669921875,174.25 428.1669921875,164.83299255371094 419.5,156.5 410.8330078125,148.16700744628906 401.0830078125,141.33299255371094 390.25,136 379.4169921875,130.66700744628906 366.6669921875,128 352,128L160,128z M156.5,64L352,64C375,64.0000991821289 394.75,67.5833969116211 411.25,74.75 427.75,81.91670227050781 442.6669921875,91.5 456,103.5 469.3330078125,115.5 481.6669921875,129.16700744628906 493,144.5 504.3330078125,159.83299255371094 516,175.66700744628906 528,192L867.5,192C888.5,192 908.5,196.25 927.5,204.75 946.5,213.25 963.0830078125,224.58299255371094 977.25,238.75 991.4169921875,252.91700744628906 1002.75,269.5 1011.25,288.5 1019.75,307.5 1024,327.5 1024,348.5L1024,803.5C1024,824.5 1019.75,844.5 1011.25,863.5 1002.75,882.5 991.4169921875,899.0830078125 977.25,913.25 963.0830078125,927.4169921875 946.5,938.75 927.5,947.25 908.5,955.75 888.5,960 867.5,960L156.5,960C135.5,960 115.5,955.75 96.5,947.25 77.5,938.75 60.91669845581055,927.4169921875 46.75,913.25 32.58330154418945,899.0830078125 21.25,882.5 12.75,863.5 4.25,844.5 0,824.5 0,803.5L0,220.5C0,199.5 4.25,179.5 12.75,160.5 21.25,141.5 32.58330154418945,124.91699981689453 46.75,110.75 60.91669845581055,96.5833969116211 77.5,85.2500991821289 96.5,76.75 115.5,68.2500991821289 135.5,64.0000991821289 156.5,64z" />
-                                                </GeometryDrawing.Geometry>
-                                            </GeometryDrawing>
-                                        </DrawingImage.Drawing>
-                                    </DrawingImage>
-                                </Image.Source>
-                            </Image>
-                            <Button
-                                Content="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.OpenFolder}"
-                                DockPanel.Dock="Right"
-                                FontFamily="{DynamicResource Font}"
-                                Name="OpenUserDataFolderBtn"
-                                VerticalAlignment="Center" />
-                            <StackPanel DockPanel.Dock="Left" Margin="10,0,0,0">
-                                <TextBlock
-                                    FontFamily="{DynamicResource Font}"
-                                    FontSize="14"
-                                    HorizontalAlignment="Left">
-                                    <Run Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.UserDataFolder}" />
-                                    <Run
-                                        FontSize="12"
-                                        Foreground="{DynamicResource GrayColor}"
-                                        Name="UserDataSize"
-                                        Text="0 KiB" />
-                                </TextBlock>
-                                <TextBlock
-                                    FontFamily="{DynamicResource Font}"
-                                    FontSize="12"
-                                    Foreground="{DynamicResource GrayColor}"
-                                    HorizontalAlignment="Left"
-                                    Margin="-1,0,0,0"
-                                    Name="UserDataFolderPath"
-                                    Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.UserDataFolder}" />
-                            </StackPanel>
-                        </DockPanel>
-                    </Border>
-                </StackPanel>
-            </Border>
-            <Border
-                Background="{DynamicResource 1x}"
-                CornerRadius="{DynamicResource MainCornerRadius}"
-                Opacity="{DynamicResource MainOpacity}">
-                <DockPanel>
-                    <WrapPanel
-                        DockPanel.Dock="Top"
-                        HorizontalAlignment="Left"
-                        Margin="8,10,10,0"
-                        VerticalAlignment="Top">
-                        <HyperlinkButton
-                            Cursor="Hand"
-                            FontFamily="{DynamicResource Font}"
-                            HorizontalAlignment="Right"
-                            Margin="0,0,2,0"
-                            NavigateUri="https://ymcl.daiyu.fun/">
-                            <Border Margin="-5,0,-6,0" Padding="0,0,5,0">
-                                <DockPanel>
-                                    <Border
-                                        CornerRadius="{DynamicResource MainCornerRadius}"
-                                        Height="38"
-                                        Margin="4,0,0,0"
-                                        Width="38">
-                                        <Image
-                                            HorizontalAlignment="Left"
-                                            VerticalAlignment="Center"
-                                            Width="35">
-                                            <Image.Source>
-                                                <DrawingImage>
-                                                    <DrawingImage.Drawing>
-                                                        <DrawingGroup>
-                                                            <DrawingGroup.Children>
-                                                                <DrawingGroup>
-                                                                    <DrawingGroup.Children>
-                                                                        <GeometryDrawing Brush="#FFFFFFFF">
-                                                                            <GeometryDrawing.Geometry>
-                                                                                <PathGeometry Figures="M201.88,88.66C209.19,85.86 217.37,84.67 225.12,85.82 223.55,85.7 221.98,85.59 220.42,85.5 224.07,99.93 229.41,113.92 233.28,128.31 211.57,123.75 189.99,118.53 168.36,113.61 179.53,105.29 190.62,96.84 201.88,88.66z" />
-                                                                            </GeometryDrawing.Geometry>
-                                                                        </GeometryDrawing>
-                                                                    </DrawingGroup.Children>
-                                                                </DrawingGroup>
-                                                                <DrawingGroup>
-                                                                    <DrawingGroup.Children>
-                                                                        <GeometryDrawing Brush="#FF9EEEFF">
-                                                                            <GeometryDrawing.Geometry>
-                                                                                <PathGeometry Figures="M233.28,128.31C229.41,113.92 224.07,99.93 220.42,85.5 221.98,85.59 223.55,85.7 225.12,85.82 233.6,86.54 240.49,92.04 246.81,97.24 278.8,122.53 310.35,148.37 342,174.07 346.48,177.91 351.49,181.2 355.1,185.96 363.08,195.81 372.17,205.4 376.23,217.67 384.52,237.15 393.51,256.32 402.52,275.46 404.82,279.52 404.95,284.26 405.65,288.76 406.02,292.47 406,296.26 405.12,299.91 405.15,299.19 405.2,297.76 405.22,297.04 348.15,241.11 291.08,185.18 234.01,129.25 233.82,129.01 233.46,128.54 233.28,128.31z" />
-                                                                            </GeometryDrawing.Geometry>
-                                                                        </GeometryDrawing>
-                                                                    </DrawingGroup.Children>
-                                                                </DrawingGroup>
-                                                                <DrawingGroup>
-                                                                    <DrawingGroup.Children>
-                                                                        <GeometryDrawing Brush="#FFBAFFD4">
-                                                                            <GeometryDrawing.Geometry>
-                                                                                <PathGeometry Figures="M150.56,113.73C156.42,112.74 162.54,112.06 168.36,113.61 189.99,118.53 211.57,123.75 233.28,128.31 233.46,128.54 233.82,129.01 234.01,129.25 233.37,139.16 234.1,149.1 233.54,159.01 233.35,198.56 232.72,238.11 232.52,277.66 232.52,280.3 232.5,282.95 232.48,285.6 184.13,252.88 135.97,219.87 87.79,186.9L87.6,186.22C92.38,177.72 98.1,169.71 103.35,161.47 111.77,148.97 120.03,136.29 129.71,124.71 134.76,118.3 142.73,115.1 150.56,113.73z" />
-                                                                            </GeometryDrawing.Geometry>
-                                                                        </GeometryDrawing>
-                                                                    </DrawingGroup.Children>
-                                                                </DrawingGroup>
-                                                                <DrawingGroup>
-                                                                    <DrawingGroup.Children>
-                                                                        <GeometryDrawing Brush="#FF0071FF">
-                                                                            <GeometryDrawing.Geometry>
-                                                                                <PathGeometry Figures="M234.01,129.25C291.08,185.18 348.15,241.11 405.22,297.04 405.2,297.76 405.15,299.19 405.12,299.91 404.71,304.98 402.84,309.9 399.92,314.06 396.76,318.62 391.71,321.23 387.18,324.2 371.53,333.83 355.43,342.73 339.17,351.28 328.74,354.22 317.26,354.71 306.94,351 300.5,348.76 295.65,343.78 290.94,339.09 273.72,321.95 257.13,304.2 240.48,286.5 237.91,283.48 234.84,280.88 232.52,277.66 232.72,238.11 233.35,198.56 233.54,159.01 234.1,149.1 233.37,139.16 234.01,129.25z" />
-                                                                            </GeometryDrawing.Geometry>
-                                                                        </GeometryDrawing>
-                                                                    </DrawingGroup.Children>
-                                                                </DrawingGroup>
-                                                                <DrawingGroup>
-                                                                    <DrawingGroup.Children>
-                                                                        <GeometryDrawing Brush="#FF00CFFF">
-                                                                            <GeometryDrawing.Geometry>
-                                                                                <PathGeometry Figures="M87.19,186.92L87.79,186.9C135.97,219.87 184.13,252.88 232.48,285.6 200.37,307.05 168.61,329.04 136.6,350.63 129.1,354.32 120.39,355.52 112.13,354.4 104.19,353.28 98.09,347.68 92,342.96 73.4,327.58 55.6,311.24 37.96,294.77 32.82,285.18 32.55,272.79 38.26,263.34 49.72,242.8 62.85,223.25 75.76,203.61 79.62,198.08 82.99,192.2 87.19,186.92z" />
-                                                                            </GeometryDrawing.Geometry>
-                                                                        </GeometryDrawing>
-                                                                    </DrawingGroup.Children>
-                                                                </DrawingGroup>
-                                                            </DrawingGroup.Children>
-                                                            <DrawingGroup.ClipGeometry>
-                                                                <RectangleGeometry Rect="0,0,440,440" />
-                                                            </DrawingGroup.ClipGeometry>
-                                                        </DrawingGroup>
-                                                    </DrawingImage.Drawing>
-                                                </DrawingImage>
-
-
-                                            </Image.Source>
-                                        </Image>
-                                    </Border>
-                                    <StackPanel Margin="6.5,0,0,0">
-                                        <TextBlock
-                                            FontSize="16"
-                                            Text="Yu Minecraft Launcher"
-                                            TextDecorations="{x:Null}" />
-                                        <TextBlock
-                                            FontSize="13"
-                                            Foreground="{DynamicResource TextColor}"
-                                            Margin="1,0,0,0"
-                                            Text="ymcl.daiyu.fun"
-                                            TextDecorations="{x:Null}" />
-                                    </StackPanel>
-                                </DockPanel>
-                            </Border>
-                        </HyperlinkButton>
-                        <HyperlinkButton
-                            Cursor="Hand"
-                            FontFamily="{DynamicResource Font}"
-                            HorizontalAlignment="Right"
-                            Margin="0,0,2,0"
-                            NavigateUri="https://afdian.com/a/DaiYui">
-                            <Border Margin="-5,0,-6,0" Padding="0,0,5,0">
-                                <DockPanel>
-                                    <Border
-                                        ClipToBounds="True"
-                                        CornerRadius="{DynamicResource MainCornerRadius}"
-                                        Height="35"
-                                        Margin="4,0,0,0"
-                                        Width="35">
-                                        <Image HorizontalAlignment="Left" VerticalAlignment="Center">
-                                            <Image.Source>
-                                                <DrawingImage>
-                                                    <DrawingImage.Drawing>
-                                                        <DrawingGroup>
-                                                            <DrawingGroup.Children>
-                                                                <GeometryDrawing Brush="#FF946CE6">
-                                                                    <GeometryDrawing.Geometry>
-                                                                        <RectangleGeometry
-                                                                            RadiusX="2"
-                                                                            RadiusY="2"
-                                                                            Rect="0,0,160,160" />
-                                                                    </GeometryDrawing.Geometry>
-                                                                </GeometryDrawing>
-                                                                <GeometryDrawing Brush="#FFFFFFFF">
-                                                                    <GeometryDrawing.Geometry>
-                                                                        <StreamGeometry>M64.9999,90.5676C63.4307,90.5676 62.1621,91.8355 62.1621,93.4037 62.1621,94.9754 63.4307,96.2433 64.9999,96.2433 66.5691,96.2433 67.8378,94.9754 67.8378,93.4037 67.8378,91.8355 66.5691,90.5676 64.9999,90.5676z</StreamGeometry>
-                                                                    </GeometryDrawing.Geometry>
-                                                                </GeometryDrawing>
-                                                                <GeometryDrawing Brush="#FFFFFFFF">
-                                                                    <GeometryDrawing.Geometry>
-                                                                        <StreamGeometry>M91.7568,99.0811C90.1876,99.0811 88.9189,100.349 88.9189,101.917 88.9189,103.489 90.1876,104.757 91.7568,104.757 93.326,104.757 94.5946,103.489 94.5946,101.917 94.5946,100.349 93.326,99.0811 91.7568,99.0811z</StreamGeometry>
-                                                                    </GeometryDrawing.Geometry>
-                                                                </GeometryDrawing>
-                                                                <GeometryDrawing Brush="#FFFFFFFF">
-                                                                    <GeometryDrawing.Geometry>
-                                                                        <StreamGeometry>M133.76,106.248C132.813,106.722 131.453,106.747 130.197,106.313 129.349,106.014 128.434,105.732 127.523,105.451 125.832,104.935 123.006,104.074 122.468,103.422 121.585,102.244 119.908,102.009 118.73,102.899 117.552,103.785 117.317,105.455 118.207,106.633 118.502,107.032 118.901,107.359 119.303,107.676 115.224,113.321 97.3137,124.555 71.985,119.02 60.5719,116.525 52.8897,111.969 49.7641,105.85 47.5106,101.429 48.0233,96.8763 49.1019,94.4025 52.2026,87.9633 74.5837,73.1344 88.8732,64.7375 90.1405,63.9865 90.5641,62.3527 89.8166,61.0819 89.069,59.8147 87.3638,59.3057 86.1641,60.1351 85.0107,60.8114 81.0912,63.1393 76.0896,66.3073 74.3986,65.1718 71.4759,63.7693 66.7911,63.3102 59.3616,62.5734 42.1921,59.295 36.6458,56.9493 32.673,55.2692 23.6557,50.8199 25.6528,45.8116 26.1156,44.6441 28.2907,42.754 33.004,40.9529 36.6351,39.5683 40.2484,38.803 42.9789,38.4969 42.6122,38.6748 42.2562,38.8457 41.9216,39.0094 38.7106,40.5685 35.2076,42.3126 32.8545,44.3736 32.6836,44.2633 32.5056,44.1529 32.3846,44.0319 31.37,42.9712 29.6969,42.8928 28.6147,43.9465 27.5467,44.9645 27.5075,46.6552 28.5292,47.7195 29.4797,48.7162 30.8859,49.4673 32.6765,50.0403 32.7442,50.0617 32.8047,50.0937 32.8723,50.108 39.095,52.023 50.1592,51.7845 65.7587,51.1651 72.4834,50.9017 78.8343,50.6526 84.1314,50.7558 101.692,51.1046 114.889,58.0884 124.479,72.1093 130.371,80.7233 128.246,89.2091 124.875,96.5844 124.472,96.2748 124.042,95.8725 123.718,95.4739 122.796,94.3241 121.09,94.164 119.969,95.0503 118.816,95.9722 118.623,97.6487 119.542,98.802 120.083,99.4854 122.867,102.685 126.316,102.411 126.38,102.415 126.437,102.408 126.501,102.404 126.605,102.39 126.711,102.408 126.822,102.39 129.178,101.959 130.659,102.073 132.044,102.942 133.878,104.099 134.782,104.789 134.6,105.366 134.493,105.729 134.219,105.989 133.76,106.248z M60.9493,76.5124C60.4189,76.9004 59.8991,77.2848 59.3758,77.6692 58.8133,77.0641 58.3648,76.4875 58.1583,76.0674 58.7777,75.8823 59.8101,76.103 60.9493,76.5124z M134.614,98.2574C133.294,97.4209 131.909,97.0578 130.563,96.9083 133.724,89.202 135.736,79.1144 128.887,69.0944 118.406,53.7636 103.38,45.7974 84.2346,45.4165 78.7809,45.3097 72.3517,45.5625 65.5487,45.833 57.6493,46.1462 47.1369,46.5556 39.9921,45.9647 41.4161,45.1923 42.9326,44.4519 44.2462,43.8148 49.2728,41.3694 53.2314,39.465 51.9214,36.0871 51.2343,34.1151 49.1874,33.0793 45.8233,33.0045 38.7426,32.8444 23.4421,36.9378 20.6903,43.8397 19.1418,47.7267 18.8854,55.2301 34.5668,61.8615 41.0174,64.5952 59.237,67.9268 66.2678,68.6245 68.2542,68.8167 69.7743,69.219 70.9277,69.6461 69.3151,70.7068 67.6597,71.8209 65.9972,72.96 63.1102,71.3155 58.3897,69.3756 54.8654,71.7782 53.502,72.7001 52.7259,74.0599 52.6903,75.6083 52.6405,77.534 53.8081,79.4169 55.1217,80.9333 49.9314,85.073 45.7343,89.0846 44.2462,92.1778 42.5873,95.9793 41.9109,102.201 45.008,108.27 48.9382,115.973 57.6279,121.344 70.8423,124.235 88.1114,128.004 103.027,124.608 112.895,119.415 118.388,116.525 122.286,113.076 124.18,109.997 124.768,110.182 125.355,110.37 125.96,110.559 126.804,110.815 127.648,111.072 128.438,111.353 131.051,112.257 133.942,112.136 136.167,111.015 136.206,110.997 136.248,110.972 136.291,110.951 137.968,110.068 139.175,108.651 139.705,106.943 141.129,102.337 137.064,99.7915 134.614,98.2574z</StreamGeometry>
-                                                                    </GeometryDrawing.Geometry>
-                                                                </GeometryDrawing>
-                                                            </DrawingGroup.Children>
-                                                            <DrawingGroup.ClipGeometry>
-                                                                <RectangleGeometry Rect="0,0,160,160" />
-                                                            </DrawingGroup.ClipGeometry>
-                                                        </DrawingGroup>
-                                                    </DrawingImage.Drawing>
-                                                </DrawingImage>
-                                            </Image.Source>
-                                        </Image>
-                                    </Border>
-                                    <StackPanel Margin="6.5,0,0,0">
-                                        <TextBlock
-                                            FontSize="16"
-                                            Text="Afdian"
-                                            TextDecorations="{x:Null}" />
-                                        <TextBlock
-                                            FontSize="13"
-                                            Foreground="{DynamicResource TextColor}"
-                                            Text="afdian.com/a/DaiYui"
-                                            TextDecorations="{x:Null}" />
-                                    </StackPanel>
-                                </DockPanel>
-                            </Border>
-                        </HyperlinkButton>
-                        <HyperlinkButton
-                            Cursor="Hand"
-                            FontFamily="{DynamicResource Font}"
-                            HorizontalAlignment="Right"
-                            Margin="0,0,2,0"
-                            NavigateUri="https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0">
-                            <Border Margin="-5,0,-6,0" Padding="0,0,5,0">
-                                <DockPanel>
-                                    <Border
-                                        ClipToBounds="True"
-                                        CornerRadius="{DynamicResource MainCornerRadius}"
-                                        Height="35"
-                                        Margin="4,0,0,0"
-                                        Width="35">
-                                        <Image HorizontalAlignment="Left" VerticalAlignment="Center">
-                                            <Image.Source>
-                                                <DrawingImage>
-                                                    <DrawingImage.Drawing>
-                                                        <DrawingGroup>
-                                                            <DrawingGroup.ClipGeometry>
-                                                                <RectangleGeometry Rect="0,0,456,456" />
-                                                            </DrawingGroup.ClipGeometry>
-                                                            <GeometryDrawing Brush="#FF512BD4">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <RectangleGeometry
-                                                                        RadiusX="0"
-                                                                        RadiusY="0"
-                                                                        Rect="0,0,456,456" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
-                                                            <GeometryDrawing Brush="#FFFFFFFF">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <PathGeometry Figures="M81.2738,291.333C78.0496,291.333 75.309,290.259 73.052,288.11 70.795,285.906 69.6665,283.289 69.6665,280.259 69.6665,277.173 70.795,274.529 73.052,272.325 75.309,270.121 78.0496,269.019 81.2738,269.019 84.5518,269.019 87.3193,270.121 89.5763,272.325 91.887,274.529 93.0424,277.173 93.0424,280.259 93.0424,283.289 91.887,285.906 89.5763,288.11 87.3193,290.259 84.5518,291.333 81.2738,291.333z" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
-                                                            <GeometryDrawing Brush="#FFFFFFFF">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <PathGeometry Figures="M210.167,289.515L189.209,289.515 133.994,202.406C132.597,200.202,131.441,197.915,130.528,195.546L130.044,195.546C130.474,198.081,130.689,203.508,130.689,211.827L130.689,289.515 112.149,289.515 112.149,171 134.477,171 187.839,256.043C190.096,259.57,191.547,261.994,192.192,263.316L192.514,263.316C191.977,260.176,191.708,254.859,191.708,247.365L191.708,171 210.167,171 210.167,289.515z" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
-                                                            <GeometryDrawing Brush="#FFFFFFFF">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <PathGeometry Figures="M300.449,289.515L235.561,289.515 235.561,171 297.87,171 297.87,187.695 254.746,187.695 254.746,221.249 294.485,221.249 294.485,237.861 254.746,237.861 254.746,272.903 300.449,272.903 300.449,289.515z" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
-                                                            <GeometryDrawing Brush="#FFFFFFFF">
-                                                                <GeometryDrawing.Geometry>
-                                                                    <PathGeometry Figures="M392.667,187.695L359.457,187.695 359.457,289.515 340.272,289.515 340.272,187.695 307.143,187.695 307.143,171 392.667,171 392.667,187.695z" />
-                                                                </GeometryDrawing.Geometry>
-                                                            </GeometryDrawing>
-                                                        </DrawingGroup>
-                                                    </DrawingImage.Drawing>
-                                                </DrawingImage>
-                                            </Image.Source>
-                                        </Image>
-                                    </Border>
-                                    <StackPanel Margin="6.5,0,0,0">
-                                        <TextBlock
-                                            FontSize="16"
-                                            Text=".NET Core 8.0"
-                                            TextDecorations="{x:Null}" />
-                                        <TextBlock
-                                            FontSize="13"
-                                            Foreground="{DynamicResource TextColor}"
-                                            Margin="2,0,0,0"
-                                            Text="dotnet.microsoft.com"
-                                            TextDecorations="{x:Null}" />
-                                    </StackPanel>
-                                </DockPanel>
-                            </Border>
-                        </HyperlinkButton>
-                        <HyperlinkButton
-                            Cursor="Hand"
-                            FontFamily="{DynamicResource Font}"
-                            HorizontalAlignment="Right"
-                            Margin="0,0,2,0"
-                            NavigateUri="https://docs.avaloniaui.net/">
-                            <Border Margin="-5,0,-6,0" Padding="0,0,5,0">
-                                <DockPanel>
-                                    <Border
-                                        CornerRadius="{DynamicResource MainCornerRadius}"
-                                        Height="36"
-                                        Margin="4,0,0,0"
-                                        Width="36">
-                                        <Image HorizontalAlignment="Left" VerticalAlignment="Center">
-                                            <Image.Source>
-                                                <DrawingImage>
-                                                    <DrawingImage.Drawing>
-                                                        <DrawingGroup>
-                                                            <DrawingGroup.Children>
-                                                                <GeometryDrawing Brush="#FF0D6EFD">
-                                                                    <GeometryDrawing.Geometry>
-                                                                        <PathGeometry Figures="M507.59,0L522.64,0C606.79,1.18 690.63,23.03 764.3,63.8 833.36,101.73 893.49,155.77 938.55,220.41 970.17,265.62 994.35,316.01 1009.83,368.97 1021.69,409.31 1028.12,451.13 1030,493.1L1030,749.99C1028.89,764.96 1029.56,780.01 1029.37,795.02 1029.24,827.69 1029.29,860.35 1029.13,893.02 1028.84,903.08 1030.06,913.32 1027.64,923.22 1021.45,955.61 1001.56,984.98 974.04,1003.08 954.66,1016.01 931.64,1023.21 908.38,1024L503.55,1024C438.64,1022.5 373.97,1008.94 314.16,983.6 254.72,958.52 200.02,922.18 153.98,876.98 98.54,822.93 55.61,756.12 29.64,683.18 -7.43,579.8 -9.59,464.35 23.35,359.6 46.35,285.87 86.61,217.67 139.67,161.58 182.42,116.29 233.44,78.8 289.51,51.66 357.22,18.62 432.3,1.11 507.59,0 M404.95,193.07C350.96,211.63 301.94,244.25 263.77,286.68 225.08,329.34 197.75,382.14 185.18,438.34 199.4,442.44 212.51,450.51 222.22,461.71 234.44,475.37 241.22,493.65 241.14,511.95 241.16,527.15 236.55,542.39 227.79,554.84 217.82,569.68 202.3,580.45 185.18,585.4 191.19,611.99 200.33,637.89 212.61,662.23 246.63,730.47 304.54,786.37 373.85,818.12 408.81,834.31 446.58,844.4 484.95,847.88 551.82,854.15 620.59,840.38 679.48,807.96 679.52,820.97 679.48,833.99 679.5,847 738.38,847 797.25,847 856.12,847 856.12,735.33 856.15,623.66 856.11,511.99 856.08,467.51 847.31,423.02 830.03,382.02 815.73,348 795.83,316.35 771.31,288.76 718.99,229.41 645.3,189.39 566.97,178.06 512.8,170.07 456.69,175.06 404.95,193.07 M152.53,458.6C134.28,461.84 118.33,475.32 111.89,492.67 107.67,503.91 107.32,516.58 111,528.01 115.26,541.44 125.02,553.11 137.63,559.46 148.67,565.36 161.85,567.05 174.07,564.47 188.17,561.6 200.95,552.77 208.62,540.6 216.34,528.72 218.95,513.72 215.83,499.91 212.74,485.81 203.64,473.24 191.35,465.71 179.9,458.59 165.76,456.02 152.53,458.6z" />
-                                                                    </GeometryDrawing.Geometry>
-                                                                </GeometryDrawing>
-                                                                <GeometryDrawing Brush="#FF0D6EFD">
-                                                                    <GeometryDrawing.Geometry>
-                                                                        <PathGeometry Figures="M510.29,350.32C550.39,348.6 590.88,362.4 621.51,388.36 650.87,412.85 671.1,448.09 677.11,485.88 683.9,526.56 674.25,569.69 650.58,603.49 628.68,635.15 595.25,658.65 557.94,668.25 517.67,678.82 473.34,673.38 437.05,652.87 403.51,634.27 376.94,603.37 363.8,567.31 349.87,529.59 350.78,486.61 366.51,449.58 381.56,413.47 410.28,383.25 445.61,366.44 465.7,356.56 487.94,351.19 510.29,350.32z" />
-                                                                    </GeometryDrawing.Geometry>
-                                                                </GeometryDrawing>
-                                                            </DrawingGroup.Children>
-                                                        </DrawingGroup>
-                                                    </DrawingImage.Drawing>
-                                                </DrawingImage>
-                                            </Image.Source>
-                                        </Image>
-                                    </Border>
-                                    <StackPanel Margin="6.5,0,0,0">
-                                        <TextBlock
-                                            FontSize="16"
-                                            Text=" AvaloniaUi"
-                                            TextDecorations="{x:Null}" />
-                                        <TextBlock
-                                            FontSize="13"
-                                            Foreground="{DynamicResource TextColor}"
-                                            Margin="2,0,0,0"
-                                            Text="docs.avaloniaui.net"
-                                            TextDecorations="{x:Null}" />
-                                    </StackPanel>
-                                </DockPanel>
-                            </Border>
-                        </HyperlinkButton>
-                    </WrapPanel>
-                    <StackPanel
-                        DockPanel.Dock="Top"
-                        Margin="20,10,20,0"
-                        VerticalAlignment="Top">
-                        <Grid VerticalAlignment="Top">
-                            <Image
-                                Height="25"
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Top"
-                                Width="25">
-                                <Image.Source>
-                                    <DrawingImage>
-                                        <DrawingImage.Drawing>
-                                            <GeometryDrawing Brush="{DynamicResource TextColor}">
-                                                <GeometryDrawing.Geometry>
-                                                    <PathGeometry Figures="M723.77001953125,333.55999755859375L642.9000244140625,574.8599853515625C681.3400268554688,595.4299926757812,749.510009765625,619.239990234375,806.6199951171875,572.3400268554688L723.77001953125,333.55999755859375z M299.55999755859375,333.55999755859375L218.69000244140625,574.8599853515625C257.1099853515625,595.4099731445312,325.2699890136719,619.239990234375,382.4100036621094,572.3400268554688L299.55999755859375,333.55999755859375z M509.24639892578125,67.12796020507812C513.7525024414062,67.17749786376953 518.324951171875,68.11250305175781 522.719970703125,70.02999877929688 523.9400024414062,70.55999755859375 525,71.29000091552734 526.1300048828125,71.94000244140625 535.1300048828125,74.91000366210938 542.9299926757812,81.41000366210938 547.0599975585938,90.76000213623047 589.8900146484375,187.75999450683594 644.2000122070312,206.74000549316406 723.5499877929688,206.74000549316406 803.3400268554688,206.74000549316406 858,187.30999755859375 901.27001953125,87.97000122070312 908.9099731445312,70.41000366210938 929.3300170898438,62.36000061035156 946.9199829101562,70.02999877929688 964.47998046875,77.66999816894531 972.510009765625,98.12000274658203 964.8599853515625,115.66999816894531 915.7899780273438,228.3300018310547 845.530029296875,263.2200012207031 776.1199951171875,272.7900085449219L876.8900146484375,563.280029296875C882.7999877929688,580.3400268554688 878.4600219726562,599.489990234375 865.8599853515625,612.0900268554688 825.4400024414062,652.5900268554688 778.2000122070312,668.3699951171875 731.3800048828125,668.3699951171875 680.9500122070312,668.3699951171875 631,650.0700073242188 590.5399780273438,624.6099853515625 572.2999877929688,613.1500244140625 564.4099731445312,590.6900024414062 571.3599853515625,570L670.97998046875,272.80999755859375C628.1300048828125,266.94000244140625,585.010009765625,251.3699951171875,546.7899780273438,213.99000549316406L546.7899780273438,887.75 719.47998046875,887.75C738.6300048828125,887.75 754.1599731445312,903.280029296875 754.1599731445312,922.4299926757812 754.1599731445312,941.5800170898438 738.6400146484375,957.1099853515625 719.47998046875,957.1099853515625L315.29998779296875,957.1099853515625C296.1499938964844,957.1099853515625 280.6199951171875,941.5800170898438 280.6199951171875,922.4299926757812 280.6199951171875,903.280029296875 296.1400146484375,887.75 315.29998779296875,887.75L477.4200134277344,887.75 477.4200134277344,212.42999267578125C438.79998779296875,250.8800048828125,395.2099914550781,266.82000732421875,351.9100036621094,272.7900085449219L452.69000244140625,563.280029296875C458.6099853515625,580.25 454.30999755859375,599.4199829101562 441.7200012207031,612.0399780273438 401.260009765625,652.5700073242188 354,668.3599853515625 307.1600036621094,668.3599853515625 256.739990234375,668.3599853515625 206.8000030517578,650.0599975585938 166.33999633789062,624.6099853515625 148.08999633789062,613.1199951171875 140.22000122070312,590.6699829101562 147.16000366210938,570L246.75999450683594,272.82000732421875C177.82000732421875,263.3800048828125 108.08999633789062,229.08999633789062 59.400001525878906,118.79000091552734 51.650001525878906,101.25 59.59000015258789,80.77999877929688 77.11000061035156,73.05000305175781 94.66999816894531,65.30000305175781 115.0999984741211,73.26000213623047 122.8499984741211,90.76000213623047 165.6699981689453,187.75999450683594 219.99000549316406,206.74000549316406 299.3500061035156,206.74000549316406 379.1300048828125,206.74000549316406 433.7799987792969,187.30999755859375 477.07000732421875,87.97000122070312 482.8074951171875,74.80000305175781 495.7281494140625,66.97937774658203 509.24639892578125,67.12796020507812z" />
-                                                </GeometryDrawing.Geometry>
-                                            </GeometryDrawing>
-                                        </DrawingImage.Drawing>
-                                    </DrawingImage>
-                                </Image.Source>
-                            </Image>
-                            <TextBlock
-                                FontFamily="{DynamicResource Font}"
-                                FontSize="18"
-                                Foreground="{DynamicResource TextColor}"
-                                HorizontalAlignment="Left"
-                                Margin="30,0,0,0"
-                                Text="GPL 3.0 License"
-                                TextDecorations="{x:Null}"
-                                VerticalAlignment="Center" />
-                        </Grid>
-                        <TextBlock
-                            DockPanel.Dock="Bottom"
-                            FontFamily="{DynamicResource Font}"
-                            FontSize="13"
-                            Foreground="{DynamicResource TextColor}"
-                            Margin="2,3,10,0"
-                            Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.GPL3Text}"
-                            TextDecorations="{x:Null}"
-                            TextWrapping="Wrap" />
-                    </StackPanel>
-                    <Grid DockPanel.Dock="Top" Margin="10,12,10,10">
-                        <TextBlock
-                            FontFamily="{DynamicResource Font}"
-                            FontSize="15"
-                            Foreground="{DynamicResource TextColor}"
-                            HorizontalAlignment="Left"
-                            Margin="10,0,0,0"
-                            Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.OpenSourceProjectUsageTable}"
-                            VerticalAlignment="Top" />
-                        <WrapPanel Margin="5,25,5,0">
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/CurseForgeCommunity/.NET-APIClient">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" CurseForge.APIClient "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/amwx/FluentAvalonia">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" FluentAvaloniaUI "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/irihitech/Ursa.Avalonia">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" Irihi.Ursa "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/Blessing-Studio/MinecraftLaunch.Skin">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" MinecraftLaunch.Skin "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/naudio/NAudio">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" NAudio "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/irihitech/Semi.Avalonia">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" Semi.Avalonia "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/Ink-Marks-Studio/StarLight.Core">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" StarLight_Core "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/Blessing-Studio/MinecraftLaunch">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" MinecraftLaunch "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://www.newtonsoft.com/json">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" Newtonsoft.Json "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/yiyungent/Afdian.Sdk">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" Afdian.Sdk "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" AsyncImageLoader.Avalonia "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/CommunityToolkit/dotnet">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" CommunityToolkit.Mvvm "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/zzzprojects/html-agility-pack">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" HtmlAgilityPack "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/reactiveui/reactiveui">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" ReactiveUI "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                            <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/xoofx/Tomlyn">
-                                <TextBlock
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text=" Tomlyn "
-                                    TextDecorations="{x:Null}" />
-                            </HyperlinkButton>
-                        </WrapPanel>
-                    </Grid>
-                </DockPanel>
-            </Border>
-            <Border
-                Background="{DynamicResource 1x}"
-                CornerRadius="{DynamicResource MainCornerRadius}"
-                Opacity="{DynamicResource MainOpacity}"
-                Padding="10">
-                <StackPanel
-                    HorizontalAlignment="Stretch"
-                    Margin="0"
-                    Spacing="10"
-                    VerticalAlignment="Stretch">
-                    <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                        <StackPanel DockPanel.Dock="Left" Margin="5,0,0,0">
-                            <TextBlock
-                                FontFamily="{DynamicResource Font}"
-                                FontSize="16"
-                                Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.Sponsors}" />
-                            <TextBlock FontFamily="{DynamicResource Font}" Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.SponsorsTip}" />
-                        </StackPanel>
-                        <HyperlinkButton
-                            DockPanel.Dock="Right"
-                            HorizontalAlignment="Right"
-                            Margin="3"
-                            NavigateUri="https://afdian.com/a/DaiYui">
-                            <StackPanel Orientation="Horizontal" Spacing="5">
-                                <PathIcon
-                                    Data="F1 M 18.75 10 C 18.75 9.84375 18.719074 9.692383 18.657227 9.545898 C 18.595377 9.399414 18.512369 9.272461 18.408203 9.165039 C 18.304035 9.057617 18.181965 8.971354 18.041992 8.90625 C 17.902018 8.841146 17.75065 8.808594 17.587891 8.808594 L 17.519531 8.808594 L 12.929688 8.964844 L 8.017578 1.591797 C 7.972005 1.526693 7.906901 1.494141 7.822266 1.494141 C 7.763671 1.494141 7.714843 1.516928 7.675781 1.5625 C 7.636718 1.608074 7.617187 1.660156 7.617188 1.71875 L 7.617188 1.757812 L 9.189453 9.091797 L 3.095703 9.296875 L 1.875 6.445312 C 1.822917 6.315104 1.72526 6.25 1.582031 6.25 C 1.490885 6.25 1.414388 6.280925 1.352539 6.342773 C 1.29069 6.404623 1.259766 6.481121 1.259766 6.572266 C 1.259766 6.598309 1.276042 6.673178 1.308594 6.796875 C 1.341146 6.920573 1.381836 7.070312 1.430664 7.246094 C 1.479492 7.421875 1.534831 7.613933 1.59668 7.822266 C 1.658529 8.0306 1.715495 8.225912 1.767578 8.408203 C 1.819661 8.590495 1.866862 8.753256 1.90918 8.896484 C 1.951497 9.039714 1.979167 9.134115 1.992188 9.179688 C 1.901042 9.231771 1.811523 9.282227 1.723633 9.331055 C 1.635742 9.379883 1.557617 9.433594 1.489258 9.492188 C 1.420898 9.550781 1.363932 9.620769 1.318359 9.702148 C 1.272786 9.783529 1.25 9.882812 1.25 10 C 1.25 10.117188 1.272786 10.216472 1.318359 10.297852 C 1.363932 10.379232 1.420898 10.449219 1.489258 10.507812 C 1.557617 10.566406 1.635742 10.620117 1.723633 10.668945 C 1.811523 10.717773 1.901042 10.768229 1.992188 10.820312 C 1.979167 10.865886 1.951497 10.958659 1.90918 11.098633 C 1.866862 11.238607 1.819661 11.402995 1.767578 11.591797 C 1.715495 11.7806 1.658529 11.977539 1.59668 12.182617 C 1.534831 12.387695 1.479492 12.578125 1.430664 12.753906 C 1.381836 12.929688 1.341146 13.081055 1.308594 13.208008 C 1.276042 13.334961 1.259766 13.408203 1.259766 13.427734 C 1.259766 13.518881 1.29069 13.595378 1.352539 13.657227 C 1.414388 13.719076 1.490885 13.75 1.582031 13.75 C 1.72526 13.75 1.822917 13.684896 1.875 13.554688 L 3.095703 10.703125 L 9.189453 10.908203 L 7.617188 18.242188 L 7.617188 18.28125 C 7.617187 18.339844 7.636718 18.391928 7.675781 18.4375 C 7.714843 18.483072 7.763671 18.505859 7.822266 18.505859 C 7.906901 18.505859 7.972005 18.473307 8.017578 18.408203 L 12.929688 11.035156 L 17.519531 11.191406 L 17.587891 11.191406 C 17.75065 11.191406 17.902018 11.158854 18.041992 11.09375 C 18.181965 11.028646 18.304035 10.942383 18.408203 10.834961 C 18.512369 10.727539 18.595377 10.600586 18.657227 10.454102 C 18.719074 10.307617 18.75 10.15625 18.75 10 Z M 17.568359 7.568359 C 17.900391 7.568359 18.214518 7.631836 18.510742 7.758789 C 18.806965 7.885742 19.065754 8.059896 19.287109 8.28125 C 19.508463 8.502604 19.682617 8.761394 19.80957 9.057617 C 19.936523 9.353842 20 9.667969 20 10 C 20 10.338542 19.934895 10.655925 19.804688 10.952148 C 19.674479 11.248373 19.498697 11.507162 19.277344 11.728516 C 19.055988 11.94987 18.797199 12.124023 18.500977 12.250977 C 18.204752 12.37793 17.887369 12.441406 17.548828 12.441406 C 16.891275 12.441406 16.232096 12.425131 15.571289 12.392578 C 14.910481 12.360026 14.248047 12.330729 13.583984 12.304688 L 9.052734 19.101562 C 8.916016 19.303385 8.740234 19.462891 8.525391 19.580078 C 8.310547 19.697266 8.079427 19.755859 7.832031 19.755859 C 7.630208 19.755859 7.439778 19.716797 7.260742 19.638672 C 7.081706 19.560547 6.927083 19.454752 6.796875 19.321289 C 6.666667 19.187826 6.5625 19.031576 6.484375 18.852539 C 6.40625 18.673502 6.367188 18.483072 6.367188 18.28125 C 6.367188 18.177084 6.376953 18.076172 6.396484 17.978516 L 7.65625 12.109375 L 3.90625 11.982422 L 3.017578 14.052734 C 2.89388 14.345703 2.701823 14.576823 2.441406 14.746094 C 2.18099 14.915365 1.894531 15 1.582031 15 C 1.367188 15 1.163737 14.959311 0.97168 14.87793 C 0.779622 14.79655 0.611979 14.684245 0.46875 14.541016 C 0.325521 14.397787 0.213216 14.230144 0.131836 14.038086 C 0.050456 13.846029 0.009766 13.642578 0.009766 13.427734 C 0.009766 13.310547 0.030924 13.15918 0.073242 12.973633 C 0.11556 12.788086 0.166016 12.594401 0.224609 12.392578 C 0.283203 12.190756 0.341797 11.995443 0.400391 11.806641 C 0.458984 11.617839 0.507812 11.461589 0.546875 11.337891 C 0.371094 11.162109 0.236003 10.957031 0.141602 10.722656 C 0.047201 10.488281 0 10.247396 0 10 C 0 9.752604 0.047201 9.511719 0.141602 9.277344 C 0.236003 9.042969 0.371094 8.837891 0.546875 8.662109 C 0.507812 8.538412 0.458984 8.382162 0.400391 8.193359 C 0.341797 8.004558 0.283203 7.810873 0.224609 7.612305 C 0.166016 7.413738 0.11556 7.220053 0.073242 7.03125 C 0.030924 6.842448 0.009766 6.689453 0.009766 6.572266 C 0.009766 6.357422 0.050456 6.153972 0.131836 5.961914 C 0.213216 5.769857 0.325521 5.602215 0.46875 5.458984 C 0.611979 5.315756 0.779622 5.203451 0.97168 5.12207 C 1.163737 5.040691 1.367188 5.000001 1.582031 5 C 1.894531 5.000001 2.18099 5.084637 2.441406 5.253906 C 2.701823 5.423178 2.89388 5.654297 3.017578 5.947266 L 3.90625 8.017578 L 7.65625 7.890625 L 6.396484 2.021484 C 6.376953 1.923828 6.367188 1.822918 6.367188 1.71875 C 6.367188 1.516928 6.40625 1.326498 6.484375 1.147461 C 6.5625 0.968426 6.666667 0.812176 6.796875 0.678711 C 6.927083 0.545248 7.081706 0.439453 7.260742 0.361328 C 7.439778 0.283203 7.630208 0.244141 7.832031 0.244141 C 8.079427 0.244141 8.310547 0.302734 8.525391 0.419922 C 8.740234 0.537109 8.916016 0.696615 9.052734 0.898438 L 13.583984 7.695312 C 14.248047 7.675782 14.912109 7.64974 15.576172 7.617188 C 16.240234 7.584636 16.904297 7.568359 17.568359 7.568359 Z "
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Width="16" />
-                                <TextBlock
-                                    FontFamily="{DynamicResource Font}"
-                                    Foreground="{DynamicResource SystemAccentColor}"
-                                    Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.Sponsor}"
-                                    TextDecorations="{x:Null}" />
-                            </StackPanel>
-                        </HyperlinkButton>
-                    </DockPanel>
-                    <WrapPanel Name="SponsorPanel" />
-                </StackPanel>
-            </Border>
+      </Border>
+      <Border Background="{DynamicResource 1x}" CornerRadius="{DynamicResource MainCornerRadius}" Opacity="{DynamicResource MainOpacity}" Padding="6.5">
+        <StackPanel Margin="5" Spacing="5">
+          <Border Background="{DynamicResource 2x}" CornerRadius="{DynamicResource MainCornerRadius}" Padding="8">
+            <DockPanel>
+              <Image DockPanel.Dock="Left" Height="24" HorizontalAlignment="Left" Margin="7,0,0,0" Width="24">
+                <Image.Source>
+                  <DrawingImage>
+                    <DrawingImage.Drawing>
+                      <GeometryDrawing Brush="{DynamicResource TextColor}">
+                        <GeometryDrawing.Geometry>
+                          <PathGeometry Figures="M521.5,256C509.8330078125,264 498.5830078125,271.8330078125 487.75,279.5 476.9169921875,287.1669921875 465.75,294 454.25,300 442.75,306 430.6669921875,310.8330078125 418,314.5 405.3330078125,318.1669921875 391.6669921875,320 377,320L64,320 64,800C64,813 66.5,825.3330078125 71.5,837 76.5,848.6669921875 83.41670227050781,858.9169921875 92.25,867.75 101.08300018310547,876.5830078125 111.33300018310547,883.5 123,888.5 134.66700744628906,893.5 147,896 160,896L864,896C877,896 889.3330078125,893.5 901,888.5 912.6669921875,883.5 922.9169921875,876.5830078125 931.75,867.75 940.5830078125,858.9169921875 947.5,848.6669921875 952.5,837 957.5,825.3330078125 960,813 960,800L960,352C960,339 957.5,326.6669921875 952.5,315 947.5,303.3330078125 940.5830078125,293.0830078125 931.75,284.25 922.9169921875,275.4169921875 912.6669921875,268.5 901,263.5 889.3330078125,258.5 877,256 864,256L521.5,256z M160,128C147,128 134.66700744628906,130.5 123,135.5 111.33300018310547,140.5 101.08300018310547,147.41700744628906 92.25,156.25 83.41670227050781,165.08299255371094 76.5,175.33299255371094 71.5,187 66.5,198.66700744628906 64,211 64,224L64,256 377,256C386,256 394.3330078125,254.83299255371094 402,252.5 409.6669921875,250.16700744628906 417.1669921875,247.08299255371094 424.5,243.25 431.8330078125,239.41700744628906 438.8330078125,235.16700744628906 445.5,230.5 452.1669921875,225.83299255371094 459,221 466,216 458.3330078125,205.66700744628906 450.8330078125,195.25 443.5,184.75 436.1669921875,174.25 428.1669921875,164.83299255371094 419.5,156.5 410.8330078125,148.16700744628906 401.0830078125,141.33299255371094 390.25,136 379.4169921875,130.66700744628906 366.6669921875,128 352,128L160,128z M156.5,64L352,64C375,64.0000991821289 394.75,67.5833969116211 411.25,74.75 427.75,81.91670227050781 442.6669921875,91.5 456,103.5 469.3330078125,115.5 481.6669921875,129.16700744628906 493,144.5 504.3330078125,159.83299255371094 516,175.66700744628906 528,192L867.5,192C888.5,192 908.5,196.25 927.5,204.75 946.5,213.25 963.0830078125,224.58299255371094 977.25,238.75 991.4169921875,252.91700744628906 1002.75,269.5 1011.25,288.5 1019.75,307.5 1024,327.5 1024,348.5L1024,803.5C1024,824.5 1019.75,844.5 1011.25,863.5 1002.75,882.5 991.4169921875,899.0830078125 977.25,913.25 963.0830078125,927.4169921875 946.5,938.75 927.5,947.25 908.5,955.75 888.5,960 867.5,960L156.5,960C135.5,960 115.5,955.75 96.5,947.25 77.5,938.75 60.91669845581055,927.4169921875 46.75,913.25 32.58330154418945,899.0830078125 21.25,882.5 12.75,863.5 4.25,844.5 0,824.5 0,803.5L0,220.5C0,199.5 4.25,179.5 12.75,160.5 21.25,141.5 32.58330154418945,124.91699981689453 46.75,110.75 60.91669845581055,96.5833969116211 77.5,85.2500991821289 96.5,76.75 115.5,68.2500991821289 135.5,64.0000991821289 156.5,64z" />
+                        </GeometryDrawing.Geometry>
+                      </GeometryDrawing>
+                    </DrawingImage.Drawing>
+                  </DrawingImage>
+                </Image.Source>
+              </Image>
+              <Button Content="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.OpenFolder}" DockPanel.Dock="Right" FontFamily="{DynamicResource Font}" Name="OpenUserDataFolderBtn" VerticalAlignment="Center" />
+              <StackPanel DockPanel.Dock="Left" Margin="10,0,0,0">
+                <TextBlock FontFamily="{DynamicResource Font}" FontSize="14" HorizontalAlignment="Left">
+                  <Run Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.UserDataFolder}" />
+                  <Run FontSize="12" Foreground="{DynamicResource GrayColor}" Name="UserDataSize" Text="0 KiB" />
+                </TextBlock>
+                <TextBlock FontFamily="{DynamicResource Font}" FontSize="12" Foreground="{DynamicResource GrayColor}" HorizontalAlignment="Left" Margin="-1,0,0,0" Name="UserDataFolderPath" Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.UserDataFolder}" />
+              </StackPanel>
+            </DockPanel>
+          </Border>
         </StackPanel>
-    </ScrollViewer>
+      </Border>
+      <Border Background="{DynamicResource 1x}" CornerRadius="{DynamicResource MainCornerRadius}" Opacity="{DynamicResource MainOpacity}">
+        <DockPanel>
+          <WrapPanel DockPanel.Dock="Top" HorizontalAlignment="Left" Margin="8,10,10,0" VerticalAlignment="Top">
+            <HyperlinkButton Cursor="Hand" FontFamily="{DynamicResource Font}" HorizontalAlignment="Right" Margin="0,0,2,0" NavigateUri="https://ymcl.yik.at/">
+              <Border Margin="-5,0,-6,0" Padding="0,0,5,0">
+                <DockPanel>
+                  <Border CornerRadius="{DynamicResource MainCornerRadius}" Height="38" Margin="4,0,0,0" Width="38">
+                    <Image HorizontalAlignment="Left" VerticalAlignment="Center" Width="35">
+                      <Image.Source>
+                        <DrawingImage>
+                          <DrawingImage.Drawing>
+                            <DrawingGroup>
+                              <DrawingGroup.Children>
+                                <DrawingGroup>
+                                  <DrawingGroup.Children>
+                                    <GeometryDrawing Brush="#FFFFFFFF">
+                                      <GeometryDrawing.Geometry>
+                                        <PathGeometry Figures="M201.88,88.66C209.19,85.86 217.37,84.67 225.12,85.82 223.55,85.7 221.98,85.59 220.42,85.5 224.07,99.93 229.41,113.92 233.28,128.31 211.57,123.75 189.99,118.53 168.36,113.61 179.53,105.29 190.62,96.84 201.88,88.66z" />
+                                      </GeometryDrawing.Geometry>
+                                    </GeometryDrawing>
+                                  </DrawingGroup.Children>
+                                </DrawingGroup>
+                                <DrawingGroup>
+                                  <DrawingGroup.Children>
+                                    <GeometryDrawing Brush="#FF9EEEFF">
+                                      <GeometryDrawing.Geometry>
+                                        <PathGeometry Figures="M233.28,128.31C229.41,113.92 224.07,99.93 220.42,85.5 221.98,85.59 223.55,85.7 225.12,85.82 233.6,86.54 240.49,92.04 246.81,97.24 278.8,122.53 310.35,148.37 342,174.07 346.48,177.91 351.49,181.2 355.1,185.96 363.08,195.81 372.17,205.4 376.23,217.67 384.52,237.15 393.51,256.32 402.52,275.46 404.82,279.52 404.95,284.26 405.65,288.76 406.02,292.47 406,296.26 405.12,299.91 405.15,299.19 405.2,297.76 405.22,297.04 348.15,241.11 291.08,185.18 234.01,129.25 233.82,129.01 233.46,128.54 233.28,128.31z" />
+                                      </GeometryDrawing.Geometry>
+                                    </GeometryDrawing>
+                                  </DrawingGroup.Children>
+                                </DrawingGroup>
+                                <DrawingGroup>
+                                  <DrawingGroup.Children>
+                                    <GeometryDrawing Brush="#FFBAFFD4">
+                                      <GeometryDrawing.Geometry>
+                                        <PathGeometry Figures="M150.56,113.73C156.42,112.74 162.54,112.06 168.36,113.61 189.99,118.53 211.57,123.75 233.28,128.31 233.46,128.54 233.82,129.01 234.01,129.25 233.37,139.16 234.1,149.1 233.54,159.01 233.35,198.56 232.72,238.11 232.52,277.66 232.52,280.3 232.5,282.95 232.48,285.6 184.13,252.88 135.97,219.87 87.79,186.9L87.6,186.22C92.38,177.72 98.1,169.71 103.35,161.47 111.77,148.97 120.03,136.29 129.71,124.71 134.76,118.3 142.73,115.1 150.56,113.73z" />
+                                      </GeometryDrawing.Geometry>
+                                    </GeometryDrawing>
+                                  </DrawingGroup.Children>
+                                </DrawingGroup>
+                                <DrawingGroup>
+                                  <DrawingGroup.Children>
+                                    <GeometryDrawing Brush="#FF0071FF">
+                                      <GeometryDrawing.Geometry>
+                                        <PathGeometry Figures="M234.01,129.25C291.08,185.18 348.15,241.11 405.22,297.04 405.2,297.76 405.15,299.19 405.12,299.91 404.71,304.98 402.84,309.9 399.92,314.06 396.76,318.62 391.71,321.23 387.18,324.2 371.53,333.83 355.43,342.73 339.17,351.28 328.74,354.22 317.26,354.71 306.94,351 300.5,348.76 295.65,343.78 290.94,339.09 273.72,321.95 257.13,304.2 240.48,286.5 237.91,283.48 234.84,280.88 232.52,277.66 232.72,238.11 233.35,198.56 233.54,159.01 234.1,149.1 233.37,139.16 234.01,129.25z" />
+                                      </GeometryDrawing.Geometry>
+                                    </GeometryDrawing>
+                                  </DrawingGroup.Children>
+                                </DrawingGroup>
+                                <DrawingGroup>
+                                  <DrawingGroup.Children>
+                                    <GeometryDrawing Brush="#FF00CFFF">
+                                      <GeometryDrawing.Geometry>
+                                        <PathGeometry Figures="M87.19,186.92L87.79,186.9C135.97,219.87 184.13,252.88 232.48,285.6 200.37,307.05 168.61,329.04 136.6,350.63 129.1,354.32 120.39,355.52 112.13,354.4 104.19,353.28 98.09,347.68 92,342.96 73.4,327.58 55.6,311.24 37.96,294.77 32.82,285.18 32.55,272.79 38.26,263.34 49.72,242.8 62.85,223.25 75.76,203.61 79.62,198.08 82.99,192.2 87.19,186.92z" />
+                                      </GeometryDrawing.Geometry>
+                                    </GeometryDrawing>
+                                  </DrawingGroup.Children>
+                                </DrawingGroup>
+                              </DrawingGroup.Children>
+                              <DrawingGroup.ClipGeometry>
+                                <RectangleGeometry Rect="0,0,440,440" />
+                              </DrawingGroup.ClipGeometry>
+                            </DrawingGroup>
+                          </DrawingImage.Drawing>
+                        </DrawingImage>
+
+
+                      </Image.Source>
+                    </Image>
+                  </Border>
+                  <StackPanel Margin="6.5,0,0,0">
+                    <TextBlock FontSize="16" Text="Yu Minecraft Launcher" TextDecorations="{x:Null}" />
+                    <TextBlock FontSize="13" Foreground="{DynamicResource TextColor}" Margin="1,0,0,0" Text="ymcl.yik.at" TextDecorations="{x:Null}" />
+                  </StackPanel>
+                </DockPanel>
+              </Border>
+            </HyperlinkButton>
+            <HyperlinkButton Cursor="Hand" FontFamily="{DynamicResource Font}" HorizontalAlignment="Right" Margin="0,0,2,0" NavigateUri="https://afdian.com/a/DaiYui">
+              <Border Margin="-5,0,-6,0" Padding="0,0,5,0">
+                <DockPanel>
+                  <Border ClipToBounds="True" CornerRadius="{DynamicResource MainCornerRadius}" Height="35" Margin="4,0,0,0" Width="35">
+                    <Image HorizontalAlignment="Left" VerticalAlignment="Center">
+                      <Image.Source>
+                        <DrawingImage>
+                          <DrawingImage.Drawing>
+                            <DrawingGroup>
+                              <DrawingGroup.Children>
+                                <GeometryDrawing Brush="#FF946CE6">
+                                  <GeometryDrawing.Geometry>
+                                    <RectangleGeometry RadiusX="2" RadiusY="2" Rect="0,0,160,160" />
+                                  </GeometryDrawing.Geometry>
+                                </GeometryDrawing>
+                                <GeometryDrawing Brush="#FFFFFFFF">
+                                  <GeometryDrawing.Geometry>
+                                    <StreamGeometry>M64.9999,90.5676C63.4307,90.5676 62.1621,91.8355 62.1621,93.4037 62.1621,94.9754 63.4307,96.2433 64.9999,96.2433 66.5691,96.2433 67.8378,94.9754 67.8378,93.4037 67.8378,91.8355 66.5691,90.5676 64.9999,90.5676z</StreamGeometry>
+                                  </GeometryDrawing.Geometry>
+                                </GeometryDrawing>
+                                <GeometryDrawing Brush="#FFFFFFFF">
+                                  <GeometryDrawing.Geometry>
+                                    <StreamGeometry>M91.7568,99.0811C90.1876,99.0811 88.9189,100.349 88.9189,101.917 88.9189,103.489 90.1876,104.757 91.7568,104.757 93.326,104.757 94.5946,103.489 94.5946,101.917 94.5946,100.349 93.326,99.0811 91.7568,99.0811z</StreamGeometry>
+                                  </GeometryDrawing.Geometry>
+                                </GeometryDrawing>
+                                <GeometryDrawing Brush="#FFFFFFFF">
+                                  <GeometryDrawing.Geometry>
+                                    <StreamGeometry>M133.76,106.248C132.813,106.722 131.453,106.747 130.197,106.313 129.349,106.014 128.434,105.732 127.523,105.451 125.832,104.935 123.006,104.074 122.468,103.422 121.585,102.244 119.908,102.009 118.73,102.899 117.552,103.785 117.317,105.455 118.207,106.633 118.502,107.032 118.901,107.359 119.303,107.676 115.224,113.321 97.3137,124.555 71.985,119.02 60.5719,116.525 52.8897,111.969 49.7641,105.85 47.5106,101.429 48.0233,96.8763 49.1019,94.4025 52.2026,87.9633 74.5837,73.1344 88.8732,64.7375 90.1405,63.9865 90.5641,62.3527 89.8166,61.0819 89.069,59.8147 87.3638,59.3057 86.1641,60.1351 85.0107,60.8114 81.0912,63.1393 76.0896,66.3073 74.3986,65.1718 71.4759,63.7693 66.7911,63.3102 59.3616,62.5734 42.1921,59.295 36.6458,56.9493 32.673,55.2692 23.6557,50.8199 25.6528,45.8116 26.1156,44.6441 28.2907,42.754 33.004,40.9529 36.6351,39.5683 40.2484,38.803 42.9789,38.4969 42.6122,38.6748 42.2562,38.8457 41.9216,39.0094 38.7106,40.5685 35.2076,42.3126 32.8545,44.3736 32.6836,44.2633 32.5056,44.1529 32.3846,44.0319 31.37,42.9712 29.6969,42.8928 28.6147,43.9465 27.5467,44.9645 27.5075,46.6552 28.5292,47.7195 29.4797,48.7162 30.8859,49.4673 32.6765,50.0403 32.7442,50.0617 32.8047,50.0937 32.8723,50.108 39.095,52.023 50.1592,51.7845 65.7587,51.1651 72.4834,50.9017 78.8343,50.6526 84.1314,50.7558 101.692,51.1046 114.889,58.0884 124.479,72.1093 130.371,80.7233 128.246,89.2091 124.875,96.5844 124.472,96.2748 124.042,95.8725 123.718,95.4739 122.796,94.3241 121.09,94.164 119.969,95.0503 118.816,95.9722 118.623,97.6487 119.542,98.802 120.083,99.4854 122.867,102.685 126.316,102.411 126.38,102.415 126.437,102.408 126.501,102.404 126.605,102.39 126.711,102.408 126.822,102.39 129.178,101.959 130.659,102.073 132.044,102.942 133.878,104.099 134.782,104.789 134.6,105.366 134.493,105.729 134.219,105.989 133.76,106.248z M60.9493,76.5124C60.4189,76.9004 59.8991,77.2848 59.3758,77.6692 58.8133,77.0641 58.3648,76.4875 58.1583,76.0674 58.7777,75.8823 59.8101,76.103 60.9493,76.5124z M134.614,98.2574C133.294,97.4209 131.909,97.0578 130.563,96.9083 133.724,89.202 135.736,79.1144 128.887,69.0944 118.406,53.7636 103.38,45.7974 84.2346,45.4165 78.7809,45.3097 72.3517,45.5625 65.5487,45.833 57.6493,46.1462 47.1369,46.5556 39.9921,45.9647 41.4161,45.1923 42.9326,44.4519 44.2462,43.8148 49.2728,41.3694 53.2314,39.465 51.9214,36.0871 51.2343,34.1151 49.1874,33.0793 45.8233,33.0045 38.7426,32.8444 23.4421,36.9378 20.6903,43.8397 19.1418,47.7267 18.8854,55.2301 34.5668,61.8615 41.0174,64.5952 59.237,67.9268 66.2678,68.6245 68.2542,68.8167 69.7743,69.219 70.9277,69.6461 69.3151,70.7068 67.6597,71.8209 65.9972,72.96 63.1102,71.3155 58.3897,69.3756 54.8654,71.7782 53.502,72.7001 52.7259,74.0599 52.6903,75.6083 52.6405,77.534 53.8081,79.4169 55.1217,80.9333 49.9314,85.073 45.7343,89.0846 44.2462,92.1778 42.5873,95.9793 41.9109,102.201 45.008,108.27 48.9382,115.973 57.6279,121.344 70.8423,124.235 88.1114,128.004 103.027,124.608 112.895,119.415 118.388,116.525 122.286,113.076 124.18,109.997 124.768,110.182 125.355,110.37 125.96,110.559 126.804,110.815 127.648,111.072 128.438,111.353 131.051,112.257 133.942,112.136 136.167,111.015 136.206,110.997 136.248,110.972 136.291,110.951 137.968,110.068 139.175,108.651 139.705,106.943 141.129,102.337 137.064,99.7915 134.614,98.2574z</StreamGeometry>
+                                  </GeometryDrawing.Geometry>
+                                </GeometryDrawing>
+                              </DrawingGroup.Children>
+                              <DrawingGroup.ClipGeometry>
+                                <RectangleGeometry Rect="0,0,160,160" />
+                              </DrawingGroup.ClipGeometry>
+                            </DrawingGroup>
+                          </DrawingImage.Drawing>
+                        </DrawingImage>
+                      </Image.Source>
+                    </Image>
+                  </Border>
+                  <StackPanel Margin="6.5,0,0,0">
+                    <TextBlock FontSize="16" Text="Afdian" TextDecorations="{x:Null}" />
+                    <TextBlock FontSize="13" Foreground="{DynamicResource TextColor}" Text="afdian.com/a/DaiYui" TextDecorations="{x:Null}" />
+                  </StackPanel>
+                </DockPanel>
+              </Border>
+            </HyperlinkButton>
+            <HyperlinkButton Cursor="Hand" FontFamily="{DynamicResource Font}" HorizontalAlignment="Right" Margin="0,0,2,0" NavigateUri="https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0">
+              <Border Margin="-5,0,-6,0" Padding="0,0,5,0">
+                <DockPanel>
+                  <Border ClipToBounds="True" CornerRadius="{DynamicResource MainCornerRadius}" Height="35" Margin="4,0,0,0" Width="35">
+                    <Image HorizontalAlignment="Left" VerticalAlignment="Center">
+                      <Image.Source>
+                        <DrawingImage>
+                          <DrawingImage.Drawing>
+                            <DrawingGroup>
+                              <DrawingGroup.ClipGeometry>
+                                <RectangleGeometry Rect="0,0,456,456" />
+                              </DrawingGroup.ClipGeometry>
+                              <GeometryDrawing Brush="#FF512BD4">
+                                <GeometryDrawing.Geometry>
+                                  <RectangleGeometry RadiusX="0" RadiusY="0" Rect="0,0,456,456" />
+                                </GeometryDrawing.Geometry>
+                              </GeometryDrawing>
+                              <GeometryDrawing Brush="#FFFFFFFF">
+                                <GeometryDrawing.Geometry>
+                                  <PathGeometry Figures="M81.2738,291.333C78.0496,291.333 75.309,290.259 73.052,288.11 70.795,285.906 69.6665,283.289 69.6665,280.259 69.6665,277.173 70.795,274.529 73.052,272.325 75.309,270.121 78.0496,269.019 81.2738,269.019 84.5518,269.019 87.3193,270.121 89.5763,272.325 91.887,274.529 93.0424,277.173 93.0424,280.259 93.0424,283.289 91.887,285.906 89.5763,288.11 87.3193,290.259 84.5518,291.333 81.2738,291.333z" />
+                                </GeometryDrawing.Geometry>
+                              </GeometryDrawing>
+                              <GeometryDrawing Brush="#FFFFFFFF">
+                                <GeometryDrawing.Geometry>
+                                  <PathGeometry Figures="M210.167,289.515L189.209,289.515 133.994,202.406C132.597,200.202,131.441,197.915,130.528,195.546L130.044,195.546C130.474,198.081,130.689,203.508,130.689,211.827L130.689,289.515 112.149,289.515 112.149,171 134.477,171 187.839,256.043C190.096,259.57,191.547,261.994,192.192,263.316L192.514,263.316C191.977,260.176,191.708,254.859,191.708,247.365L191.708,171 210.167,171 210.167,289.515z" />
+                                </GeometryDrawing.Geometry>
+                              </GeometryDrawing>
+                              <GeometryDrawing Brush="#FFFFFFFF">
+                                <GeometryDrawing.Geometry>
+                                  <PathGeometry Figures="M300.449,289.515L235.561,289.515 235.561,171 297.87,171 297.87,187.695 254.746,187.695 254.746,221.249 294.485,221.249 294.485,237.861 254.746,237.861 254.746,272.903 300.449,272.903 300.449,289.515z" />
+                                </GeometryDrawing.Geometry>
+                              </GeometryDrawing>
+                              <GeometryDrawing Brush="#FFFFFFFF">
+                                <GeometryDrawing.Geometry>
+                                  <PathGeometry Figures="M392.667,187.695L359.457,187.695 359.457,289.515 340.272,289.515 340.272,187.695 307.143,187.695 307.143,171 392.667,171 392.667,187.695z" />
+                                </GeometryDrawing.Geometry>
+                              </GeometryDrawing>
+                            </DrawingGroup>
+                          </DrawingImage.Drawing>
+                        </DrawingImage>
+                      </Image.Source>
+                    </Image>
+                  </Border>
+                  <StackPanel Margin="6.5,0,0,0">
+                    <TextBlock FontSize="16" Text=".NET Core 8.0" TextDecorations="{x:Null}" />
+                    <TextBlock FontSize="13" Foreground="{DynamicResource TextColor}" Margin="2,0,0,0" Text="dotnet.microsoft.com" TextDecorations="{x:Null}" />
+                  </StackPanel>
+                </DockPanel>
+              </Border>
+            </HyperlinkButton>
+            <HyperlinkButton Cursor="Hand" FontFamily="{DynamicResource Font}" HorizontalAlignment="Right" Margin="0,0,2,0" NavigateUri="https://docs.avaloniaui.net/">
+              <Border Margin="-5,0,-6,0" Padding="0,0,5,0">
+                <DockPanel>
+                  <Border CornerRadius="{DynamicResource MainCornerRadius}" Height="36" Margin="4,0,0,0" Width="36">
+                    <Image HorizontalAlignment="Left" VerticalAlignment="Center">
+                      <Image.Source>
+                        <DrawingImage>
+                          <DrawingImage.Drawing>
+                            <DrawingGroup>
+                              <DrawingGroup.Children>
+                                <GeometryDrawing Brush="#FF0D6EFD">
+                                  <GeometryDrawing.Geometry>
+                                    <PathGeometry Figures="M507.59,0L522.64,0C606.79,1.18 690.63,23.03 764.3,63.8 833.36,101.73 893.49,155.77 938.55,220.41 970.17,265.62 994.35,316.01 1009.83,368.97 1021.69,409.31 1028.12,451.13 1030,493.1L1030,749.99C1028.89,764.96 1029.56,780.01 1029.37,795.02 1029.24,827.69 1029.29,860.35 1029.13,893.02 1028.84,903.08 1030.06,913.32 1027.64,923.22 1021.45,955.61 1001.56,984.98 974.04,1003.08 954.66,1016.01 931.64,1023.21 908.38,1024L503.55,1024C438.64,1022.5 373.97,1008.94 314.16,983.6 254.72,958.52 200.02,922.18 153.98,876.98 98.54,822.93 55.61,756.12 29.64,683.18 -7.43,579.8 -9.59,464.35 23.35,359.6 46.35,285.87 86.61,217.67 139.67,161.58 182.42,116.29 233.44,78.8 289.51,51.66 357.22,18.62 432.3,1.11 507.59,0 M404.95,193.07C350.96,211.63 301.94,244.25 263.77,286.68 225.08,329.34 197.75,382.14 185.18,438.34 199.4,442.44 212.51,450.51 222.22,461.71 234.44,475.37 241.22,493.65 241.14,511.95 241.16,527.15 236.55,542.39 227.79,554.84 217.82,569.68 202.3,580.45 185.18,585.4 191.19,611.99 200.33,637.89 212.61,662.23 246.63,730.47 304.54,786.37 373.85,818.12 408.81,834.31 446.58,844.4 484.95,847.88 551.82,854.15 620.59,840.38 679.48,807.96 679.52,820.97 679.48,833.99 679.5,847 738.38,847 797.25,847 856.12,847 856.12,735.33 856.15,623.66 856.11,511.99 856.08,467.51 847.31,423.02 830.03,382.02 815.73,348 795.83,316.35 771.31,288.76 718.99,229.41 645.3,189.39 566.97,178.06 512.8,170.07 456.69,175.06 404.95,193.07 M152.53,458.6C134.28,461.84 118.33,475.32 111.89,492.67 107.67,503.91 107.32,516.58 111,528.01 115.26,541.44 125.02,553.11 137.63,559.46 148.67,565.36 161.85,567.05 174.07,564.47 188.17,561.6 200.95,552.77 208.62,540.6 216.34,528.72 218.95,513.72 215.83,499.91 212.74,485.81 203.64,473.24 191.35,465.71 179.9,458.59 165.76,456.02 152.53,458.6z" />
+                                  </GeometryDrawing.Geometry>
+                                </GeometryDrawing>
+                                <GeometryDrawing Brush="#FF0D6EFD">
+                                  <GeometryDrawing.Geometry>
+                                    <PathGeometry Figures="M510.29,350.32C550.39,348.6 590.88,362.4 621.51,388.36 650.87,412.85 671.1,448.09 677.11,485.88 683.9,526.56 674.25,569.69 650.58,603.49 628.68,635.15 595.25,658.65 557.94,668.25 517.67,678.82 473.34,673.38 437.05,652.87 403.51,634.27 376.94,603.37 363.8,567.31 349.87,529.59 350.78,486.61 366.51,449.58 381.56,413.47 410.28,383.25 445.61,366.44 465.7,356.56 487.94,351.19 510.29,350.32z" />
+                                  </GeometryDrawing.Geometry>
+                                </GeometryDrawing>
+                              </DrawingGroup.Children>
+                            </DrawingGroup>
+                          </DrawingImage.Drawing>
+                        </DrawingImage>
+                      </Image.Source>
+                    </Image>
+                  </Border>
+                  <StackPanel Margin="6.5,0,0,0">
+                    <TextBlock FontSize="16" Text=" AvaloniaUi" TextDecorations="{x:Null}" />
+                    <TextBlock FontSize="13" Foreground="{DynamicResource TextColor}" Margin="2,0,0,0" Text="docs.avaloniaui.net" TextDecorations="{x:Null}" />
+                  </StackPanel>
+                </DockPanel>
+              </Border>
+            </HyperlinkButton>
+          </WrapPanel>
+          <StackPanel DockPanel.Dock="Top" Margin="20,10,20,0" VerticalAlignment="Top">
+            <Grid VerticalAlignment="Top">
+              <Image Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25">
+                <Image.Source>
+                  <DrawingImage>
+                    <DrawingImage.Drawing>
+                      <GeometryDrawing Brush="{DynamicResource TextColor}">
+                        <GeometryDrawing.Geometry>
+                          <PathGeometry Figures="M723.77001953125,333.55999755859375L642.9000244140625,574.8599853515625C681.3400268554688,595.4299926757812,749.510009765625,619.239990234375,806.6199951171875,572.3400268554688L723.77001953125,333.55999755859375z M299.55999755859375,333.55999755859375L218.69000244140625,574.8599853515625C257.1099853515625,595.4099731445312,325.2699890136719,619.239990234375,382.4100036621094,572.3400268554688L299.55999755859375,333.55999755859375z M509.24639892578125,67.12796020507812C513.7525024414062,67.17749786376953 518.324951171875,68.11250305175781 522.719970703125,70.02999877929688 523.9400024414062,70.55999755859375 525,71.29000091552734 526.1300048828125,71.94000244140625 535.1300048828125,74.91000366210938 542.9299926757812,81.41000366210938 547.0599975585938,90.76000213623047 589.8900146484375,187.75999450683594 644.2000122070312,206.74000549316406 723.5499877929688,206.74000549316406 803.3400268554688,206.74000549316406 858,187.30999755859375 901.27001953125,87.97000122070312 908.9099731445312,70.41000366210938 929.3300170898438,62.36000061035156 946.9199829101562,70.02999877929688 964.47998046875,77.66999816894531 972.510009765625,98.12000274658203 964.8599853515625,115.66999816894531 915.7899780273438,228.3300018310547 845.530029296875,263.2200012207031 776.1199951171875,272.7900085449219L876.8900146484375,563.280029296875C882.7999877929688,580.3400268554688 878.4600219726562,599.489990234375 865.8599853515625,612.0900268554688 825.4400024414062,652.5900268554688 778.2000122070312,668.3699951171875 731.3800048828125,668.3699951171875 680.9500122070312,668.3699951171875 631,650.0700073242188 590.5399780273438,624.6099853515625 572.2999877929688,613.1500244140625 564.4099731445312,590.6900024414062 571.3599853515625,570L670.97998046875,272.80999755859375C628.1300048828125,266.94000244140625,585.010009765625,251.3699951171875,546.7899780273438,213.99000549316406L546.7899780273438,887.75 719.47998046875,887.75C738.6300048828125,887.75 754.1599731445312,903.280029296875 754.1599731445312,922.4299926757812 754.1599731445312,941.5800170898438 738.6400146484375,957.1099853515625 719.47998046875,957.1099853515625L315.29998779296875,957.1099853515625C296.1499938964844,957.1099853515625 280.6199951171875,941.5800170898438 280.6199951171875,922.4299926757812 280.6199951171875,903.280029296875 296.1400146484375,887.75 315.29998779296875,887.75L477.4200134277344,887.75 477.4200134277344,212.42999267578125C438.79998779296875,250.8800048828125,395.2099914550781,266.82000732421875,351.9100036621094,272.7900085449219L452.69000244140625,563.280029296875C458.6099853515625,580.25 454.30999755859375,599.4199829101562 441.7200012207031,612.0399780273438 401.260009765625,652.5700073242188 354,668.3599853515625 307.1600036621094,668.3599853515625 256.739990234375,668.3599853515625 206.8000030517578,650.0599975585938 166.33999633789062,624.6099853515625 148.08999633789062,613.1199951171875 140.22000122070312,590.6699829101562 147.16000366210938,570L246.75999450683594,272.82000732421875C177.82000732421875,263.3800048828125 108.08999633789062,229.08999633789062 59.400001525878906,118.79000091552734 51.650001525878906,101.25 59.59000015258789,80.77999877929688 77.11000061035156,73.05000305175781 94.66999816894531,65.30000305175781 115.0999984741211,73.26000213623047 122.8499984741211,90.76000213623047 165.6699981689453,187.75999450683594 219.99000549316406,206.74000549316406 299.3500061035156,206.74000549316406 379.1300048828125,206.74000549316406 433.7799987792969,187.30999755859375 477.07000732421875,87.97000122070312 482.8074951171875,74.80000305175781 495.7281494140625,66.97937774658203 509.24639892578125,67.12796020507812z" />
+                        </GeometryDrawing.Geometry>
+                      </GeometryDrawing>
+                    </DrawingImage.Drawing>
+                  </DrawingImage>
+                </Image.Source>
+              </Image>
+              <TextBlock FontFamily="{DynamicResource Font}" FontSize="18" Foreground="{DynamicResource TextColor}" HorizontalAlignment="Left" Margin="30,0,0,0" Text="GPL 3.0 License" TextDecorations="{x:Null}" VerticalAlignment="Center" />
+            </Grid>
+            <TextBlock DockPanel.Dock="Bottom" FontFamily="{DynamicResource Font}" FontSize="13" Foreground="{DynamicResource TextColor}" Margin="2,3,10,0" Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.GPL3Text}" TextDecorations="{x:Null}" TextWrapping="Wrap" />
+          </StackPanel>
+          <Grid DockPanel.Dock="Top" Margin="10,12,10,10">
+            <TextBlock FontFamily="{DynamicResource Font}" FontSize="15" Foreground="{DynamicResource TextColor}" HorizontalAlignment="Left" Margin="10,0,0,0" Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.OpenSourceProjectUsageTable}" VerticalAlignment="Top" />
+            <WrapPanel Margin="5,25,5,0">
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/CurseForgeCommunity/.NET-APIClient">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" CurseForge.APIClient " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/amwx/FluentAvalonia">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" FluentAvaloniaUI " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/irihitech/Ursa.Avalonia">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" Irihi.Ursa " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/Blessing-Studio/MinecraftLaunch.Skin">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" MinecraftLaunch.Skin " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/naudio/NAudio">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" NAudio " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/irihitech/Semi.Avalonia">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" Semi.Avalonia " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/Ink-Marks-Studio/StarLight.Core">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" StarLight_Core " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/Blessing-Studio/MinecraftLaunch">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" MinecraftLaunch " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://www.newtonsoft.com/json">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" Newtonsoft.Json " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/yiyungent/Afdian.Sdk">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" Afdian.Sdk " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" AsyncImageLoader.Avalonia " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/CommunityToolkit/dotnet">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" CommunityToolkit.Mvvm " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/zzzprojects/html-agility-pack">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" HtmlAgilityPack " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/reactiveui/reactiveui">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" ReactiveUI " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+              <HyperlinkButton FontFamily="{DynamicResource Font}" NavigateUri="https://github.com/xoofx/Tomlyn">
+                <TextBlock Foreground="{DynamicResource SystemAccentColor}" Text=" Tomlyn " TextDecorations="{x:Null}" />
+              </HyperlinkButton>
+            </WrapPanel>
+          </Grid>
+        </DockPanel>
+      </Border>
+      <Border Background="{DynamicResource 1x}" CornerRadius="{DynamicResource MainCornerRadius}" Opacity="{DynamicResource MainOpacity}" Padding="10">
+        <StackPanel HorizontalAlignment="Stretch" Margin="0" Spacing="10" VerticalAlignment="Stretch">
+          <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <StackPanel DockPanel.Dock="Left" Margin="5,0,0,0">
+              <TextBlock FontFamily="{DynamicResource Font}" FontSize="16" Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.Sponsors}" />
+              <TextBlock FontFamily="{DynamicResource Font}" Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.SponsorsTip}" />
+            </StackPanel>
+            <HyperlinkButton DockPanel.Dock="Right" HorizontalAlignment="Right" Margin="3" NavigateUri="https://afdian.com/a/DaiYui">
+              <StackPanel Orientation="Horizontal" Spacing="5">
+                <PathIcon Data="F1 M 18.75 10 C 18.75 9.84375 18.719074 9.692383 18.657227 9.545898 C 18.595377 9.399414 18.512369 9.272461 18.408203 9.165039 C 18.304035 9.057617 18.181965 8.971354 18.041992 8.90625 C 17.902018 8.841146 17.75065 8.808594 17.587891 8.808594 L 17.519531 8.808594 L 12.929688 8.964844 L 8.017578 1.591797 C 7.972005 1.526693 7.906901 1.494141 7.822266 1.494141 C 7.763671 1.494141 7.714843 1.516928 7.675781 1.5625 C 7.636718 1.608074 7.617187 1.660156 7.617188 1.71875 L 7.617188 1.757812 L 9.189453 9.091797 L 3.095703 9.296875 L 1.875 6.445312 C 1.822917 6.315104 1.72526 6.25 1.582031 6.25 C 1.490885 6.25 1.414388 6.280925 1.352539 6.342773 C 1.29069 6.404623 1.259766 6.481121 1.259766 6.572266 C 1.259766 6.598309 1.276042 6.673178 1.308594 6.796875 C 1.341146 6.920573 1.381836 7.070312 1.430664 7.246094 C 1.479492 7.421875 1.534831 7.613933 1.59668 7.822266 C 1.658529 8.0306 1.715495 8.225912 1.767578 8.408203 C 1.819661 8.590495 1.866862 8.753256 1.90918 8.896484 C 1.951497 9.039714 1.979167 9.134115 1.992188 9.179688 C 1.901042 9.231771 1.811523 9.282227 1.723633 9.331055 C 1.635742 9.379883 1.557617 9.433594 1.489258 9.492188 C 1.420898 9.550781 1.363932 9.620769 1.318359 9.702148 C 1.272786 9.783529 1.25 9.882812 1.25 10 C 1.25 10.117188 1.272786 10.216472 1.318359 10.297852 C 1.363932 10.379232 1.420898 10.449219 1.489258 10.507812 C 1.557617 10.566406 1.635742 10.620117 1.723633 10.668945 C 1.811523 10.717773 1.901042 10.768229 1.992188 10.820312 C 1.979167 10.865886 1.951497 10.958659 1.90918 11.098633 C 1.866862 11.238607 1.819661 11.402995 1.767578 11.591797 C 1.715495 11.7806 1.658529 11.977539 1.59668 12.182617 C 1.534831 12.387695 1.479492 12.578125 1.430664 12.753906 C 1.381836 12.929688 1.341146 13.081055 1.308594 13.208008 C 1.276042 13.334961 1.259766 13.408203 1.259766 13.427734 C 1.259766 13.518881 1.29069 13.595378 1.352539 13.657227 C 1.414388 13.719076 1.490885 13.75 1.582031 13.75 C 1.72526 13.75 1.822917 13.684896 1.875 13.554688 L 3.095703 10.703125 L 9.189453 10.908203 L 7.617188 18.242188 L 7.617188 18.28125 C 7.617187 18.339844 7.636718 18.391928 7.675781 18.4375 C 7.714843 18.483072 7.763671 18.505859 7.822266 18.505859 C 7.906901 18.505859 7.972005 18.473307 8.017578 18.408203 L 12.929688 11.035156 L 17.519531 11.191406 L 17.587891 11.191406 C 17.75065 11.191406 17.902018 11.158854 18.041992 11.09375 C 18.181965 11.028646 18.304035 10.942383 18.408203 10.834961 C 18.512369 10.727539 18.595377 10.600586 18.657227 10.454102 C 18.719074 10.307617 18.75 10.15625 18.75 10 Z M 17.568359 7.568359 C 17.900391 7.568359 18.214518 7.631836 18.510742 7.758789 C 18.806965 7.885742 19.065754 8.059896 19.287109 8.28125 C 19.508463 8.502604 19.682617 8.761394 19.80957 9.057617 C 19.936523 9.353842 20 9.667969 20 10 C 20 10.338542 19.934895 10.655925 19.804688 10.952148 C 19.674479 11.248373 19.498697 11.507162 19.277344 11.728516 C 19.055988 11.94987 18.797199 12.124023 18.500977 12.250977 C 18.204752 12.37793 17.887369 12.441406 17.548828 12.441406 C 16.891275 12.441406 16.232096 12.425131 15.571289 12.392578 C 14.910481 12.360026 14.248047 12.330729 13.583984 12.304688 L 9.052734 19.101562 C 8.916016 19.303385 8.740234 19.462891 8.525391 19.580078 C 8.310547 19.697266 8.079427 19.755859 7.832031 19.755859 C 7.630208 19.755859 7.439778 19.716797 7.260742 19.638672 C 7.081706 19.560547 6.927083 19.454752 6.796875 19.321289 C 6.666667 19.187826 6.5625 19.031576 6.484375 18.852539 C 6.40625 18.673502 6.367188 18.483072 6.367188 18.28125 C 6.367188 18.177084 6.376953 18.076172 6.396484 17.978516 L 7.65625 12.109375 L 3.90625 11.982422 L 3.017578 14.052734 C 2.89388 14.345703 2.701823 14.576823 2.441406 14.746094 C 2.18099 14.915365 1.894531 15 1.582031 15 C 1.367188 15 1.163737 14.959311 0.97168 14.87793 C 0.779622 14.79655 0.611979 14.684245 0.46875 14.541016 C 0.325521 14.397787 0.213216 14.230144 0.131836 14.038086 C 0.050456 13.846029 0.009766 13.642578 0.009766 13.427734 C 0.009766 13.310547 0.030924 13.15918 0.073242 12.973633 C 0.11556 12.788086 0.166016 12.594401 0.224609 12.392578 C 0.283203 12.190756 0.341797 11.995443 0.400391 11.806641 C 0.458984 11.617839 0.507812 11.461589 0.546875 11.337891 C 0.371094 11.162109 0.236003 10.957031 0.141602 10.722656 C 0.047201 10.488281 0 10.247396 0 10 C 0 9.752604 0.047201 9.511719 0.141602 9.277344 C 0.236003 9.042969 0.371094 8.837891 0.546875 8.662109 C 0.507812 8.538412 0.458984 8.382162 0.400391 8.193359 C 0.341797 8.004558 0.283203 7.810873 0.224609 7.612305 C 0.166016 7.413738 0.11556 7.220053 0.073242 7.03125 C 0.030924 6.842448 0.009766 6.689453 0.009766 6.572266 C 0.009766 6.357422 0.050456 6.153972 0.131836 5.961914 C 0.213216 5.769857 0.325521 5.602215 0.46875 5.458984 C 0.611979 5.315756 0.779622 5.203451 0.97168 5.12207 C 1.163737 5.040691 1.367188 5.000001 1.582031 5 C 1.894531 5.000001 2.18099 5.084637 2.441406 5.253906 C 2.701823 5.423178 2.89388 5.654297 3.017578 5.947266 L 3.90625 8.017578 L 7.65625 7.890625 L 6.396484 2.021484 C 6.376953 1.923828 6.367188 1.822918 6.367188 1.71875 C 6.367188 1.516928 6.40625 1.326498 6.484375 1.147461 C 6.5625 0.968426 6.666667 0.812176 6.796875 0.678711 C 6.927083 0.545248 7.081706 0.439453 7.260742 0.361328 C 7.439778 0.283203 7.630208 0.244141 7.832031 0.244141 C 8.079427 0.244141 8.310547 0.302734 8.525391 0.419922 C 8.740234 0.537109 8.916016 0.696615 9.052734 0.898438 L 13.583984 7.695312 C 14.248047 7.675782 14.912109 7.64974 15.576172 7.617188 C 16.240234 7.584636 16.904297 7.568359 17.568359 7.568359 Z " Foreground="{DynamicResource SystemAccentColor}" Width="16" />
+                <TextBlock FontFamily="{DynamicResource Font}" Foreground="{DynamicResource SystemAccentColor}" Text="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.Sponsor}" TextDecorations="{x:Null}" />
+              </StackPanel>
+            </HyperlinkButton>
+          </DockPanel>
+          <WrapPanel Name="SponsorPanel" />
+        </StackPanel>
+      </Border>
+    </StackPanel>
+  </ScrollViewer>
 </UserControl>

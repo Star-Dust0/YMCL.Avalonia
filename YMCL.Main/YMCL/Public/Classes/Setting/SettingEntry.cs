@@ -52,7 +52,7 @@ public class SettingEntry : ReactiveObject
     [Reactive] [JsonProperty] public bool EnableAutoAllocateMem { get; set; }
     [Reactive] [JsonProperty] public bool EnableIndependencyWindowNotification { get; set; } = true;
     [Reactive] [JsonProperty] public string? CustomUpdateUrl { get; set; } = "https://github.moeyy.xyz/{%url%}";
-    [Reactive] [JsonProperty] public string? MusicApi { get; set; } = "http://music.api.daiyu.fun/";
+    [Reactive] [JsonProperty] public string? MusicApi { get; set; } = "http://music.api.yik.at/";
 
     [Reactive]
     [JsonProperty]
@@ -62,7 +62,7 @@ public class SettingEntry : ReactiveObject
     [Reactive]
     [JsonProperty]
     public Enum.Setting.CustomBackGroundWay CustomBackGround { get; set; } = Enum.Setting.CustomBackGroundWay.Default;
-    
+
     [Reactive]
     [JsonProperty]
     public Enum.Setting.CustomHomePageWay CustomHomePage { get; set; } = Enum.Setting.CustomHomePageWay.None;
@@ -83,8 +83,9 @@ public class SettingEntry : ReactiveObject
     [JsonProperty]
     public AccountInfo Account { get; set; } = new()
     {
-        Name = "Steve", AccountType = Enum.Setting.AccountType.Offline,
-        AddTime = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz"), 
+        Name = "Steve",
+        AccountType = Enum.Setting.AccountType.Offline,
+        AddTime = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz"),
         Data = JsonConvert.SerializeObject(new OfflineAuthenticator().Authenticate("Steve"))
     };
 
@@ -128,7 +129,7 @@ public class SettingEntry : ReactiveObject
                 {
                 }
             }
-            
+
             if (e.PropertyName == nameof(EnableIndependencyWindowNotification))
             {
                 if (EnableIndependencyWindowNotification)

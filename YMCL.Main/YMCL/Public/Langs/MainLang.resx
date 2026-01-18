@@ -125,7 +125,7 @@
   </data>
   <data name="WaitForMicrosoftVerification" xml:space="preserve">
     <value>正在等待微软账户验证完成
-跳转至浏览器完成验证</value>
+      跳转至浏览器完成验证</value>
   </data>
   <data name="LoginFail" xml:space="preserve">
     <value>登录失败</value>
@@ -443,10 +443,10 @@
     <value>初始化音频库失败</value>
   </data>
   <data name="InstallVlcTip" xml:space="preserve">
-    <value>尝试执行: 
+    <value>尝试执行:
 
-sudo apt install libvlc-dev
-sudo apt install vlc</value>
+      sudo apt install libvlc-dev
+      sudo apt install vlc</value>
   </data>
   <data name="ThisFeatureIsCurrentlyUnderDevelopment" xml:space="preserve">
     <value>此功能正在开发中</value>
@@ -711,7 +711,7 @@ sudo apt install vlc</value>
   </data>
   <data name="UnofficialTip" xml:space="preserve">
     <value>当前版本为非官方版本，可能遭受病毒攻击。
-重定向至 https://ymcl.daiyu.fun/ 下载官方版本。</value>
+      重定向至 https://ymcl.yik.at/ 下载官方版本。</value>
   </data>
   <data name="LanguageTip" xml:space="preserve">
     <value>在开始设置 Yu Minecraft Launcher 前，需要选择语言。</value>
@@ -778,13 +778,13 @@ sudo apt install vlc</value>
   </data>
   <data name="SkipVersionTip" xml:space="preserve">
     <value>已跳过版本 : {version}
-前往 设置-启动器-检查更新 可再次获取此版本</value>
+      前往 设置-启动器-检查更新 可再次获取此版本</value>
   </data>
   <data name="WinSevenAutoUpdateTip" xml:space="preserve">
     <value>发现新版本 : {version}
-win10 以下系统(不包括10)不支持自动更新
-前往以下链接下载新版本 :  “{url}”
-前往 设置-下载-自动更新 可关闭自动检查更新</value>
+      win10 以下系统(不包括10)不支持自动更新
+      前往以下链接下载新版本 : “{url}”
+      前往 设置-下载-自动更新 可关闭自动检查更新</value>
   </data>
   <data name="OpenBrowser" xml:space="preserve">
     <value>打开浏览器</value>
@@ -845,14 +845,14 @@ win10 以下系统(不包括10)不支持自动更新
   </data>
   <data name="MacOsUpdateTip" xml:space="preserve">
     <value>发现新版本 : {version}
-MacOs 不支持自动更新
-前往以下链接下载新版本 :  “{url}”
-前往 设置-下载-自动更新 可关闭自动检查更新</value>
+      MacOs 不支持自动更新
+      前往以下链接下载新版本 : “{url}”
+      前往 设置-下载-自动更新 可关闭自动检查更新</value>
   </data>
   <data name="CurrectSystemNoSupportAutoUpdateTip" xml:space="preserve">
     <value>当前系统不支持自动更新
-可前往 设置-下载 关闭自动更新
-可手动下载最新版本并替换程序文件</value>
+      可前往 设置-下载 关闭自动更新
+      可手动下载最新版本并替换程序文件</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="AlreadyCopyToClipBoard" xml:space="preserve">
@@ -1151,7 +1151,7 @@ MacOs 不支持自动更新
   </data>
   <data name="GetJavaInfoFail" xml:space="preserve">
     <value>获取Java信息失败
-可能此Java不正确/已损坏/无执行权限</value>
+      可能此Java不正确/已损坏/无执行权限</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="Seed" xml:space="preserve">

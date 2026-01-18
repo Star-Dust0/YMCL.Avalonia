@@ -224,7 +224,7 @@
   </data>
   <data name="WaitForMicrosoftVerification" xml:space="preserve">
     <value>Ожидание подтверждения учетной записи Майкрософт
-Перейдите в браузер, чтобы завершить проверку</value>
+      Перейдите в браузер, чтобы завершить проверку</value>
   </data>
   <data name="LoginFail" xml:space="preserve">
     <value>Ошибка входа в систему</value>
@@ -545,10 +545,10 @@
     <value>Не удалось инициализировать аудио библиотеку</value>
   </data>
   <data name="InstallVlcTip" xml:space="preserve">
-    <value>Попытка выполнения: 
+    <value>Попытка выполнения:
 
-sudo apt install libvlc-dev
-sudo apt install vlc</value>
+      sudo apt install libvlc-dev
+      sudo apt install vlc</value>
   </data>
   <data name="ThisFeatureIsCurrentlyUnderDevelopment" xml:space="preserve">
     <value>Эта функция находится в разработке</value>
@@ -813,7 +813,7 @@ sudo apt install vlc</value>
   </data>
   <data name="UnofficialTip" xml:space="preserve">
     <value>Текущая версия является неофициальной и может быть уязвима для вирусов.
-Перенаправьте на https://ymcl.daiyu.fun/, чтобы загрузить официальную версию.</value>
+      Перенаправьте на https://ymcl.yik.at/, чтобы загрузить официальную версию.</value>
   </data>
   <data name="LanguageTip" xml:space="preserve">
     <value>Вам нужно выбрать язык, прежде чем вы сможете начать настройку Yu Minecraft Launcher.</value>
@@ -880,13 +880,13 @@ sudo apt install vlc</value>
   </data>
   <data name="SkipVersionTip" xml:space="preserve">
     <value>Версия пропущена: {version}
-Перейдите в Настройки - Средство запуска - Проверьте наличие обновлений, чтобы снова получить эту версию</value>
+      Перейдите в Настройки - Средство запуска - Проверьте наличие обновлений, чтобы снова получить эту версию</value>
   </data>
   <data name="WinSevenAutoUpdateTip" xml:space="preserve">
     <value>Найдена новая версия: {version}
-автоматические обновления не поддерживаются на системах ниже Win10 (за исключением 10)
-Скачайте новую версию по ссылке: «{url}»
-Перейдите в Настройки - Загрузки - Автоматические обновления, чтобы отключить автоматическую проверку обновлений</value>
+      автоматические обновления не поддерживаются на системах ниже Win10 (за исключением 10)
+      Скачайте новую версию по ссылке: «{url}»
+      Перейдите в Настройки - Загрузки - Автоматические обновления, чтобы отключить автоматическую проверку обновлений</value>
   </data>
   <data name="OpenBrowser" xml:space="preserve">
     <value>Откройте браузер</value>
@@ -947,9 +947,9 @@ sudo apt install vlc</value>
   </data>
   <data name="MacOsUpdateTip" xml:space="preserve">
     <value>Найдена новая версия: {version}
-MacO не поддерживают автоматические обновления
-Скачайте новую версию по ссылке: «{url}»
-Перейдите в Настройки - Загрузки - Автоматические обновления, чтобы отключить автоматическую проверку обновлений</value>
+      MacO не поддерживают автоматические обновления
+      Скачайте новую версию по ссылке: «{url}»
+      Перейдите в Настройки - Загрузки - Автоматические обновления, чтобы отключить автоматическую проверку обновлений</value>
   </data>
   <data name="AlreadyCopyToClipBoard" xml:space="preserve">
     <value>Скопировано в буфер обмена</value>
@@ -1247,7 +1247,7 @@ MacO не поддерживают автоматические обновлен
   </data>
   <data name="GetJavaInfoFail" xml:space="preserve">
     <value>Не удалось получить информацию о Java
-Возможно, эта Java неверна/повреждена/не имеет прав на выполнение</value>
+      Возможно, эта Java неверна/повреждена/не имеет прав на выполнение</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="Seed" xml:space="preserve">
@@ -1436,8 +1436,8 @@ MacO не поддерживают автоматические обновлен
   </data>
   <data name="CurrectSystemNoSupportAutoUpdateTip" xml:space="preserve">
     <value>Автоматические обновления не поддерживаются в текущей системе
-Откройте Настройки - Загрузки, чтобы отключить автоматические обновления.
-Вы можете вручную загрузить последнюю версию и заменить файл программы</value>
+      Откройте Настройки - Загрузки, чтобы отключить автоматические обновления.
+      Вы можете вручную загрузить последнюю версию и заменить файл программы</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="DependencyItems" xml:space="preserve">

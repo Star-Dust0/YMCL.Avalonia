@@ -224,7 +224,7 @@
   </data>
   <data name="WaitForMicrosoftVerification" xml:space="preserve">
     <value>正在等待微軟帳戶驗證完成
-跳轉至瀏覽器完成驗證</value>
+      跳轉至瀏覽器完成驗證</value>
   </data>
   <data name="LoginFail" xml:space="preserve">
     <value>登入失敗</value>
@@ -545,10 +545,10 @@
     <value>初始化音訊庫失敗</value>
   </data>
   <data name="InstallVlcTip" xml:space="preserve">
-    <value>嘗試執行: 
+    <value>嘗試執行:
 
-sudo apt install libvlc-dev
-sudo apt install vlc</value>
+      sudo apt install libvlc-dev
+      sudo apt install vlc</value>
   </data>
   <data name="ThisFeatureIsCurrentlyUnderDevelopment" xml:space="preserve">
     <value>此功能正在開發中</value>
@@ -813,7 +813,7 @@ sudo apt install vlc</value>
   </data>
   <data name="UnofficialTip" xml:space="preserve">
     <value>目前版本為非官方版本，可能遭受病毒攻擊。
-重定向至https://ymcl.daiyu.fun/ 下載官方版本。</value>
+      重定向至https://ymcl.yik.at/ 下載官方版本。</value>
   </data>
   <data name="LanguageTip" xml:space="preserve">
     <value>在開始設定Yu Minecraft Launcher 前，需要選擇語言。</value>
@@ -880,13 +880,13 @@ sudo apt install vlc</value>
   </data>
   <data name="SkipVersionTip" xml:space="preserve">
     <value>已跳過版本: {version}
-前往 設定-啟動器-檢查更新 可再次取得此版本</value>
+      前往 設定-啟動器-檢查更新 可再次取得此版本</value>
   </data>
   <data name="WinSevenAutoUpdateTip" xml:space="preserve">
     <value>發現新版本: {version}
-win10 以下系統(不包括10)不支援自動更新
-前往以下連結下載新版本: “{url}”
-前往 設定-下載-自動更新 可關閉自動檢查更新</value>
+      win10 以下系統(不包括10)不支援自動更新
+      前往以下連結下載新版本: “{url}”
+      前往 設定-下載-自動更新 可關閉自動檢查更新</value>
   </data>
   <data name="OpenBrowser" xml:space="preserve">
     <value>打開瀏覽器</value>
@@ -1432,8 +1432,8 @@ win10 以下系統(不包括10)不支援自動更新
   </data>
   <data name="CurrectSystemNoSupportAutoUpdateTip" xml:space="preserve">
     <value>目前系統不支援自動更新
-可前往 設定-下載 關閉自動更新
-可手動下載最新版本並取代程式檔案</value>
+      可前往 設定-下載 關閉自動更新
+      可手動下載最新版本並取代程式檔案</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="DependencyItems" xml:space="preserve">

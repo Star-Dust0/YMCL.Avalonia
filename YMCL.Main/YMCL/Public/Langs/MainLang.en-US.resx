@@ -224,7 +224,7 @@
   </data>
   <data name="WaitForMicrosoftVerification" xml:space="preserve">
     <value>Waiting for Microsoft account verification to complete
-Jump to the browser to complete verification</value>
+      Jump to the browser to complete verification</value>
   </data>
   <data name="LoginFail" xml:space="preserve">
     <value>Login failed</value>
@@ -545,10 +545,10 @@ Jump to the browser to complete verification</value>
     <value>Failed to initialize audio library</value>
   </data>
   <data name="InstallVlcTip" xml:space="preserve">
-    <value>Attempt to execute: 
+    <value>Attempt to execute:
 
-sudo apt install libvlc-dev
-sudo apt install vlc</value>
+      sudo apt install libvlc-dev
+      sudo apt install vlc</value>
   </data>
   <data name="ThisFeatureIsCurrentlyUnderDevelopment" xml:space="preserve">
     <value>This feature is in development</value>
@@ -813,7 +813,7 @@ sudo apt install vlc</value>
   </data>
   <data name="UnofficialTip" xml:space="preserve">
     <value>The current version is unofficial and may be vulnerable to viruses.
-Redirect to https://ymcl.daiyu.fun/ to download the official version.</value>
+      Redirect to https://ymcl.yik.at/ to download the official version.</value>
   </data>
   <data name="LanguageTip" xml:space="preserve">
     <value>You need to select a language before you can start setting up Yu Minecraft Launcher.</value>
@@ -880,13 +880,13 @@ Redirect to https://ymcl.daiyu.fun/ to download the official version.</value>
   </data>
   <data name="SkipVersionTip" xml:space="preserve">
     <value>Skip version:{version}.
-Go to Settings-Launcher-Check Updates download this version</value>
+      Go to Settings-Launcher-Check Updates download this version</value>
   </data>
   <data name="WinSevenAutoUpdateTip" xml:space="preserve">
     <value>New version:{version}
-Above Windows 10 can't auto updates.
-Go to "{url}" download new version.
-Go to Settings-Download-Auto Update can disable auto check update</value>
+      Above Windows 10 can't auto updates.
+      Go to "{url}" download new version.
+      Go to Settings-Download-Auto Update can disable auto check update</value>
   </data>
   <data name="OpenBrowser" xml:space="preserve">
     <value>Open Browser</value>
@@ -947,9 +947,9 @@ Go to Settings-Download-Auto Update can disable auto check update</value>
   </data>
   <data name="MacOsUpdateTip" xml:space="preserve">
     <value>New version:{version}
-macOS can't auto updates.
-Go to "{url}" download new version.
-Go to Settings-Download-Auto Update can disable auto check update</value>
+      macOS can't auto updates.
+      Go to "{url}" download new version.
+      Go to Settings-Download-Auto Update can disable auto check update</value>
   </data>
   <data name="AlreadyCopyToClipBoard" xml:space="preserve">
     <value>Copied to clipboard</value>
@@ -1247,7 +1247,7 @@ Go to Settings-Download-Auto Update can disable auto check update</value>
   </data>
   <data name="GetJavaInfoFail" xml:space="preserve">
     <value>Failed to get Java information
-Possibly this Java is incorrect/corrupted/has no execute permissions</value>
+      Possibly this Java is incorrect/corrupted/has no execute permissions</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="Seed" xml:space="preserve">
@@ -1436,8 +1436,8 @@ Possibly this Java is incorrect/corrupted/has no execute permissions</value>
   </data>
   <data name="CurrectSystemNoSupportAutoUpdateTip" xml:space="preserve">
     <value>Automatic updates are not supported on the current system
-Go to Settings - Downloads to turn off automatic updates
-You can manually download the latest version and replace the program file</value>
+      Go to Settings - Downloads to turn off automatic updates
+      You can manually download the latest version and replace the program file</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="DependencyItems" xml:space="preserve">

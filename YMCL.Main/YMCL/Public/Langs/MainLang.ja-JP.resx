@@ -224,7 +224,7 @@
   </data>
   <data name="WaitForMicrosoftVerification" xml:space="preserve">
     <value>Microsoftアカウントの認証が完了するのを待っています
-ブラウザに移動して認証を完了してください</value>
+      ブラウザに移動して認証を完了してください</value>
   </data>
   <data name="LoginFail" xml:space="preserve">
     <value>ログインに失敗しました</value>
@@ -545,10 +545,10 @@
     <value>オーディオライブラリの初期化に失敗しました</value>
   </data>
   <data name="InstallVlcTip" xml:space="preserve">
-    <value>実行を試みます： 
+    <value>実行を試みます：
 
-sudo apt install libvlc - dev
-sudo apt install vlc</value>
+      sudo apt install libvlc - dev
+      sudo apt install vlc</value>
   </data>
   <data name="ThisFeatureIsCurrentlyUnderDevelopment" xml:space="preserve">
     <value>この機能は現在開発中です</value>
@@ -782,7 +782,7 @@ sudo apt install vlc</value>
     <value>カスタムアップデートURL</value>
   </data>
   <data name="LyricTip" xml:space="preserve">
-    <value>私が歌詞  ヾ(≧▽≦*)o</value>
+    <value>私が歌詞 ヾ(≧▽≦*)o</value>
   </data>
   <data name="MusicPlayerOnlySupportWindows" xml:space="preserve">
     <value>音楽プレーヤーは Windows のみ対応です</value>
@@ -813,7 +813,7 @@ sudo apt install vlc</value>
   </data>
   <data name="UnofficialTip" xml:space="preserve">
     <value>現在のバージョンは非公式であり、ウイルスに対して脆弱である可能性があります。
-公式バージョンをダウンロードするには、https://ymcl.daiyu.fun/にリダイレクトしてください。</value>
+      公式バージョンをダウンロードするには、https://ymcl.yik.at/にリダイレクトしてください。</value>
   </data>
   <data name="LanguageTip" xml:space="preserve">
     <value>言語を選択するために Yu Minecraft ランチャーを準備します。</value>
@@ -880,13 +880,13 @@ sudo apt install vlc</value>
   </data>
   <data name="SkipVersionTip" xml:space="preserve">
     <value>スキップされたバージョン : {version}
-設定へ移動-イニシエータ-更新をチェックしてこのバージョンを再取得します</value>
+      設定へ移動-イニシエータ-更新をチェックしてこのバージョンを再取得します</value>
   </data>
   <data name="WinSevenAutoUpdateTip" xml:space="preserve">
     <value>新しいバージョンが見つかりました: {version}
-win 10以下のシステム（10を除く）は自動更新をサポートしていない
-次のリンクに移動して新しいバージョンをダウンロードします:「{url}」
-設定へ移動-ダウンロード-自動更新により自動チェック更新をオフにする</value>
+      win 10以下のシステム（10を除く）は自動更新をサポートしていない
+      次のリンクに移動して新しいバージョンをダウンロードします:「{url}」
+      設定へ移動-ダウンロード-自動更新により自動チェック更新をオフにする</value>
   </data>
   <data name="OpenBrowser" xml:space="preserve">
     <value>ブラウザーを開く</value>
@@ -947,9 +947,9 @@ win 10以下のシステム（10を除く）は自動更新をサポートして
   </data>
   <data name="MacOsUpdateTip" xml:space="preserve">
     <value>新しいバージョンが見つかりました : {version}
-MacOsは自動更新をサポートしていません
-次のリンクに移動して新しいバージョンをダウンロードします:「{url}」
-設定へ移動-ダウンロード-自動更新により自動チェック更新をオフにする</value>
+      MacOsは自動更新をサポートしていません
+      次のリンクに移動して新しいバージョンをダウンロードします:「{url}」
+      設定へ移動-ダウンロード-自動更新により自動チェック更新をオフにする</value>
   </data>
   <data name="AlreadyCopyToClipBoard" xml:space="preserve">
     <value>クリップボードにコピーしました</value>
@@ -970,7 +970,7 @@ MacOsは自動更新をサポートしていません
     <value>実行中のタスクはありません</value>
   </data>
   <data name="CrashLa" xml:space="preserve">
-    <value>おっと！解釈のための特殊ファイル  (• ω • `) o</value>
+    <value>おっと！解釈のための特殊ファイル (• ω • `) o</value>
   </data>
   <data name="YMCLHappenError" xml:space="preserve">
     <value>YuMinecraft ランチャーが例外を処理していません</value>
@@ -1247,7 +1247,7 @@ MacOsは自動更新をサポートしていません
   </data>
   <data name="GetJavaInfoFail" xml:space="preserve">
     <value>Java情報の取得に失敗しました
-このJavaが正しくない/破損している/実行権限がない可能性があります</value>
+      このJavaが正しくない/破損している/実行権限がない可能性があります</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="Seed" xml:space="preserve">
@@ -1436,8 +1436,8 @@ MacOsは自動更新をサポートしていません
   </data>
   <data name="CurrectSystemNoSupportAutoUpdateTip" xml:space="preserve">
     <value>自動更新は現在のシステムではサポートされていません
-[設定] - [ダウンロード]に移動して自動更新をオフにします
-最新バージョンを手動でダウンロードして、プログラムファイルを置き換えることができます</value>
+      [設定] - [ダウンロード]に移動して自動更新をオフにします
+      最新バージョンを手動でダウンロードして、プログラムファイルを置き換えることができます</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="DependencyItems" xml:space="preserve">

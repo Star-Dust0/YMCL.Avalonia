@@ -7,10 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace YMCL.Public.Langs {
+namespace YMCL.Public.Langs
+{
     using System;
-    
-    
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -21,4051 +22,4947 @@ namespace YMCL.Public.Langs {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class MainLang {
-        
+    public class MainLang
+    {
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal MainLang() {
+        internal MainLang()
+        {
         }
-        
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.ReferenceEquals(resourceMan, null)) {
+        public static global::System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.ReferenceEquals(resourceMan, null))
+                {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("YMCL.Public.Langs.MainLang", typeof(MainLang).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
-            get {
+        public static global::System.Globalization.CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 关于.
         /// </summary>
-        public static string About {
-            get {
+        public static string About
+        {
+            get
+            {
                 return ResourceManager.GetString("About", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 账户.
         /// </summary>
-        public static string Account {
-            get {
+        public static string Account
+        {
+            get
+            {
                 return ResourceManager.GetString("Account", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 账户错误.
         /// </summary>
-        public static string AccountError {
-            get {
+        public static string AccountError
+        {
+            get
+            {
                 return ResourceManager.GetString("AccountError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 账户名称.
         /// </summary>
-        public static string AccountName {
-            get {
+        public static string AccountName
+        {
+            get
+            {
                 return ResourceManager.GetString("AccountName", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 账户名称不可为空.
         /// </summary>
-        public static string AccountNameCannotBeNull {
-            get {
+        public static string AccountNameCannotBeNull
+        {
+            get
+            {
                 return ResourceManager.GetString("AccountNameCannotBeNull", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 账户密码.
         /// </summary>
-        public static string AccountPassword {
-            get {
+        public static string AccountPassword
+        {
+            get
+            {
                 return ResourceManager.GetString("AccountPassword", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动游戏至少需要一个账户，如使用离线账户将无法登入有正版验证的服务器。.
         /// </summary>
-        public static string AccountTip {
-            get {
+        public static string AccountTip
+        {
+            get
+            {
                 return ResourceManager.GetString("AccountTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 亚克力.
         /// </summary>
-        public static string AcrylicBlur {
-            get {
+        public static string AcrylicBlur
+        {
+            get
+            {
                 return ResourceManager.GetString("AcrylicBlur", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 激活Windows/Office.
         /// </summary>
-        public static string ActivateWinOffice {
-            get {
+        public static string ActivateWinOffice
+        {
+            get
+            {
                 return ResourceManager.GetString("ActivateWinOffice", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 添加.
         /// </summary>
-        public static string Add {
-            get {
+        public static string Add
+        {
+            get
+            {
                 return ResourceManager.GetString("Add", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 添加快捷启动.
         /// </summary>
-        public static string AddFastLaunch {
-            get {
+        public static string AddFastLaunch
+        {
+            get
+            {
                 return ResourceManager.GetString("AddFastLaunch", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 添加文件夹.
         /// </summary>
-        public static string AddFolder {
-            get {
+        public static string AddFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("AddFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 添加音频文件.
         /// </summary>
-        public static string AddLocalSong {
-            get {
+        public static string AddLocalSong
+        {
+            get
+            {
                 return ResourceManager.GetString("AddLocalSong", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 添加新账户.
         /// </summary>
-        public static string AddNewAccount {
-            get {
+        public static string AddNewAccount
+        {
+            get
+            {
                 return ResourceManager.GetString("AddNewAccount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Uuid，留空则自动生成.
         /// </summary>
-        public static string AddNewAccountUuid {
-            get {
+        public static string AddNewAccountUuid
+        {
+            get
+            {
                 return ResourceManager.GetString("AddNewAccountUuid", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 将以下文件作为模组添加至当前版本.
         /// </summary>
-        public static string AddTheFollowingFilesAsModsToTheCurrentVersion {
-            get {
+        public static string AddTheFollowingFilesAsModsToTheCurrentVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("AddTheFollowingFilesAsModsToTheCurrentVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动完成后关闭.
         /// </summary>
-        public static string AfterLaunchExitLauncher {
-            get {
+        public static string AfterLaunchExitLauncher
+        {
+            get
+            {
                 return ResourceManager.GetString("AfterLaunchExitLauncher", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动完成后隐藏，游戏退出后显示.
         /// </summary>
-        public static string AfterLaunchHideAndShowWhenGameExit {
-            get {
+        public static string AfterLaunchHideAndShowWhenGameExit
+        {
+            get
+            {
                 return ResourceManager.GetString("AfterLaunchHideAndShowWhenGameExit", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动完成后保持不变.
         /// </summary>
-        public static string AfterLaunchKeepLauncherVisible {
-            get {
+        public static string AfterLaunchKeepLauncherVisible
+        {
+            get
+            {
                 return ResourceManager.GetString("AfterLaunchKeepLauncherVisible", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动完成后最小化.
         /// </summary>
-        public static string AfterLaunchMakeLauncherMinimize {
-            get {
+        public static string AfterLaunchMakeLauncherMinimize
+        {
+            get
+            {
                 return ResourceManager.GetString("AfterLaunchMakeLauncherMinimize", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动完成后最小化，游戏退出后显示.
         /// </summary>
-        public static string AfterLaunchMinimizeAndShowWhenGameExit {
-            get {
+        public static string AfterLaunchMinimizeAndShowWhenGameExit
+        {
+            get
+            {
                 return ResourceManager.GetString("AfterLaunchMinimizeAndShowWhenGameExit", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 输入关键词以在YMCL中搜索.
         /// </summary>
-        public static string AggregateSearchTip {
-            get {
+        public static string AggregateSearchTip
+        {
+            get
+            {
                 return ResourceManager.GetString("AggregateSearchTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 输入关键词以在YMCL中搜索.
         /// </summary>
-        public static string AggregateSearchWatermark {
-            get {
+        public static string AggregateSearchWatermark
+        {
+            get
+            {
                 return ResourceManager.GetString("AggregateSearchWatermark", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 居中对齐.
         /// </summary>
-        public static string AlignCenter {
-            get {
+        public static string AlignCenter
+        {
+            get
+            {
                 return ResourceManager.GetString("AlignCenter", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 居左对齐.
         /// </summary>
-        public static string AlignLeft {
-            get {
+        public static string AlignLeft
+        {
+            get
+            {
                 return ResourceManager.GetString("AlignLeft", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 居右对齐.
         /// </summary>
-        public static string AlignRight {
-            get {
+        public static string AlignRight
+        {
+            get
+            {
                 return ResourceManager.GetString("AlignRight", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 全部.
         /// </summary>
-        public static string All {
-            get {
+        public static string All
+        {
+            get
+            {
                 return ResourceManager.GetString("All", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 全部导入.
         /// </summary>
-        public static string AllImport {
-            get {
+        public static string AllImport
+        {
+            get
+            {
                 return ResourceManager.GetString("AllImport", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 允许命令.
         /// </summary>
-        public static string AllowCommands {
-            get {
+        public static string AllowCommands
+        {
+            get
+            {
                 return ResourceManager.GetString("AllowCommands", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 所有类型.
         /// </summary>
-        public static string AllType {
-            get {
+        public static string AllType
+        {
+            get
+            {
                 return ResourceManager.GetString("AllType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 所有版本.
         /// </summary>
-        public static string AllVersion {
-            get {
+        public static string AllVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("AllVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 已复制到剪切板.
         /// </summary>
-        public static string AlreadyCopyToClipBoard {
-            get {
+        public static string AlreadyCopyToClipBoard
+        {
+            get
+            {
                 return ResourceManager.GetString("AlreadyCopyToClipBoard", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 任意加载器.
         /// </summary>
-        public static string AnyModLoader {
-            get {
+        public static string AnyModLoader
+        {
+            get
+            {
                 return ResourceManager.GetString("AnyModLoader", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 所有来源.
         /// </summary>
-        public static string AnySource {
-            get {
+        public static string AnySource
+        {
+            get
+            {
                 return ResourceManager.GetString("AnySource", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 应用程序接口.
         /// </summary>
-        public static string Api {
-            get {
+        public static string Api
+        {
+            get
+            {
                 return ResourceManager.GetString("Api", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Api错误.
         /// </summary>
-        public static string ApiError {
-            get {
+        public static string ApiError
+        {
+            get
+            {
                 return ResourceManager.GetString("ApiError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 作为资源包导入.
         /// </summary>
-        public static string AsResourcePackImport {
-            get {
+        public static string AsResourcePackImport
+        {
+            get
+            {
                 return ResourceManager.GetString("AsResourcePackImport", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 作为光影包导入.
         /// </summary>
-        public static string AsShaderPackImport {
-            get {
+        public static string AsShaderPackImport
+        {
+            get
+            {
                 return ResourceManager.GetString("AsShaderPackImport", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 作者.
         /// </summary>
-        public static string Author {
-            get {
+        public static string Author
+        {
+            get
+            {
                 return ResourceManager.GetString("Author", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自动分配.
         /// </summary>
-        public static string AutoAllocate {
-            get {
+        public static string AutoAllocate
+        {
+            get
+            {
                 return ResourceManager.GetString("AutoAllocate", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自动安装.
         /// </summary>
-        public static string AutoInstall {
-            get {
+        public static string AutoInstall
+        {
+            get
+            {
                 return ResourceManager.GetString("AutoInstall", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自动加入服务器.
         /// </summary>
-        public static string AutoJoinServer {
-            get {
+        public static string AutoJoinServer
+        {
+            get
+            {
                 return ResourceManager.GetString("AutoJoinServer", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自动进入存档.
         /// </summary>
-        public static string AutoJoinWorld {
-            get {
+        public static string AutoJoinWorld
+        {
+            get
+            {
                 return ResourceManager.GetString("AutoJoinWorld", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自动扫描.
         /// </summary>
-        public static string AutoScan {
-            get {
+        public static string AutoScan
+        {
+            get
+            {
                 return ResourceManager.GetString("AutoScan", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自动滚动到末尾.
         /// </summary>
-        public static string AutoScrollToEnd {
-            get {
+        public static string AutoScrollToEnd
+        {
+            get
+            {
                 return ResourceManager.GetString("AutoScrollToEnd", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自动更新.
         /// </summary>
-        public static string AutoUpdate {
-            get {
+        public static string AutoUpdate
+        {
+            get
+            {
                 return ResourceManager.GetString("AutoUpdate", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 背景图.
         /// </summary>
-        public static string BackGroundImg {
-            get {
+        public static string BackGroundImg
+        {
+            get
+            {
                 return ResourceManager.GetString("BackGroundImg", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 基岩版.
         /// </summary>
-        public static string BedRockVersion {
-            get {
+        public static string BedRockVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("BedRockVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 开始下载.
         /// </summary>
-        public static string BeginDownload {
-            get {
+        public static string BeginDownload
+        {
+            get
+            {
                 return ResourceManager.GetString("BeginDownload", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 开始安装.
         /// </summary>
-        public static string BeginInstall {
-            get {
+        public static string BeginInstall
+        {
+            get
+            {
                 return ResourceManager.GetString("BeginInstall", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 构建启动配置项.
         /// </summary>
-        public static string BuildLaunchConfig {
-            get {
+        public static string BuildLaunchConfig
+        {
+            get
+            {
                 return ResourceManager.GetString("BuildLaunchConfig", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 构建启动配置失败.
         /// </summary>
-        public static string BuildLaunchConfigFail {
-            get {
+        public static string BuildLaunchConfigFail
+        {
+            get
+            {
                 return ResourceManager.GetString("BuildLaunchConfigFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 取消.
         /// </summary>
-        public static string Cancel {
-            get {
+        public static string Cancel
+        {
+            get
+            {
                 return ResourceManager.GetString("Cancel", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 取消激活Windows.
         /// </summary>
-        public static string CancelActivateWin {
-            get {
+        public static string CancelActivateWin
+        {
+            get
+            {
                 return ResourceManager.GetString("CancelActivateWin", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 此操作会移除Windows激活状态，导致Windows个性化等功能不可用，是否继续？.
         /// </summary>
-        public static string CancelActivateWinTip {
-            get {
+        public static string CancelActivateWinTip
+        {
+            get
+            {
                 return ResourceManager.GetString("CancelActivateWinTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 已取消.
         /// </summary>
-        public static string Canceled {
-            get {
+        public static string Canceled
+        {
+            get
+            {
                 return ResourceManager.GetString("Canceled", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 更新已取消.
         /// </summary>
-        public static string CanceledUpdate {
-            get {
+        public static string CanceledUpdate
+        {
+            get
+            {
                 return ResourceManager.GetString("CanceledUpdate", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 取消中.
         /// </summary>
-        public static string Canceling {
-            get {
+        public static string Canceling
+        {
+            get
+            {
                 return ResourceManager.GetString("Canceling", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无法找到合适Java.
         /// </summary>
-        public static string CannotFandRightJava {
-            get {
+        public static string CannotFandRightJava
+        {
+            get
+            {
                 return ResourceManager.GetString("CannotFandRightJava", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无法找到Minecraft文件夹.
         /// </summary>
-        public static string CannotFindMinecraftFolder {
-            get {
+        public static string CannotFindMinecraftFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("CannotFindMinecraftFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无法加载.
         /// </summary>
-        public static string CannotLoad {
-            get {
+        public static string CannotLoad
+        {
+            get
+            {
                 return ResourceManager.GetString("CannotLoad", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无法加载版本设置.
         /// </summary>
-        public static string CannotLoadVersionSetting {
-            get {
+        public static string CannotLoadVersionSetting
+        {
+            get
+            {
                 return ResourceManager.GetString("CannotLoadVersionSetting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无法打开基岩版设置.
         /// </summary>
-        public static string CannotOpenBedRockSetting {
-            get {
+        public static string CannotOpenBedRockSetting
+        {
+            get
+            {
                 return ResourceManager.GetString("CannotOpenBedRockSetting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无法打开浏览器.
         /// </summary>
-        public static string CannotOpenBrowser {
-            get {
+        public static string CannotOpenBrowser
+        {
+            get
+            {
                 return ResourceManager.GetString("CannotOpenBrowser", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无法识别选中版本.
         /// </summary>
-        public static string CannotRecognitionTheVersion {
-            get {
+        public static string CannotRecognitionTheVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("CannotRecognitionTheVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 检查启动参数.
         /// </summary>
-        public static string CheckLaunchArg {
-            get {
+        public static string CheckLaunchArg
+        {
+            get
+            {
                 return ResourceManager.GetString("CheckLaunchArg", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 检查更新.
         /// </summary>
-        public static string CheckUpdate {
-            get {
+        public static string CheckUpdate
+        {
+            get
+            {
                 return ResourceManager.GetString("CheckUpdate", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 检查更新失败.
         /// </summary>
-        public static string CheckUpdateFail {
-            get {
+        public static string CheckUpdateFail
+        {
+            get
+            {
                 return ResourceManager.GetString("CheckUpdateFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 检查版本资源.
         /// </summary>
-        public static string CheckVersionResource {
-            get {
+        public static string CheckVersionResource
+        {
+            get
+            {
                 return ResourceManager.GetString("CheckVersionResource", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 选择平台.
         /// </summary>
-        public static string ChooseArchitecture {
-            get {
+        public static string ChooseArchitecture
+        {
+            get
+            {
                 return ResourceManager.GetString("ChooseArchitecture", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 选择语言/Choose Language.
         /// </summary>
-        public static string ChooseLanguage {
-            get {
+        public static string ChooseLanguage
+        {
+            get
+            {
                 return ResourceManager.GetString("ChooseLanguage", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 色彩模式.
         /// </summary>
-        public static string ColorMode {
-            get {
+        public static string ColorMode
+        {
+            get
+            {
                 return ResourceManager.GetString("ColorMode", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 冲突.
         /// </summary>
-        public static string Conflict {
-            get {
+        public static string Conflict
+        {
+            get
+            {
                 return ResourceManager.GetString("Conflict", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 复制.
         /// </summary>
-        public static string Copy {
-            get {
+        public static string Copy
+        {
+            get
+            {
                 return ResourceManager.GetString("Copy", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 复制代码并打开浏览器.
         /// </summary>
-        public static string CopyCodeAndOPenBrowser {
-            get {
+        public static string CopyCodeAndOPenBrowser
+        {
+            get
+            {
                 return ResourceManager.GetString("CopyCodeAndOPenBrowser", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 复制到剪贴板.
         /// </summary>
-        public static string CopyToClipBoard {
-            get {
+        public static string CopyToClipBoard
+        {
+            get
+            {
                 return ResourceManager.GetString("CopyToClipBoard", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Ctrl + C 复制以下链接并粘贴至浏览器.
         /// </summary>
-        public static string CopyUrlAndManualOpen {
-            get {
+        public static string CopyUrlAndManualOpen
+        {
+            get
+            {
                 return ResourceManager.GetString("CopyUrlAndManualOpen", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 圆角半径.
         /// </summary>
-        public static string CornerRadius {
-            get {
+        public static string CornerRadius
+        {
+            get
+            {
                 return ResourceManager.GetString("CornerRadius", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 覆盖.
         /// </summary>
-        public static string Cover {
-            get {
+        public static string Cover
+        {
+            get
+            {
                 return ResourceManager.GetString("Cover", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 崩溃啦！ヾ(•ω•`)o.
         /// </summary>
-        public static string CrashLa {
-            get {
+        public static string CrashLa
+        {
+            get
+            {
                 return ResourceManager.GetString("CrashLa", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 创建下载任务.
         /// </summary>
-        public static string CreateDownloadTask {
-            get {
+        public static string CreateDownloadTask
+        {
+            get
+            {
                 return ResourceManager.GetString("CreateDownloadTask", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 创建游戏实例失败.
         /// </summary>
-        public static string CreateGameEntryFail {
-            get {
+        public static string CreateGameEntryFail
+        {
+            get
+            {
                 return ResourceManager.GetString("CreateGameEntryFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 创建时间.
         /// </summary>
-        public static string CreateTime {
-            get {
+        public static string CreateTime
+        {
+            get
+            {
                 return ResourceManager.GetString("CreateTime", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 当前系统不支持自动更新
         ///可前往 设置-下载 关闭自动更新
         ///可手动下载最新版本并替换程序文件.
         /// </summary>
-        public static string CurrectSystemNoSupportAutoUpdateTip {
-            get {
+        public static string CurrectSystemNoSupportAutoUpdateTip
+        {
+            get
+            {
                 return ResourceManager.GetString("CurrectSystemNoSupportAutoUpdateTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 当前列表为空.
         /// </summary>
-        public static string CurrentListIsEmpty {
-            get {
+        public static string CurrentListIsEmpty
+        {
+            get
+            {
                 return ResourceManager.GetString("CurrentListIsEmpty", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 当前是最新版本.
         /// </summary>
-        public static string CurrentlyTheLatestVersion {
-            get {
+        public static string CurrentlyTheLatestVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("CurrentlyTheLatestVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 当前版本不支持此操作.
         /// </summary>
-        public static string CurrentVersionUnsupportOperation {
-            get {
+        public static string CurrentVersionUnsupportOperation
+        {
+            get
+            {
                 return ResourceManager.GetString("CurrentVersionUnsupportOperation", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自定义.
         /// </summary>
-        public static string Custom {
-            get {
+        public static string Custom
+        {
+            get
+            {
                 return ResourceManager.GetString("Custom", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自定义背景.
         /// </summary>
-        public static string CustomBackground {
-            get {
+        public static string CustomBackground
+        {
+            get
+            {
                 return ResourceManager.GetString("CustomBackground", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自定义背景图.
         /// </summary>
-        public static string CustomBackGroundImg {
-            get {
+        public static string CustomBackGroundImg
+        {
+            get
+            {
                 return ResourceManager.GetString("CustomBackGroundImg", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自定义下载.
         /// </summary>
-        public static string CustomDownload {
-            get {
+        public static string CustomDownload
+        {
+            get
+            {
                 return ResourceManager.GetString("CustomDownload", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自定义主页面.
         /// </summary>
-        public static string CustomHomePage {
-            get {
+        public static string CustomHomePage
+        {
+            get
+            {
                 return ResourceManager.GetString("CustomHomePage", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自定义主页面源代码错误.
         /// </summary>
-        public static string CustomHomePageSourceCodeError {
-            get {
+        public static string CustomHomePageSourceCodeError
+        {
+            get
+            {
                 return ResourceManager.GetString("CustomHomePageSourceCodeError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 预设-Java新闻.
         /// </summary>
-        public static string CustomHomePageWay_Presetting_JavaNews {
-            get {
+        public static string CustomHomePageWay_Presetting_JavaNews
+        {
+            get
+            {
                 return ResourceManager.GetString("CustomHomePageWay_Presetting_JavaNews", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 自定义更新Url.
         /// </summary>
-        public static string CustomUpdateUrl {
-            get {
+        public static string CustomUpdateUrl
+        {
+            get
+            {
                 return ResourceManager.GetString("CustomUpdateUrl", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 深色.
         /// </summary>
-        public static string Dark {
-            get {
+        public static string Dark
+        {
+            get
+            {
                 return ResourceManager.GetString("Dark", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 数据包.
         /// </summary>
-        public static string DataPack {
-            get {
+        public static string DataPack
+        {
+            get
+            {
                 return ResourceManager.GetString("DataPack", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 数据包数量.
         /// </summary>
-        public static string DataPackCount {
-            get {
+        public static string DataPackCount
+        {
+            get
+            {
                 return ResourceManager.GetString("DataPackCount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 默认.
         /// </summary>
-        public static string Default {
-            get {
+        public static string Default
+        {
+            get
+            {
                 return ResourceManager.GetString("Default", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 删除.
         /// </summary>
-        public static string Delete {
-            get {
+        public static string Delete
+        {
+            get
+            {
                 return ResourceManager.GetString("Delete", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 删除选中项.
         /// </summary>
-        public static string DeleteSelect {
-            get {
+        public static string DeleteSelect
+        {
+            get
+            {
                 return ResourceManager.GetString("DeleteSelect", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 删除选中项.
         /// </summary>
-        public static string DelSelectedItem {
-            get {
+        public static string DelSelectedItem
+        {
+            get
+            {
                 return ResourceManager.GetString("DelSelectedItem", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 依赖项.
         /// </summary>
-        public static string DependencyItems {
-            get {
+        public static string DependencyItems
+        {
+            get
+            {
                 return ResourceManager.GetString("DependencyItems", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 描述.
         /// </summary>
-        public static string Description {
-            get {
+        public static string Description
+        {
+            get
+            {
                 return ResourceManager.GetString("Description", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 全不选.
         /// </summary>
-        public static string DeselectAll {
-            get {
+        public static string DeselectAll
+        {
+            get
+            {
                 return ResourceManager.GetString("DeselectAll", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 桌面歌词对齐.
         /// </summary>
-        public static string DeskLyricAlignment {
-            get {
+        public static string DeskLyricAlignment
+        {
+            get
+            {
                 return ResourceManager.GetString("DeskLyricAlignment", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 桌面歌词颜色.
         /// </summary>
-        public static string DeskLyricColor {
-            get {
+        public static string DeskLyricColor
+        {
+            get
+            {
                 return ResourceManager.GetString("DeskLyricColor", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 桌面歌词大小.
         /// </summary>
-        public static string DeskLyricSize {
-            get {
+        public static string DeskLyricSize
+        {
+            get
+            {
                 return ResourceManager.GetString("DeskLyricSize", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 销毁.
         /// </summary>
-        public static string Destroy {
-            get {
+        public static string Destroy
+        {
+            get
+            {
                 return ResourceManager.GetString("Destroy", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 详细信息.
         /// </summary>
-        public static string DetailedInfo {
-            get {
+        public static string DetailedInfo
+        {
+            get
+            {
                 return ResourceManager.GetString("DetailedInfo", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 禁用所有.
         /// </summary>
-        public static string DisableAll {
-            get {
+        public static string DisableAll
+        {
+            get
+            {
                 return ResourceManager.GetString("DisableAll", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 禁用选中项.
         /// </summary>
-        public static string DisableSelect {
-            get {
+        public static string DisableSelect
+        {
+            get
+            {
                 return ResourceManager.GetString("DisableSelect", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 显示独立任务窗口.
         /// </summary>
-        public static string DisplayIndependentTaskWindow {
-            get {
+        public static string DisplayIndependentTaskWindow
+        {
+            get
+            {
                 return ResourceManager.GetString("DisplayIndependentTaskWindow", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 显示启动参数.
         /// </summary>
-        public static string DisplayLaunchArguments {
-            get {
+        public static string DisplayLaunchArguments
+        {
+            get
+            {
                 return ResourceManager.GetString("DisplayLaunchArguments", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 显示名称.
         /// </summary>
-        public static string DisplayName {
-            get {
+        public static string DisplayName
+        {
+            get
+            {
                 return ResourceManager.GetString("DisplayName", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 下载.
         /// </summary>
-        public static string Download {
-            get {
+        public static string Download
+        {
+            get
+            {
                 return ResourceManager.GetString("Download", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 下载失败.
         /// </summary>
-        public static string DownloadFail {
-            get {
+        public static string DownloadFail
+        {
+            get
+            {
                 return ResourceManager.GetString("DownloadFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 重新下载失败文件.
         /// </summary>
-        public static string DownloadFailedFileAgain {
-            get {
+        public static string DownloadFailedFileAgain
+        {
+            get
+            {
                 return ResourceManager.GetString("DownloadFailedFileAgain", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 下载完成.
         /// </summary>
-        public static string DownloadFinish {
-            get {
+        public static string DownloadFinish
+        {
+            get
+            {
                 return ResourceManager.GetString("DownloadFinish", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 下载整合包模组.
         /// </summary>
-        public static string DownloadModPackMod {
-            get {
+        public static string DownloadModPackMod
+        {
+            get
+            {
                 return ResourceManager.GetString("DownloadModPackMod", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 下载资源.
         /// </summary>
-        public static string DownloadResource {
-            get {
+        public static string DownloadResource
+        {
+            get
+            {
                 return ResourceManager.GetString("DownloadResource", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 下载源.
         /// </summary>
-        public static string DownloadSource {
-            get {
+        public static string DownloadSource
+        {
+            get
+            {
                 return ResourceManager.GetString("DownloadSource", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 下载成功.
         /// </summary>
-        public static string DownloadSuccess {
-            get {
+        public static string DownloadSuccess
+        {
+            get
+            {
                 return ResourceManager.GetString("DownloadSuccess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 下载线程过大可能导致设备卡顿.
         /// </summary>
-        public static string DownloadThreadTooBigTip {
-            get {
+        public static string DownloadThreadTooBigTip
+        {
+            get
+            {
                 return ResourceManager.GetString("DownloadThreadTooBigTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 下载链接.
         /// </summary>
-        public static string DownloadUrl {
-            get {
+        public static string DownloadUrl
+        {
+            get
+            {
                 return ResourceManager.GetString("DownloadUrl", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 下载链接解析失败.
         /// </summary>
-        public static string DownloadUrlParserFail {
-            get {
+        public static string DownloadUrlParserFail
+        {
+            get
+            {
                 return ResourceManager.GetString("DownloadUrlParserFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 编辑.
         /// </summary>
-        public static string Edit {
-            get {
+        public static string Edit
+        {
+            get
+            {
                 return ResourceManager.GetString("Edit", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 邮箱地址.
         /// </summary>
-        public static string EmailAddress {
-            get {
+        public static string EmailAddress
+        {
+            get
+            {
                 return ResourceManager.GetString("EmailAddress", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启用所有.
         /// </summary>
-        public static string EnableAll {
-            get {
+        public static string EnableAll
+        {
+            get
+            {
                 return ResourceManager.GetString("EnableAll", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启用自动分配内存.
         /// </summary>
-        public static string EnableAutoAllocateMem {
-            get {
+        public static string EnableAutoAllocateMem
+        {
+            get
+            {
                 return ResourceManager.GetString("EnableAutoAllocateMem", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启用独立核心.
         /// </summary>
-        public static string EnableIndependencyCore {
-            get {
+        public static string EnableIndependencyCore
+        {
+            get
+            {
                 return ResourceManager.GetString("EnableIndependencyCore", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启用独立窗口通知.
         /// </summary>
-        public static string EnableIndependencyWindowNotification {
-            get {
+        public static string EnableIndependencyWindowNotification
+        {
+            get
+            {
                 return ResourceManager.GetString("EnableIndependencyWindowNotification", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启用选中项.
         /// </summary>
-        public static string EnableSelect {
-            get {
+        public static string EnableSelect
+        {
+            get
+            {
                 return ResourceManager.GetString("EnableSelect", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启用半透明特殊控件列表.
         /// </summary>
-        public static string EnableTranslucentSpecialControlList {
-            get {
+        public static string EnableTranslucentSpecialControlList
+        {
+            get
+            {
                 return ResourceManager.GetString("EnableTranslucentSpecialControlList", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 错误.
         /// </summary>
-        public static string Error {
-            get {
+        public static string Error
+        {
+            get
+            {
                 return ResourceManager.GetString("Error", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 调用Api时出错.
         /// </summary>
-        public static string ErrorCallingApi {
-            get {
+        public static string ErrorCallingApi
+        {
+            get
+            {
                 return ResourceManager.GetString("ErrorCallingApi", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 示例通知.
         /// </summary>
-        public static string ExampleNotification {
-            get {
+        public static string ExampleNotification
+        {
+            get
+            {
                 return ResourceManager.GetString("ExampleNotification", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 账户数据(不含微软帐户).
         /// </summary>
-        public static string ExchangeSetting_Account {
-            get {
+        public static string ExchangeSetting_Account
+        {
+            get
+            {
                 return ResourceManager.GetString("ExchangeSetting_Account", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动设置.
         /// </summary>
-        public static string ExchangeSetting_Launch {
-            get {
+        public static string ExchangeSetting_Launch
+        {
+            get
+            {
                 return ResourceManager.GetString("ExchangeSetting_Launch", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 网络设置.
         /// </summary>
-        public static string ExchangeSetting_Net {
-            get {
+        public static string ExchangeSetting_Net
+        {
+            get
+            {
                 return ResourceManager.GetString("ExchangeSetting_Net", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 其他设置.
         /// </summary>
-        public static string ExchangeSetting_Other {
-            get {
+        public static string ExchangeSetting_Other
+        {
+            get
+            {
                 return ResourceManager.GetString("ExchangeSetting_Other", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 界面设置.
         /// </summary>
-        public static string ExchangeSetting_Ui {
-            get {
+        public static string ExchangeSetting_Ui
+        {
+            get
+            {
                 return ResourceManager.GetString("ExchangeSetting_Ui", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 现存账户.
         /// </summary>
-        public static string ExistAccount {
-            get {
+        public static string ExistAccount
+        {
+            get
+            {
                 return ResourceManager.GetString("ExistAccount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 现有的.
         /// </summary>
-        public static string ExistingNow {
-            get {
+        public static string ExistingNow
+        {
+            get
+            {
                 return ResourceManager.GetString("ExistingNow", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 退出应用.
         /// </summary>
-        public static string ExitApp {
-            get {
+        public static string ExitApp
+        {
+            get
+            {
                 return ResourceManager.GetString("ExitApp", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 导出.
         /// </summary>
-        public static string Export {
-            get {
+        public static string Export
+        {
+            get
+            {
                 return ResourceManager.GetString("Export", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 导出日志文件.
         /// </summary>
-        public static string ExportLogFile {
-            get {
+        public static string ExportLogFile
+        {
+            get
+            {
                 return ResourceManager.GetString("ExportLogFile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 导出成功，数据量过大无法显示，点击复制以复制所有数据.
         /// </summary>
-        public static string ExportSettingSuccessTip {
-            get {
+        public static string ExportSettingSuccessTip
+        {
+            get
+            {
                 return ResourceManager.GetString("ExportSettingSuccessTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 选择需要导出的设置项.
         /// </summary>
-        public static string ExportSettingTip {
-            get {
+        public static string ExportSettingTip
+        {
+            get
+            {
                 return ResourceManager.GetString("ExportSettingTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 导出成功.
         /// </summary>
-        public static string ExportSuccess {
-            get {
+        public static string ExportSuccess
+        {
+            get
+            {
                 return ResourceManager.GetString("ExportSuccess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 快捷启动.
         /// </summary>
-        public static string FastLaunch {
-            get {
+        public static string FastLaunch
+        {
+            get
+            {
                 return ResourceManager.GetString("FastLaunch", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 收藏.
         /// </summary>
-        public static string Favourite {
-            get {
+        public static string Favourite
+        {
+            get
+            {
                 return ResourceManager.GetString("Favourite", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 收藏夹.
         /// </summary>
-        public static string Favourites {
-            get {
+        public static string Favourites
+        {
+            get
+            {
                 return ResourceManager.GetString("Favourites", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 已收藏.
         /// </summary>
-        public static string Favourted {
-            get {
+        public static string Favourted
+        {
+            get
+            {
                 return ResourceManager.GetString("Favourted", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 文件冲突，目标文件夹已存在相同名称文件，希望如何处理复制操作？.
         /// </summary>
-        public static string FileConflictTip {
-            get {
+        public static string FileConflictTip
+        {
+            get
+            {
                 return ResourceManager.GetString("FileConflictTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 文件不存在.
         /// </summary>
-        public static string FileNotExist {
-            get {
+        public static string FileNotExist
+        {
+            get
+            {
                 return ResourceManager.GetString("FileNotExist", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 文件选择窗口.
         /// </summary>
-        public static string FileSelectWindow {
-            get {
+        public static string FileSelectWindow
+        {
+            get
+            {
                 return ResourceManager.GetString("FileSelectWindow", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 已完成.
         /// </summary>
-        public static string Finished {
-            get {
+        public static string Finished
+        {
+            get
+            {
                 return ResourceManager.GetString("Finished", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 解压整合包完成.
         /// </summary>
-        public static string FinsihUnzipModPack {
-            get {
+        public static string FinsihUnzipModPack
+        {
+            get
+            {
                 return ResourceManager.GetString("FinsihUnzipModPack", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 在加载数据时遇到异常，这可能是由于数据发生损坏导致的。是否重置YMCL数据以解决此问题？.
         /// </summary>
-        public static string FixLoadDataFailTip {
-            get {
+        public static string FixLoadDataFailTip
+        {
+            get
+            {
                 return ResourceManager.GetString("FixLoadDataFailTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 文件夹已存在.
         /// </summary>
-        public static string FolderAlreadyExists {
-            get {
+        public static string FolderAlreadyExists
+        {
+            get
+            {
                 return ResourceManager.GetString("FolderAlreadyExists", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 文件夹不存在.
         /// </summary>
-        public static string FolderNotExist {
-            get {
+        public static string FolderNotExist
+        {
+            get
+            {
                 return ResourceManager.GetString("FolderNotExist", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 跟随系统.
         /// </summary>
-        public static string FollowSystem {
-            get {
+        public static string FollowSystem
+        {
+            get
+            {
                 return ResourceManager.GetString("FollowSystem", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 发现新版本.
         /// </summary>
-        public static string FoundNewVersion {
-            get {
+        public static string FoundNewVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("FoundNewVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 游戏已退出.
         /// </summary>
-        public static string GameExited {
-            get {
+        public static string GameExited
+        {
+            get
+            {
                 return ResourceManager.GetString("GameExited", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 游戏主要文件缺失.
         /// </summary>
-        public static string GameMainFileDeletion {
-            get {
+        public static string GameMainFileDeletion
+        {
+            get
+            {
                 return ResourceManager.GetString("GameMainFileDeletion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 游戏类型.
         /// </summary>
-        public static string GameType {
-            get {
+        public static string GameType
+        {
+            get
+            {
                 return ResourceManager.GetString("GameType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 更新日志.
         /// </summary>
-        public static string GameUpdateLog {
-            get {
+        public static string GameUpdateLog
+        {
+            get
+            {
                 return ResourceManager.GetString("GameUpdateLog", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 游戏版本.
         /// </summary>
-        public static string GameVersion {
-            get {
+        public static string GameVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("GameVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 发生异常.
         /// </summary>
-        public static string GetException {
-            get {
+        public static string GetException
+        {
+            get
+            {
                 return ResourceManager.GetString("GetException", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 获取失败.
         /// </summary>
-        public static string GetFail {
-            get {
+        public static string GetFail
+        {
+            get
+            {
                 return ResourceManager.GetString("GetFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 获取可安装列表失败.
         /// </summary>
-        public static string GetInstallableVersionFail {
-            get {
+        public static string GetInstallableVersionFail
+        {
+            get
+            {
                 return ResourceManager.GetString("GetInstallableVersionFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 获取Java信息失败
         ///可能此Java不正确/已损坏/无执行权限.
         /// </summary>
-        public static string GetJavaInfoFail {
-            get {
+        public static string GetJavaInfoFail
+        {
+            get
+            {
                 return ResourceManager.GetString("GetJavaInfoFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 获取整合包信息.
         /// </summary>
-        public static string GetModPackInfo {
-            get {
+        public static string GetModPackInfo
+        {
+            get
+            {
                 return ResourceManager.GetString("GetModPackInfo", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 获取更新统一资源定位器.
         /// </summary>
-        public static string GetUpdateUrl {
-            get {
+        public static string GetUpdateUrl
+        {
+            get
+            {
                 return ResourceManager.GetString("GetUpdateUrl", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to YMCL 以 GPL 3.0 License 协议开放源代码，可以修改且分发，但软件必须包含原始代码的版权声明和许可声明，以及一个包含许可信息的通知文件。.
         /// </summary>
-        public static string GPL3Text {
-            get {
+        public static string GPL3Text
+        {
+            get
+            {
                 return ResourceManager.GetString("GPL3Text", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 主页.
         /// </summary>
-        public static string Home {
-            get {
+        public static string Home
+        {
+            get
+            {
                 return ResourceManager.GetString("Home", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 希望如何处理此文件.
         /// </summary>
-        public static string HopeHowToHandleTheFile {
-            get {
+        public static string HopeHowToHandleTheFile
+        {
+            get
+            {
                 return ResourceManager.GetString("HopeHowToHandleTheFile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 热门资源.
         /// </summary>
-        public static string HotResource {
-            get {
+        public static string HotResource
+        {
+            get
+            {
                 return ResourceManager.GetString("HotResource", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 图标.
         /// </summary>
-        public static string Icon {
-            get {
+        public static string Icon
+        {
+            get
+            {
                 return ResourceManager.GetString("Icon", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 如未安装基岩版则无法启动.
         /// </summary>
-        public static string IfInstallBedRock {
-            get {
+        public static string IfInstallBedRock
+        {
+            get
+            {
                 return ResourceManager.GetString("IfInstallBedRock", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 我知道了.
         /// </summary>
-        public static string IKnow {
-            get {
+        public static string IKnow
+        {
+            get
+            {
                 return ResourceManager.GetString("IKnow", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 导入.
         /// </summary>
-        public static string Import {
-            get {
+        public static string Import
+        {
+            get
+            {
                 return ResourceManager.GetString("Import", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 导入失败.
         /// </summary>
-        public static string ImportFailed {
-            get {
+        public static string ImportFailed
+        {
+            get
+            {
                 return ResourceManager.GetString("ImportFailed", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 导入完成.
         /// </summary>
-        public static string ImportFinish {
-            get {
+        public static string ImportFinish
+        {
+            get
+            {
                 return ResourceManager.GetString("ImportFinish", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 导入整合包.
         /// </summary>
-        public static string ImportModPack {
-            get {
+        public static string ImportModPack
+        {
+            get
+            {
                 return ResourceManager.GetString("ImportModPack", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 导入/导出设置.
         /// </summary>
-        public static string ImportOrExportSetting {
-            get {
+        public static string ImportOrExportSetting
+        {
+            get
+            {
                 return ResourceManager.GetString("ImportOrExportSetting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 输入hex数据.
         /// </summary>
-        public static string ImportSettingTextBoxWatermark {
-            get {
+        public static string ImportSettingTextBoxWatermark
+        {
+            get
+            {
                 return ResourceManager.GetString("ImportSettingTextBoxWatermark", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 导入成功.
         /// </summary>
-        public static string ImportSuccess {
-            get {
+        public static string ImportSuccess
+        {
+            get
+            {
                 return ResourceManager.GetString("ImportSuccess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 导入时间.
         /// </summary>
-        public static string ImportTime {
-            get {
+        public static string ImportTime
+        {
+            get
+            {
                 return ResourceManager.GetString("ImportTime", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 包含特殊字符.
         /// </summary>
-        public static string IncludeSpecialWord {
-            get {
+        public static string IncludeSpecialWord
+        {
+            get
+            {
                 return ResourceManager.GetString("IncludeSpecialWord", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 初始化音频库失败.
         /// </summary>
-        public static string InitAudioLibraryFail {
-            get {
+        public static string InitAudioLibraryFail
+        {
+            get
+            {
                 return ResourceManager.GetString("InitAudioLibraryFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 输入账户名称.
         /// </summary>
-        public static string InputAccountName {
-            get {
+        public static string InputAccountName
+        {
+            get
+            {
                 return ResourceManager.GetString("InputAccountName", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 输入文件路径.
         /// </summary>
-        public static string InputFilePath {
-            get {
+        public static string InputFilePath
+        {
+            get
+            {
                 return ResourceManager.GetString("InputFilePath", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 输入文件夹路径.
         /// </summary>
-        public static string InputFolderPath {
-            get {
+        public static string InputFolderPath
+        {
+            get
+            {
                 return ResourceManager.GetString("InputFolderPath", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 输入皮肤文件路径.
         /// </summary>
-        public static string InputSkinFilePath {
-            get {
+        public static string InputSkinFilePath
+        {
+            get
+            {
                 return ResourceManager.GetString("InputSkinFilePath", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 安装.
         /// </summary>
-        public static string Install {
-            get {
+        public static string Install
+        {
+            get
+            {
                 return ResourceManager.GetString("Install", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 安装失败.
         /// </summary>
-        public static string InstallFail {
-            get {
+        public static string InstallFail
+        {
+            get
+            {
                 return ResourceManager.GetString("InstallFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 安装完成.
         /// </summary>
-        public static string InstallFinish {
-            get {
+        public static string InstallFinish
+        {
+            get
+            {
                 return ResourceManager.GetString("InstallFinish", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 安装整合包.
         /// </summary>
-        public static string InstallModPack {
-            get {
+        public static string InstallModPack
+        {
+            get
+            {
                 return ResourceManager.GetString("InstallModPack", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 安装预览.
         /// </summary>
-        public static string InstallPreview {
-            get {
+        public static string InstallPreview
+        {
+            get
+            {
                 return ResourceManager.GetString("InstallPreview", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 将以下文件作为整合包(CurseForge格式)安装.
         /// </summary>
-        public static string InstallTheFollowingFilesAsAnIntegrationPackageCurseforgeFormat {
-            get {
+        public static string InstallTheFollowingFilesAsAnIntegrationPackageCurseforgeFormat
+        {
+            get
+            {
                 return ResourceManager.GetString("InstallTheFollowingFilesAsAnIntegrationPackageCurseforgeFormat", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 安装版本.
         /// </summary>
-        public static string InstallVersion {
-            get {
+        public static string InstallVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("InstallVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 尝试执行: 
         ///
         ///sudo apt install libvlc-dev
         ///sudo apt install vlc.
         /// </summary>
-        public static string InstallVlcTip {
-            get {
+        public static string InstallVlcTip
+        {
+            get
+            {
                 return ResourceManager.GetString("InstallVlcTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Java运行时.
         /// </summary>
-        public static string JavaRuntime {
-            get {
+        public static string JavaRuntime
+        {
+            get
+            {
                 return ResourceManager.GetString("JavaRuntime", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Java运行时错误.
         /// </summary>
-        public static string JavaRuntimeError {
-            get {
+        public static string JavaRuntimeError
+        {
+            get
+            {
                 return ResourceManager.GetString("JavaRuntimeError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动游戏至少需要一个Java运行时。.
         /// </summary>
-        public static string JavaRuntimeTip {
-            get {
+        public static string JavaRuntimeTip
+        {
+            get
+            {
                 return ResourceManager.GetString("JavaRuntimeTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 跳转搜索.
         /// </summary>
-        public static string JumpSearch {
-            get {
+        public static string JumpSearch
+        {
+            get
+            {
                 return ResourceManager.GetString("JumpSearch", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 将会跳转到 {target} 搜索此关键词.
         /// </summary>
-        public static string JumpToSearchTip {
-            get {
+        public static string JumpToSearchTip
+        {
+            get
+            {
                 return ResourceManager.GetString("JumpToSearchTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 结束进程.
         /// </summary>
-        public static string KillProcess {
-            get {
+        public static string KillProcess
+        {
+            get
+            {
                 return ResourceManager.GetString("KillProcess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 语言.
         /// </summary>
-        public static string Language {
-            get {
+        public static string Language
+        {
+            get
+            {
                 return ResourceManager.GetString("Language", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 在开始设置 Yu Minecraft Launcher 前，需要选择语言。.
         /// </summary>
-        public static string LanguageTip {
-            get {
+        public static string LanguageTip
+        {
+            get
+            {
                 return ResourceManager.GetString("LanguageTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 最后修改时间.
         /// </summary>
-        public static string LastModifiedTime {
-            get {
+        public static string LastModifiedTime
+        {
+            get
+            {
                 return ResourceManager.GetString("LastModifiedTime", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 最后游玩时间.
         /// </summary>
-        public static string LastPlayTime {
-            get {
+        public static string LastPlayTime
+        {
+            get
+            {
                 return ResourceManager.GetString("LastPlayTime", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 最新版本.
         /// </summary>
-        public static string LatestVersion {
-            get {
+        public static string LatestVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("LatestVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动.
         /// </summary>
-        public static string Launch {
-            get {
+        public static string Launch
+        {
+            get
+            {
                 return ResourceManager.GetString("Launch", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动参数.
         /// </summary>
-        public static string LaunchArguments {
-            get {
+        public static string LaunchArguments
+        {
+            get
+            {
                 return ResourceManager.GetString("LaunchArguments", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动核心.
         /// </summary>
-        public static string LaunchCore {
-            get {
+        public static string LaunchCore
+        {
+            get
+            {
                 return ResourceManager.GetString("LaunchCore", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动器.
         /// </summary>
-        public static string Launcher {
-            get {
+        public static string Launcher
+        {
+            get
+            {
                 return ResourceManager.GetString("Launcher", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动器样式.
         /// </summary>
-        public static string LauncherStyle {
-            get {
+        public static string LauncherStyle
+        {
+            get
+            {
                 return ResourceManager.GetString("LauncherStyle", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动器可见性.
         /// </summary>
-        public static string LauncherVisibility {
-            get {
+        public static string LauncherVisibility
+        {
+            get
+            {
                 return ResourceManager.GetString("LauncherVisibility", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动失败.
         /// </summary>
-        public static string LaunchFail {
-            get {
+        public static string LaunchFail
+        {
+            get
+            {
                 return ResourceManager.GetString("LaunchFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动完成.
         /// </summary>
-        public static string LaunchFinish {
-            get {
+        public static string LaunchFinish
+        {
+            get
+            {
                 return ResourceManager.GetString("LaunchFinish", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动游戏.
         /// </summary>
-        public static string LaunchGame {
-            get {
+        public static string LaunchGame
+        {
+            get
+            {
                 return ResourceManager.GetString("LaunchGame", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动 Minecraft 进程.
         /// </summary>
-        public static string LaunchMinecraftProcess {
-            get {
+        public static string LaunchMinecraftProcess
+        {
+            get
+            {
                 return ResourceManager.GetString("LaunchMinecraftProcess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 启动进度.
         /// </summary>
-        public static string LaunchProgress {
-            get {
+        public static string LaunchProgress
+        {
+            get
+            {
                 return ResourceManager.GetString("LaunchProgress", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 让YMCL选择合适的Java.
         /// </summary>
-        public static string LetYMCLChooseJava {
-            get {
+        public static string LetYMCLChooseJava
+        {
+            get
+            {
                 return ResourceManager.GetString("LetYMCLChooseJava", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 浅色.
         /// </summary>
-        public static string Light {
-            get {
+        public static string Light
+        {
+            get
+            {
                 return ResourceManager.GetString("Light", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 加载音频文件失败.
         /// </summary>
-        public static string LoadAudioFileFail {
-            get {
+        public static string LoadAudioFileFail
+        {
+            get
+            {
                 return ResourceManager.GetString("LoadAudioFileFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 从图像文件加载背景图失败 , 检查图片格式是否正确.
         /// </summary>
-        public static string LoadBackGroudFromPicFailTip {
-            get {
+        public static string LoadBackGroudFromPicFailTip
+        {
+            get
+            {
                 return ResourceManager.GetString("LoadBackGroudFromPicFailTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 加载失败.
         /// </summary>
-        public static string LoadFail {
-            get {
+        public static string LoadFail
+        {
+            get
+            {
                 return ResourceManager.GetString("LoadFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 加载中....
         /// </summary>
-        public static string Loading {
-            get {
+        public static string Loading
+        {
+            get
+            {
                 return ResourceManager.GetString("Loading", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 加载更多.
         /// </summary>
-        public static string LoadMore {
-            get {
+        public static string LoadMore
+        {
+            get
+            {
                 return ResourceManager.GetString("LoadMore", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 加载插件错误.
         /// </summary>
-        public static string LoadPluginError {
-            get {
+        public static string LoadPluginError
+        {
+            get
+            {
                 return ResourceManager.GetString("LoadPluginError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 本地资源.
         /// </summary>
-        public static string LocalResource {
-            get {
+        public static string LocalResource
+        {
+            get
+            {
                 return ResourceManager.GetString("LocalResource", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 本地源代码.
         /// </summary>
-        public static string LocalSourceCode {
-            get {
+        public static string LocalSourceCode
+        {
+            get
+            {
                 return ResourceManager.GetString("LocalSourceCode", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 定位.
         /// </summary>
-        public static string Locate {
-            get {
+        public static string Locate
+        {
+            get
+            {
                 return ResourceManager.GetString("Locate", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 登录失败.
         /// </summary>
-        public static string LoginFail {
-            get {
+        public static string LoginFail
+        {
+            get
+            {
                 return ResourceManager.GetString("LoginFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 登录成功.
         /// </summary>
-        public static string LoginSucess {
-            get {
+        public static string LoginSucess
+        {
+            get
+            {
                 return ResourceManager.GetString("LoginSucess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 今天的运气可能不太好，但别灰心，明天会更好！/n今天的运气有点差呢。/n今天的运气一般般。/n今天的运气还行。/n今天的运气不错呢！/n今天的运气非常好！/n今天的运气简直爆棚！/n.
         /// </summary>
-        public static string LuckyValueTip {
-            get {
+        public static string LuckyValueTip
+        {
+            get
+            {
                 return ResourceManager.GetString("LuckyValueTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 我是歌词 ヾ(≧▽≦*)o.
         /// </summary>
-        public static string LyricTip {
-            get {
+        public static string LyricTip
+        {
+            get
+            {
                 return ResourceManager.GetString("LyricTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 发现新版本 : {version}
         ///MacOs 不支持自动更新
         ///前往以下链接下载新版本 :  “{url}”
         ///前往 设置-下载-自动更新 可关闭自动检查更新.
         /// </summary>
-        public static string MacOsUpdateTip {
-            get {
+        public static string MacOsUpdateTip
+        {
+            get
+            {
                 return ResourceManager.GetString("MacOsUpdateTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 手动添加.
         /// </summary>
-        public static string ManualAdd {
-            get {
+        public static string ManualAdd
+        {
+            get
+            {
                 return ResourceManager.GetString("ManualAdd", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 手动输入.
         /// </summary>
-        public static string ManualInput {
-            get {
+        public static string ManualInput
+        {
+            get
+            {
                 return ResourceManager.GetString("ManualInput", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 手动打开.
         /// </summary>
-        public static string ManualOpen {
-            get {
+        public static string ManualOpen
+        {
+            get
+            {
                 return ResourceManager.GetString("ManualOpen", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 地图.
         /// </summary>
-        public static string Map {
-            get {
+        public static string Map
+        {
+            get
+            {
                 return ResourceManager.GetString("Map", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 匹配的版本.
         /// </summary>
-        public static string MatchingVersion {
-            get {
+        public static string MatchingVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("MatchingVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 材质包.
         /// </summary>
-        public static string MaterialPack {
-            get {
+        public static string MaterialPack
+        {
+            get
+            {
                 return ResourceManager.GetString("MaterialPack", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 最大文件分片.
         /// </summary>
-        public static string MaxFileFragmentation {
-            get {
+        public static string MaxFileFragmentation
+        {
+            get
+            {
                 return ResourceManager.GetString("MaxFileFragmentation", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 最大下载线程.
         /// </summary>
-        public static string MaximumDownloadThread {
-            get {
+        public static string MaximumDownloadThread
+        {
+            get
+            {
                 return ResourceManager.GetString("MaximumDownloadThread", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 最大内存.
         /// </summary>
-        public static string MaxMem {
-            get {
+        public static string MaxMem
+        {
+            get
+            {
                 return ResourceManager.GetString("MaxMem", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 云母.
         /// </summary>
-        public static string Mica {
-            get {
+        public static string Mica
+        {
+            get
+            {
                 return ResourceManager.GetString("Mica", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 微软登录.
         /// </summary>
-        public static string MicrosoftLogin {
-            get {
+        public static string MicrosoftLogin
+        {
+            get
+            {
                 return ResourceManager.GetString("MicrosoftLogin", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Minecraft文件夹.
         /// </summary>
-        public static string MinecraftFolder {
-            get {
+        public static string MinecraftFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("MinecraftFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 存放Minecraft数据的文件夹 (.minecraft).
         /// </summary>
-        public static string MinecraftFolderTip {
-            get {
+        public static string MinecraftFolderTip
+        {
+            get
+            {
                 return ResourceManager.GetString("MinecraftFolderTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Minecraft 版本.
         /// </summary>
-        public static string MinecraftVersion {
-            get {
+        public static string MinecraftVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("MinecraftVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Minecrat发生崩溃.
         /// </summary>
-        public static string MineratCrashed {
-            get {
+        public static string MineratCrashed
+        {
+            get
+            {
                 return ResourceManager.GetString("MineratCrashed", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 模组.
         /// </summary>
-        public static string Mod {
-            get {
+        public static string Mod
+        {
+            get
+            {
                 return ResourceManager.GetString("Mod", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 修改失败.
         /// </summary>
-        public static string ModifyFail {
-            get {
+        public static string ModifyFail
+        {
+            get
+            {
                 return ResourceManager.GetString("ModifyFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 修改皮肤(微软).
         /// </summary>
-        public static string ModifyMicrosoftSkin {
-            get {
+        public static string ModifyMicrosoftSkin
+        {
+            get
+            {
                 return ResourceManager.GetString("ModifyMicrosoftSkin", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 修改成功.
         /// </summary>
-        public static string ModifySuccess {
-            get {
+        public static string ModifySuccess
+        {
+            get
+            {
                 return ResourceManager.GetString("ModifySuccess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 模组名称.
         /// </summary>
-        public static string ModName {
-            get {
+        public static string ModName
+        {
+            get
+            {
                 return ResourceManager.GetString("ModName", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 整合包.
         /// </summary>
-        public static string ModPack {
-            get {
+        public static string ModPack
+        {
+            get
+            {
                 return ResourceManager.GetString("ModPack", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 整合包信息.
         /// </summary>
-        public static string ModPackInfo {
-            get {
+        public static string ModPackInfo
+        {
+            get
+            {
                 return ResourceManager.GetString("ModPackInfo", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 模组文件夹.
         /// </summary>
-        public static string ModsFolder {
-            get {
+        public static string ModsFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("ModsFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 更多.
         /// </summary>
-        public static string More {
-            get {
+        public static string More
+        {
+            get
+            {
                 return ResourceManager.GetString("More", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 移动到回收站.
         /// </summary>
-        public static string MoveToRecycleBin {
-            get {
+        public static string MoveToRecycleBin
+        {
+            get
+            {
                 return ResourceManager.GetString("MoveToRecycleBin", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 音乐.
         /// </summary>
-        public static string Music {
-            get {
+        public static string Music
+        {
+            get
+            {
                 return ResourceManager.GetString("Music", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 音乐Api.
         /// </summary>
-        public static string MusicApi {
-            get {
+        public static string MusicApi
+        {
+            get
+            {
                 return ResourceManager.GetString("MusicApi", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 音乐Api附带IP地址.
         /// </summary>
-        public static string MusicApiWithIP {
-            get {
+        public static string MusicApiWithIP
+        {
+            get
+            {
                 return ResourceManager.GetString("MusicApiWithIP", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 音乐获取失败.
         /// </summary>
-        public static string MusicGetFail {
-            get {
+        public static string MusicGetFail
+        {
+            get
+            {
                 return ResourceManager.GetString("MusicGetFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 音乐不可用.
         /// </summary>
-        public static string MusicNotAvailable {
-            get {
+        public static string MusicNotAvailable
+        {
+            get
+            {
                 return ResourceManager.GetString("MusicNotAvailable", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 音乐播放器仅支持Windows.
         /// </summary>
-        public static string MusicPlayerOnlySupportWindows {
-            get {
+        public static string MusicPlayerOnlySupportWindows
+        {
+            get
+            {
                 return ResourceManager.GetString("MusicPlayerOnlySupportWindows", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 名称.
         /// </summary>
-        public static string Name {
-            get {
+        public static string Name
+        {
+            get
+            {
                 return ResourceManager.GetString("Name", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 需要重启YMCL.
         /// </summary>
-        public static string NeedRestartApp {
-            get {
+        public static string NeedRestartApp
+        {
+            get
+            {
                 return ResourceManager.GetString("NeedRestartApp", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 需要手动打开终端执行以下命令.
         /// </summary>
-        public static string NeedToManuallyOpenTheTerminalAndExecuteTheFollowingCommand {
-            get {
+        public static string NeedToManuallyOpenTheTerminalAndExecuteTheFollowingCommand
+        {
+            get
+            {
                 return ResourceManager.GetString("NeedToManuallyOpenTheTerminalAndExecuteTheFollowingCommand", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 需选择&apos;.minecraft&apos;文件夹.
         /// </summary>
-        public static string NeedToSelectMinecraftFolder {
-            get {
+        public static string NeedToSelectMinecraftFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("NeedToSelectMinecraftFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 网络错误.
         /// </summary>
-        public static string NetWorkError {
-            get {
+        public static string NetWorkError
+        {
+            get
+            {
                 return ResourceManager.GetString("NetWorkError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 网络源.
         /// </summary>
-        public static string NetworkSource {
-            get {
+        public static string NetworkSource
+        {
+            get
+            {
                 return ResourceManager.GetString("NetworkSource", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 千万别点.
         /// </summary>
-        public static string NeverClick {
-            get {
+        public static string NeverClick
+        {
+            get
+            {
                 return ResourceManager.GetString("NeverClick", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 此操作可能会发生奇奇怪怪的问题，确定要继续吗？.
         /// </summary>
-        public static string NeverClickTip {
-            get {
+        public static string NeverClickTip
+        {
+            get
+            {
                 return ResourceManager.GetString("NeverClickTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无附加安装.
         /// </summary>
-        public static string NoAdditionalInstall {
-            get {
+        public static string NoAdditionalInstall
+        {
+            get
+            {
                 return ResourceManager.GetString("NoAdditionalInstall", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无可用项目.
         /// </summary>
-        public static string NoAvailableItem {
-            get {
+        public static string NoAvailableItem
+        {
+            get
+            {
                 return ResourceManager.GetString("NoAvailableItem", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 未选择游戏.
         /// </summary>
-        public static string NoChooseGame {
-            get {
+        public static string NoChooseGame
+        {
+            get
+            {
                 return ResourceManager.GetString("NoChooseGame", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 未选择游戏或无法找到游戏.
         /// </summary>
-        public static string NoChooseGameOrCannotFindGame {
-            get {
+        public static string NoChooseGameOrCannotFindGame
+        {
+            get
+            {
                 return ResourceManager.GetString("NoChooseGameOrCannotFindGame", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无崩溃信息.
         /// </summary>
-        public static string NoCrashInfo {
-            get {
+        public static string NoCrashInfo
+        {
+            get
+            {
                 return ResourceManager.GetString("NoCrashInfo", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无描述信息.
         /// </summary>
-        public static string NoDescription {
-            get {
+        public static string NoDescription
+        {
+            get
+            {
                 return ResourceManager.GetString("NoDescription", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 暂无已识别插件.
         /// </summary>
-        public static string NoIdentifiedPlugins {
-            get {
+        public static string NoIdentifiedPlugins
+        {
+            get
+            {
                 return ResourceManager.GetString("NoIdentifiedPlugins", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无匹配结果.
         /// </summary>
-        public static string NoMatchResult {
-            get {
+        public static string NoMatchResult
+        {
+            get
+            {
                 return ResourceManager.GetString("NoMatchResult", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 忽略错误 , 强制继续运行.
         /// </summary>
-        public static string NoMatterErrorAndKeepOnRun {
-            get {
+        public static string NoMatterErrorAndKeepOnRun
+        {
+            get
+            {
                 return ResourceManager.GetString("NoMatterErrorAndKeepOnRun", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 现不支持.
         /// </summary>
-        public static string NoSupportNow {
-            get {
+        public static string NoSupportNow
+        {
+            get
+            {
                 return ResourceManager.GetString("NoSupportNow", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 通知方式.
         /// </summary>
-        public static string NoticeWay {
-            get {
+        public static string NoticeWay
+        {
+            get
+            {
                 return ResourceManager.GetString("NoticeWay", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 通知气泡.
         /// </summary>
-        public static string NotificationBubble {
-            get {
+        public static string NotificationBubble
+        {
+            get
+            {
                 return ResourceManager.GetString("NotificationBubble", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 通知卡片.
         /// </summary>
-        public static string NotificationCard {
-            get {
+        public static string NotificationCard
+        {
+            get
+            {
                 return ResourceManager.GetString("NotificationCard", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 暂无运行中任务.
         /// </summary>
-        public static string NoWorkingTask {
-            get {
+        public static string NoWorkingTask
+        {
+            get
+            {
                 return ResourceManager.GetString("NoWorkingTask", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 关闭.
         /// </summary>
-        public static string Off {
-            get {
+        public static string Off
+        {
+            get
+            {
                 return ResourceManager.GetString("Off", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 离线登录.
         /// </summary>
-        public static string OfflineLogin {
-            get {
+        public static string OfflineLogin
+        {
+            get
+            {
                 return ResourceManager.GetString("OfflineLogin", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 确定.
         /// </summary>
-        public static string Ok {
-            get {
+        public static string Ok
+        {
+            get
+            {
                 return ResourceManager.GetString("Ok", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 远古版本.
         /// </summary>
-        public static string OldVersion {
-            get {
+        public static string OldVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("OldVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 开启.
         /// </summary>
-        public static string On {
-            get {
+        public static string On
+        {
+            get
+            {
                 return ResourceManager.GetString("On", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 一言.
         /// </summary>
-        public static string OneSentence {
-            get {
+        public static string OneSentence
+        {
+            get
+            {
                 return ResourceManager.GetString("OneSentence", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 仅支持 Windows 10 以上系统.
         /// </summary>
-        public static string OnlySupportsWindows10AndAboveSystems {
-            get {
+        public static string OnlySupportsWindows10AndAboveSystems
+        {
+            get
+            {
                 return ResourceManager.GetString("OnlySupportsWindows10AndAboveSystems", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 打开浏览器.
         /// </summary>
-        public static string OpenBrowser {
-            get {
+        public static string OpenBrowser
+        {
+            get
+            {
                 return ResourceManager.GetString("OpenBrowser", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 打开文件.
         /// </summary>
-        public static string OpenFile {
-            get {
+        public static string OpenFile
+        {
+            get
+            {
                 return ResourceManager.GetString("OpenFile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 打开文件方式.
         /// </summary>
-        public static string OpenFileWay {
-            get {
+        public static string OpenFileWay
+        {
+            get
+            {
                 return ResourceManager.GetString("OpenFileWay", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 打开文件夹.
         /// </summary>
-        public static string OpenFolder {
-            get {
+        public static string OpenFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("OpenFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 开源项目使用表.
         /// </summary>
-        public static string OpenSourceProjectUsageTable {
-            get {
+        public static string OpenSourceProjectUsageTable
+        {
+            get
+            {
                 return ResourceManager.GetString("OpenSourceProjectUsageTable", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 操作失败.
         /// </summary>
-        public static string OperateFailed {
-            get {
+        public static string OperateFailed
+        {
+            get
+            {
                 return ResourceManager.GetString("OperateFailed", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 操作成功.
         /// </summary>
-        public static string OperateSuccess {
-            get {
+        public static string OperateSuccess
+        {
+            get
+            {
                 return ResourceManager.GetString("OperateSuccess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 覆盖整合包.
         /// </summary>
-        public static string OverrideModPack {
-            get {
+        public static string OverrideModPack
+        {
+            get
+            {
                 return ResourceManager.GetString("OverrideModPack", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 概览.
         /// </summary>
-        public static string Overview {
-            get {
+        public static string Overview
+        {
+            get
+            {
                 return ResourceManager.GetString("Overview", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 已暂停.
         /// </summary>
-        public static string Paused {
-            get {
+        public static string Paused
+        {
+            get
+            {
                 return ResourceManager.GetString("Paused", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 个性化.
         /// </summary>
-        public static string Personalize {
-            get {
+        public static string Personalize
+        {
+            get
+            {
                 return ResourceManager.GetString("Personalize", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 玩家数量.
         /// </summary>
-        public static string PlayerCount {
-            get {
+        public static string PlayerCount
+        {
+            get
+            {
                 return ResourceManager.GetString("PlayerCount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 播放列表.
         /// </summary>
-        public static string PlayList {
-            get {
+        public static string PlayList
+        {
+            get
+            {
                 return ResourceManager.GetString("PlayList", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 插件.
         /// </summary>
-        public static string Plugin {
-            get {
+        public static string Plugin
+        {
+            get
+            {
                 return ResourceManager.GetString("Plugin", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 准备.
         /// </summary>
-        public static string Prepare {
-            get {
+        public static string Prepare
+        {
+            get
+            {
                 return ResourceManager.GetString("Prepare", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 准备安装.
         /// </summary>
-        public static string PrepareInstall {
-            get {
+        public static string PrepareInstall
+        {
+            get
+            {
                 return ResourceManager.GetString("PrepareInstall", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 预览版本.
         /// </summary>
-        public static string PreviewVersion {
-            get {
+        public static string PreviewVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("PreviewVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 项目信息.
         /// </summary>
-        public static string ProjectInfo {
-            get {
+        public static string ProjectInfo
+        {
+            get
+            {
                 return ResourceManager.GetString("ProjectInfo", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 读取剪贴板.
         /// </summary>
-        public static string ReadClipBoard {
-            get {
+        public static string ReadClipBoard
+        {
+            get
+            {
                 return ResourceManager.GetString("ReadClipBoard", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 刷新.
         /// </summary>
-        public static string Refresh {
-            get {
+        public static string Refresh
+        {
+            get
+            {
                 return ResourceManager.GetString("Refresh", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 刷新用户令牌.
         /// </summary>
-        public static string RefreshAccountToken {
-            get {
+        public static string RefreshAccountToken
+        {
+            get
+            {
                 return ResourceManager.GetString("RefreshAccountToken", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 刷新皮肤.
         /// </summary>
-        public static string RefreshMicrosoftSkin {
-            get {
+        public static string RefreshMicrosoftSkin
+        {
+            get
+            {
                 return ResourceManager.GetString("RefreshMicrosoftSkin", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 释放鼠标让YMCL处理此文件.
         /// </summary>
-        public static string ReleaseTheMouseAndLetYmclProcessThisFile {
-            get {
+        public static string ReleaseTheMouseAndLetYmclProcessThisFile
+        {
+            get
+            {
                 return ResourceManager.GetString("ReleaseTheMouseAndLetYmclProcessThisFile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 正式版本.
         /// </summary>
-        public static string ReleaseVersion {
-            get {
+        public static string ReleaseVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("ReleaseVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 重新加载.
         /// </summary>
-        public static string Reload {
-            get {
+        public static string Reload
+        {
+            get
+            {
                 return ResourceManager.GetString("Reload", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 移除.
         /// </summary>
-        public static string Remove {
-            get {
+        public static string Remove
+        {
+            get
+            {
                 return ResourceManager.GetString("Remove", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 重命名.
         /// </summary>
-        public static string Rename {
-            get {
+        public static string Rename
+        {
+            get
+            {
                 return ResourceManager.GetString("Rename", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 重复的项目.
         /// </summary>
-        public static string RepeatItem {
-            get {
+        public static string RepeatItem
+        {
+            get
+            {
                 return ResourceManager.GetString("RepeatItem", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 重置数据.
         /// </summary>
-        public static string ResetData {
-            get {
+        public static string ResetData
+        {
+            get
+            {
                 return ResourceManager.GetString("ResetData", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 资源包.
         /// </summary>
-        public static string ResourcePacks {
-            get {
+        public static string ResourcePacks
+        {
+            get
+            {
                 return ResourceManager.GetString("ResourcePacks", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 资源包文件夹.
         /// </summary>
-        public static string ResourcePacksFolder {
-            get {
+        public static string ResourcePacksFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("ResourcePacksFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 重启应用.
         /// </summary>
-        public static string RestartApp {
-            get {
+        public static string RestartApp
+        {
+            get
+            {
                 return ResourceManager.GetString("RestartApp", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 返回.
         /// </summary>
-        public static string Return {
-            get {
+        public static string Return
+        {
+            get
+            {
                 return ResourceManager.GetString("Return", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to ← 返回.
         /// </summary>
-        public static string ReturnWithIcon {
-            get {
+        public static string ReturnWithIcon
+        {
+            get
+            {
                 return ResourceManager.GetString("ReturnWithIcon", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 运行.
         /// </summary>
-        public static string Run {
-            get {
+        public static string Run
+        {
+            get
+            {
                 return ResourceManager.GetString("Run", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 运行激活.
         /// </summary>
-        public static string RunActivate {
-            get {
+        public static string RunActivate
+        {
+            get
+            {
                 return ResourceManager.GetString("RunActivate", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 运行命令失败.
         /// </summary>
-        public static string RunCommandFail {
-            get {
+        public static string RunCommandFail
+        {
+            get
+            {
                 return ResourceManager.GetString("RunCommandFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 运行中.
         /// </summary>
-        public static string Running {
-            get {
+        public static string Running
+        {
+            get
+            {
                 return ResourceManager.GetString("Running", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 另存为.
         /// </summary>
-        public static string SaveAs {
-            get {
+        public static string SaveAs
+        {
+            get
+            {
                 return ResourceManager.GetString("SaveAs", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 保存音频文件.
         /// </summary>
-        public static string SaveAudioFile {
-            get {
+        public static string SaveAudioFile
+        {
+            get
+            {
                 return ResourceManager.GetString("SaveAudioFile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 保存文件.
         /// </summary>
-        public static string SaveFile {
-            get {
+        public static string SaveFile
+        {
+            get
+            {
                 return ResourceManager.GetString("SaveFile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 保存完成.
         /// </summary>
-        public static string SaveFinish {
-            get {
+        public static string SaveFinish
+        {
+            get
+            {
                 return ResourceManager.GetString("SaveFinish", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 存档信息.
         /// </summary>
-        public static string SaveInfo {
-            get {
+        public static string SaveInfo
+        {
+            get
+            {
                 return ResourceManager.GetString("SaveInfo", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 存档.
         /// </summary>
-        public static string Saves {
-            get {
+        public static string Saves
+        {
+            get
+            {
                 return ResourceManager.GetString("Saves", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 存档文件夹.
         /// </summary>
-        public static string SavesFolder {
-            get {
+        public static string SavesFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("SavesFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 保存皮肤文件.
         /// </summary>
-        public static string SaveSkinFile {
-            get {
+        public static string SaveSkinFile
+        {
+            get
+            {
                 return ResourceManager.GetString("SaveSkinFile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 存档名称.
         /// </summary>
-        public static string SavesName {
-            get {
+        public static string SavesName
+        {
+            get
+            {
                 return ResourceManager.GetString("SavesName", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 扫描Java成功.
         /// </summary>
-        public static string ScanJavaSuccess {
-            get {
+        public static string ScanJavaSuccess
+        {
+            get
+            {
                 return ResourceManager.GetString("ScanJavaSuccess", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 截图.
         /// </summary>
-        public static string Screenshots {
-            get {
+        public static string Screenshots
+        {
+            get
+            {
                 return ResourceManager.GetString("Screenshots", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 截图文件夹.
         /// </summary>
-        public static string ScreenshotsFolder {
-            get {
+        public static string ScreenshotsFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("ScreenshotsFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 搜索.
         /// </summary>
-        public static string Search {
-            get {
+        public static string Search
+        {
+            get
+            {
                 return ResourceManager.GetString("Search", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 在 {target} 中搜索.
         /// </summary>
-        public static string SearchInTip {
-            get {
+        public static string SearchInTip
+        {
+            get
+            {
                 return ResourceManager.GetString("SearchInTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 搜索关键词....
         /// </summary>
-        public static string SearchKeyword {
-            get {
+        public static string SearchKeyword
+        {
+            get
+            {
                 return ResourceManager.GetString("SearchKeyword", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 搜索无结果.
         /// </summary>
-        public static string SearchNoResult {
-            get {
+        public static string SearchNoResult
+        {
+            get
+            {
                 return ResourceManager.GetString("SearchNoResult", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 种子.
         /// </summary>
-        public static string Seed {
-            get {
+        public static string Seed
+        {
+            get
+            {
                 return ResourceManager.GetString("Seed", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 选择账户类型.
         /// </summary>
-        public static string SelectAccountType {
-            get {
+        public static string SelectAccountType
+        {
+            get
+            {
                 return ResourceManager.GetString("SelectAccountType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 全选.
         /// </summary>
-        public static string SelectAll {
-            get {
+        public static string SelectAll
+        {
+            get
+            {
                 return ResourceManager.GetString("SelectAll", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 已选择项目: .
         /// </summary>
-        public static string SelectedItem {
-            get {
+        public static string SelectedItem
+        {
+            get
+            {
                 return ResourceManager.GetString("SelectedItem", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 选择图像文件.
         /// </summary>
-        public static string SelectImgFile {
-            get {
+        public static string SelectImgFile
+        {
+            get
+            {
                 return ResourceManager.GetString("SelectImgFile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 选择Java.
         /// </summary>
-        public static string SelectJava {
-            get {
+        public static string SelectJava
+        {
+            get
+            {
                 return ResourceManager.GetString("SelectJava", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 选择&apos;.minecraft&apos;文件夹.
         /// </summary>
-        public static string SelectMinecraftFolder {
-            get {
+        public static string SelectMinecraftFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("SelectMinecraftFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 选择音频文件.
         /// </summary>
-        public static string SelectMusicFile {
-            get {
+        public static string SelectMusicFile
+        {
+            get
+            {
                 return ResourceManager.GetString("SelectMusicFile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 选择皮肤文件.
         /// </summary>
-        public static string SelectSkinFile {
-            get {
+        public static string SelectSkinFile
+        {
+            get
+            {
                 return ResourceManager.GetString("SelectSkinFile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 服务器包.
         /// </summary>
-        public static string ServerPack {
-            get {
+        public static string ServerPack
+        {
+            get
+            {
                 return ResourceManager.GetString("ServerPack", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 服务器Url错误.
         /// </summary>
-        public static string ServerUrlError {
-            get {
+        public static string ServerUrlError
+        {
+            get
+            {
                 return ResourceManager.GetString("ServerUrlError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 此操作将会同时关闭自动进入存档.
         /// </summary>
-        public static string SetAutoJoinServerTip {
-            get {
+        public static string SetAutoJoinServerTip
+        {
+            get
+            {
                 return ResourceManager.GetString("SetAutoJoinServerTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 此操作将会同时关闭自动进入服务器.
         /// </summary>
-        public static string SetAutoJoinWorldTip {
-            get {
+        public static string SetAutoJoinWorldTip
+        {
+            get
+            {
                 return ResourceManager.GetString("SetAutoJoinWorldTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 设置图标.
         /// </summary>
-        public static string SetIcon {
-            get {
+        public static string SetIcon
+        {
+            get
+            {
                 return ResourceManager.GetString("SetIcon", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 设置服务器.
         /// </summary>
-        public static string SetServer {
-            get {
+        public static string SetServer
+        {
+            get
+            {
                 return ResourceManager.GetString("SetServer", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 设置.
         /// </summary>
-        public static string Setting {
-            get {
+        public static string Setting
+        {
+            get
+            {
                 return ResourceManager.GetString("Setting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 设置存档.
         /// </summary>
-        public static string SetWorld {
-            get {
+        public static string SetWorld
+        {
+            get
+            {
                 return ResourceManager.GetString("SetWorld", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 光影包.
         /// </summary>
-        public static string ShaderPack {
-            get {
+        public static string ShaderPack
+        {
+            get
+            {
                 return ResourceManager.GetString("ShaderPack", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 光影包文件夹.
         /// </summary>
-        public static string ShaderPacksFolder {
-            get {
+        public static string ShaderPacksFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("ShaderPacksFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 显示游戏输出.
         /// </summary>
-        public static string ShowGameOutput {
-            get {
+        public static string ShowGameOutput
+        {
+            get
+            {
                 return ResourceManager.GetString("ShowGameOutput", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 皮肤模型.
         /// </summary>
-        public static string SkinModel {
-            get {
+        public static string SkinModel
+        {
+            get
+            {
                 return ResourceManager.GetString("SkinModel", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 跳过此版本.
         /// </summary>
-        public static string SkipThisVersion {
-            get {
+        public static string SkipThisVersion
+        {
+            get
+            {
                 return ResourceManager.GetString("SkipThisVersion", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 已跳过版本 : {version}
         ///前往 设置-启动器-检查更新 可再次获取此版本.
         /// </summary>
-        public static string SkipVersionTip {
-            get {
+        public static string SkipVersionTip
+        {
+            get
+            {
                 return ResourceManager.GetString("SkipVersionTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 赞助.
         /// </summary>
-        public static string Sponsor {
-            get {
+        public static string Sponsor
+        {
+            get
+            {
                 return ResourceManager.GetString("Sponsor", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 赞助者.
         /// </summary>
-        public static string Sponsors {
-            get {
+        public static string Sponsors
+        {
+            get
+            {
                 return ResourceManager.GetString("Sponsors", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 以下是发电的赞助者，感谢对 Yu Minecraft Launcher 的支持 ！.
         /// </summary>
-        public static string SponsorsTip {
-            get {
+        public static string SponsorsTip
+        {
+            get
+            {
                 return ResourceManager.GetString("SponsorsTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 添加成功.
         /// </summary>
-        public static string SuccessAdd {
-            get {
+        public static string SuccessAdd
+        {
+            get
+            {
                 return ResourceManager.GetString("SuccessAdd", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 移除成功.
         /// </summary>
-        public static string SuccessRemove {
-            get {
+        public static string SuccessRemove
+        {
+            get
+            {
                 return ResourceManager.GetString("SuccessRemove", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 确定导入此文件.
         /// </summary>
-        public static string SureToImportTheFile {
-            get {
+        public static string SureToImportTheFile
+        {
+            get
+            {
                 return ResourceManager.GetString("SureToImportTheFile", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 确定要安装 Java : {Java}？.
         /// </summary>
-        public static string SureToInstallTheJava {
-            get {
+        public static string SureToInstallTheJava
+        {
+            get
+            {
                 return ResourceManager.GetString("SureToInstallTheJava", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 已切换到.
         /// </summary>
-        public static string SwitchedTo {
-            get {
+        public static string SwitchedTo
+        {
+            get
+            {
                 return ResourceManager.GetString("SwitchedTo", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 系统样式.
         /// </summary>
-        public static string SystemStyle {
-            get {
+        public static string SystemStyle
+        {
+            get
+            {
                 return ResourceManager.GetString("SystemStyle", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 任务.
         /// </summary>
-        public static string Task {
-            get {
+        public static string Task
+        {
+            get
+            {
                 return ResourceManager.GetString("Task", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 任务中心.
         /// </summary>
-        public static string TaskCenter {
-            get {
+        public static string TaskCenter
+        {
+            get
+            {
                 return ResourceManager.GetString("TaskCenter", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 已存在此项目.
         /// </summary>
-        public static string TheItemAlreadyExist {
-            get {
+        public static string TheItemAlreadyExist
+        {
+            get
+            {
                 return ResourceManager.GetString("TheItemAlreadyExist", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Java不正确.
         /// </summary>
-        public static string TheJavaIsError {
-            get {
+        public static string TheJavaIsError
+        {
+            get
+            {
                 return ResourceManager.GetString("TheJavaIsError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 主题色.
         /// </summary>
-        public static string ThemeColor {
-            get {
+        public static string ThemeColor
+        {
+            get
+            {
                 return ResourceManager.GetString("ThemeColor", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 版本名称将被重命名为: .
         /// </summary>
-        public static string TheVersionNameWillBeRenamedTo {
-            get {
+        public static string TheVersionNameWillBeRenamedTo
+        {
+            get
+            {
                 return ResourceManager.GetString("TheVersionNameWillBeRenamedTo", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 第三方登录.
         /// </summary>
-        public static string ThirdPartyLogin {
-            get {
+        public static string ThirdPartyLogin
+        {
+            get
+            {
                 return ResourceManager.GetString("ThirdPartyLogin", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 此平台不支持自动更新，打开以下路径手动替换.
         /// </summary>
-        public static string ThisArchitectureCannotAutoUpdate {
-            get {
+        public static string ThisArchitectureCannotAutoUpdate
+        {
+            get
+            {
                 return ResourceManager.GetString("ThisArchitectureCannotAutoUpdate", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 此功能正在开发中.
         /// </summary>
-        public static string ThisFeatureIsCurrentlyUnderDevelopment {
-            get {
+        public static string ThisFeatureIsCurrentlyUnderDevelopment
+        {
+            get
+            {
                 return ResourceManager.GetString("ThisFeatureIsCurrentlyUnderDevelopment", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 该功能仅支持Windows10以上，低于此版本系统不保证激活成功.
         /// </summary>
-        public static string ThisFeatureOnlySupportsWindows10AndAbove {
-            get {
+        public static string ThisFeatureOnlySupportsWindows10AndAbove
+        {
+            get
+            {
                 return ResourceManager.GetString("ThisFeatureOnlySupportsWindows10AndAbove", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 该功能仅支持Windows平台.
         /// </summary>
-        public static string ThisFeatureOnlySupportsWindowsPlatform {
-            get {
+        public static string ThisFeatureOnlySupportsWindowsPlatform
+        {
+            get
+            {
                 return ResourceManager.GetString("ThisFeatureOnlySupportsWindowsPlatform", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 提示.
         /// </summary>
-        public static string Tip {
-            get {
+        public static string Tip
+        {
+            get
+            {
                 return ResourceManager.GetString("Tip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 今日人品.
         /// </summary>
-        public static string TodayLuckyValue {
-            get {
+        public static string TodayLuckyValue
+        {
+            get
+            {
                 return ResourceManager.GetString("TodayLuckyValue", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 今日的人品值是 : {value} !.
         /// </summary>
-        public static string TodayLuckyValueTip {
-            get {
+        public static string TodayLuckyValueTip
+        {
+            get
+            {
                 return ResourceManager.GetString("TodayLuckyValueTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 切换导航.
         /// </summary>
-        public static string ToggleNav {
-            get {
+        public static string ToggleNav
+        {
+            get
+            {
                 return ResourceManager.GetString("ToggleNav", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 模组总数量.
         /// </summary>
-        public static string TotalNumberOfMod {
-            get {
+        public static string TotalNumberOfMod
+        {
+            get
+            {
                 return ResourceManager.GetString("TotalNumberOfMod", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 半透明背景控件不透明度.
         /// </summary>
-        public static string TranslucentBackgroundOpacity {
-            get {
+        public static string TranslucentBackgroundOpacity
+        {
+            get
+            {
                 return ResourceManager.GetString("TranslucentBackgroundOpacity", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 透明.
         /// </summary>
-        public static string Transparent {
-            get {
+        public static string Transparent
+        {
+            get
+            {
                 return ResourceManager.GetString("Transparent", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 百宝箱.
         /// </summary>
-        public static string TreasureBox {
-            get {
+        public static string TreasureBox
+        {
+            get
+            {
                 return ResourceManager.GetString("TreasureBox", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无法为基岩版添加模组.
         /// </summary>
-        public static string UnableToAddModsForBedrockEdition {
-            get {
+        public static string UnableToAddModsForBedrockEdition
+        {
+            get
+            {
                 return ResourceManager.GetString("UnableToAddModsForBedrockEdition", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Yu Minecraft Launcher 遇到了没有处理的异常 , 可能无法继续运行 , 下方为异常的详细信息.
         /// </summary>
-        public static string UnhandledErrorTip {
-            get {
+        public static string UnhandledErrorTip
+        {
+            get
+            {
                 return ResourceManager.GetString("UnhandledErrorTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 未处理的异常.
         /// </summary>
-        public static string UnhandledException {
-            get {
+        public static string UnhandledException
+        {
+            get
+            {
                 return ResourceManager.GetString("UnhandledException", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 未知.
         /// </summary>
-        public static string Unknown {
-            get {
+        public static string Unknown
+        {
+            get
+            {
                 return ResourceManager.GetString("Unknown", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 当前版本为非官方版本，可能遭受病毒攻击。
-        ///重定向至 https://ymcl.daiyu.fun/ 下载官方版本。.
+        ///重定向至 https://ymcl.yik.at/ 下载官方版本。.
         /// </summary>
-        public static string UnofficialTip {
-            get {
+        public static string UnofficialTip
+        {
+            get
+            {
                 return ResourceManager.GetString("UnofficialTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 无法识别.
         /// </summary>
-        public static string Unrecognized {
-            get {
+        public static string Unrecognized
+        {
+            get
+            {
                 return ResourceManager.GetString("Unrecognized", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 不支持的文件类型.
         /// </summary>
-        public static string UnsupportedFileType {
-            get {
+        public static string UnsupportedFileType
+        {
+            get
+            {
                 return ResourceManager.GetString("UnsupportedFileType", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 解压.
         /// </summary>
-        public static string Unzip {
-            get {
+        public static string Unzip
+        {
+            get
+            {
                 return ResourceManager.GetString("Unzip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 正在解压整合包.
         /// </summary>
-        public static string UnzipingModPack {
-            get {
+        public static string UnzipingModPack
+        {
+            get
+            {
                 return ResourceManager.GetString("UnzipingModPack", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 更新.
         /// </summary>
-        public static string Update {
-            get {
+        public static string Update
+        {
+            get
+            {
                 return ResourceManager.GetString("Update", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 更新失败.
         /// </summary>
-        public static string UpdateFail {
-            get {
+        public static string UpdateFail
+        {
+            get
+            {
                 return ResourceManager.GetString("UpdateFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 提升至管理员权限.
         /// </summary>
-        public static string UpgradeToAdministratorPrivileges {
-            get {
+        public static string UpgradeToAdministratorPrivileges
+        {
+            get
+            {
                 return ResourceManager.GetString("UpgradeToAdministratorPrivileges", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 提升至管理员权限失败.
         /// </summary>
-        public static string UpgradeToAdministratorPrivilegesFail {
-            get {
+        public static string UpgradeToAdministratorPrivilegesFail
+        {
+            get
+            {
                 return ResourceManager.GetString("UpgradeToAdministratorPrivilegesFail", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 执行操作需要提升至管理员权限，点击确定以管理员权限重启程序.
         /// </summary>
-        public static string UpgradeToAdministratorPrivilegesTip {
-            get {
+        public static string UpgradeToAdministratorPrivilegesTip
+        {
+            get
+            {
                 return ResourceManager.GetString("UpgradeToAdministratorPrivilegesTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 已用内存.
         /// </summary>
-        public static string UsedMem {
-            get {
+        public static string UsedMem
+        {
+            get
+            {
                 return ResourceManager.GetString("UsedMem", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 使用全局设置.
         /// </summary>
-        public static string UseGlobalSetting {
-            get {
+        public static string UseGlobalSetting
+        {
+            get
+            {
                 return ResourceManager.GetString("UseGlobalSetting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 用户数据文件夹.
         /// </summary>
-        public static string UserDataFolder {
-            get {
+        public static string UserDataFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("UserDataFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 验证代码.
         /// </summary>
-        public static string VerificationCode {
-            get {
+        public static string VerificationCode
+        {
+            get
+            {
                 return ResourceManager.GetString("VerificationCode", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 验证服务器.
         /// </summary>
-        public static string VerificationServer {
-            get {
+        public static string VerificationServer
+        {
+            get
+            {
                 return ResourceManager.GetString("VerificationServer", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 正在验证账户.
         /// </summary>
-        public static string VerifyingAccount {
-            get {
+        public static string VerifyingAccount
+        {
+            get
+            {
                 return ResourceManager.GetString("VerifyingAccount", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 版本.
         /// </summary>
-        public static string Version {
-            get {
+        public static string Version
+        {
+            get
+            {
                 return ResourceManager.GetString("Version", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 版本文件夹.
         /// </summary>
-        public static string VersionFolder {
-            get {
+        public static string VersionFolder
+        {
+            get
+            {
                 return ResourceManager.GetString("VersionFolder", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 版本 Id 不可为空.
         /// </summary>
-        public static string VersionIdCannotBeEmpty {
-            get {
+        public static string VersionIdCannotBeEmpty
+        {
+            get
+            {
                 return ResourceManager.GetString("VersionIdCannotBeEmpty", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 版本列表.
         /// </summary>
-        public static string VersionList {
-            get {
+        public static string VersionList
+        {
+            get
+            {
                 return ResourceManager.GetString("VersionList", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 版本设置.
         /// </summary>
-        public static string VersionSetting {
-            get {
+        public static string VersionSetting
+        {
+            get
+            {
                 return ResourceManager.GetString("VersionSetting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 查看更新内容.
         /// </summary>
-        public static string ViewUpdatedContent {
-            get {
+        public static string ViewUpdatedContent
+        {
+            get
+            {
                 return ResourceManager.GetString("ViewUpdatedContent", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 等待游戏窗口出现.
         /// </summary>
-        public static string WaitForGameWindowAppear {
-            get {
+        public static string WaitForGameWindowAppear
+        {
+            get
+            {
                 return ResourceManager.GetString("WaitForGameWindowAppear", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 正在等待微软账户验证完成
         ///跳转至浏览器完成验证.
         /// </summary>
-        public static string WaitForMicrosoftVerification {
-            get {
+        public static string WaitForMicrosoftVerification
+        {
+            get
+            {
                 return ResourceManager.GetString("WaitForMicrosoftVerification", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 等待中.
         /// </summary>
-        public static string Waiting {
-            get {
+        public static string Waiting
+        {
+            get
+            {
                 return ResourceManager.GetString("Waiting", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 窗口标题栏样式.
         /// </summary>
-        public static string WindowTitleBarStyle {
-            get {
+        public static string WindowTitleBarStyle
+        {
+            get
+            {
                 return ResourceManager.GetString("WindowTitleBarStyle", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 设置启动器窗口标题栏的样式，在特定情况启动器样式不受支持。.
         /// </summary>
-        public static string WindowTitleBarStyleTip {
-            get {
+        public static string WindowTitleBarStyleTip
+        {
+            get
+            {
                 return ResourceManager.GetString("WindowTitleBarStyleTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 发现新版本 : {version}
         ///win10 以下系统(不包括10)不支持自动更新
         ///前往以下链接下载新版本 :  “{url}”
         ///前往 设置-下载-自动更新 可关闭自动检查更新.
         /// </summary>
-        public static string WinSevenAutoUpdateTip {
-            get {
+        public static string WinSevenAutoUpdateTip
+        {
+            get
+            {
                 return ResourceManager.GetString("WinSevenAutoUpdateTip", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 写入.
         /// </summary>
-        public static string WriteIn {
-            get {
+        public static string WriteIn
+        {
+            get
+            {
                 return ResourceManager.GetString("WriteIn", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 邮箱不可为空.
         /// </summary>
-        public static string YggdrasilEmailIsEmpty {
-            get {
+        public static string YggdrasilEmailIsEmpty
+        {
+            get
+            {
                 return ResourceManager.GetString("YggdrasilEmailIsEmpty", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 密码不可为空.
         /// </summary>
-        public static string YggdrasilPasswordIsEmpty {
-            get {
+        public static string YggdrasilPasswordIsEmpty
+        {
+            get
+            {
                 return ResourceManager.GetString("YggdrasilPasswordIsEmpty", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 验证服务器不可为空.
         /// </summary>
-        public static string YggdrasilServerUrlIsEmpty {
-            get {
+        public static string YggdrasilServerUrlIsEmpty
+        {
+            get
+            {
                 return ResourceManager.GetString("YggdrasilServerUrlIsEmpty", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Yu Minecraft Launcher 发生未处理异常.
         /// </summary>
-        public static string YMCLHappenError {
-            get {
+        public static string YMCLHappenError
+        {
+            get
+            {
                 return ResourceManager.GetString("YMCLHappenError", resourceCulture);
             }
         }

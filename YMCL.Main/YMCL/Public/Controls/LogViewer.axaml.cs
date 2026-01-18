@@ -38,11 +38,11 @@ public partial class LogViewer : UserControl
             }))?.Path.LocalPath;
         if (string.IsNullOrWhiteSpace(path)) return;
         _ = File.WriteAllTextAsync(path,
-            $"---- Exported By Yu Minecraft Launcher (http://ymcl.daiyu.fun) ----\n" +
+            $"---- Exported By Yu Minecraft Launcher (http://ymcl.yik.at) ----\n" +
             $"---- Exported Time : {time:yyyy-MM-ddTHH:mm:sszzz} ----\n\n\n" +
             $"{string.Join("\n", Model.LogItems.Select(a => a.Original))}");
     }
-    
+
     public void Dispose()
     {
         Model.LogItems.Clear();
