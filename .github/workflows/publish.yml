@@ -199,10 +199,19 @@ jobs:
           path: ./YMCL.Release/
       - name: List Release Files
         run: find ./YMCL.Release/ -type f -name "*.exe" -o -name "*.dmg" -o -name "*.AppImage" -o -name "*.zip"
+      - name: Rename Artifacts (Remove Desktop)
+        run: |
+          cd ./YMCL.Release/
+          find . -type f \( -name "*.exe" -o -name "*.dmg" -o -name "*.AppImage" -o -name "*.zip" \) | while read file; do
+            newname=$(echo "$file" | sed 's/YMCL\.Desktop\./YMCL./g')
+            if [ "$file" != "$newname" ]; then
+              mv "$file" "$newname"
+            fi
+          done
       - name: Publish Release
         uses: marvinpinto/action-automatic-releases@latest
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          repo_token: "${{ secrets.TOKEN }}"
           title: "v${{ needs.time.outputs.v }}"
           automatic_release_tag: "AutoPublish"
           prerelease: false
