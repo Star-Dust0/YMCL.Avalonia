@@ -2,7 +2,16 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   initDownloads();
+  initMirrorSelector();
 });
+
+// Mirror routes configuration
+const mirrorRoutes = {
+  0: "", // Official - no prefix
+  1: "https://github.moeyy.xyz/",
+  2: "https://ghproxy.net/",
+  3: "https://ghfast.top/",
+};
 
 // Download configuration based on the README.md information
 const downloadConfig = {
@@ -27,6 +36,20 @@ const downloadConfig = {
     "linux-arm-appimage": "YMCL.linux.arm.AppImage",
   },
 };
+
+// Store current mirror selection
+let currentMirror = 0;
+
+function initMirrorSelector() {
+  const mirrorRadios = document.querySelectorAll('input[name="mirror-route"]');
+
+  mirrorRadios.forEach((radio) => {
+    radio.addEventListener("change", function () {
+      currentMirror = parseInt(this.value);
+      console.log(`Mirror route changed to: ${currentMirror}`);
+    });
+  });
+}
 
 function initDownloads() {
   const downloadButtons = document.querySelectorAll(".btn-download");
@@ -154,8 +177,8 @@ function handleDownload(event) {
     downloadType = select ? select.value : getDefaultDownloadType(platform);
   }
 
-  // Get download URL
-  const downloadUrl = getDownloadUrl(downloadType);
+  // Get download URL with mirror route
+  const downloadUrl = getDownloadUrl(downloadType, currentMirror);
 
   if (downloadUrl) {
     // Add download animation
@@ -166,7 +189,7 @@ function handleDownload(event) {
       window.open(downloadUrl, "_blank");
 
       // Track download (you can add analytics here)
-      trackDownload(downloadType);
+      trackDownload(downloadType, currentMirror);
     }, 500);
   }
 }
@@ -181,10 +204,19 @@ function getDefaultDownloadType(platform) {
   return defaults[platform] || "win-x64-installer";
 }
 
-function getDownloadUrl(downloadType) {
+function getDownloadUrl(downloadType, mirrorRoute = 0) {
   const fileName = downloadConfig.files[downloadType];
   if (fileName) {
-    return downloadConfig.baseUrl + fileName;
+    const mirrorPrefix = mirrorRoutes[mirrorRoute] || "";
+
+    if (mirrorRoute === 0) {
+      // Official route - use direct GitHub URL
+      return downloadConfig.baseUrl + fileName;
+    } else {
+      // Mirror routes - use mirror prefix + GitHub URL
+      const githubUrl = downloadConfig.baseUrl + fileName;
+      return mirrorPrefix + githubUrl;
+    }
   }
   return null;
 }
@@ -212,15 +244,18 @@ function animateDownloadButton(button) {
   }, 2000);
 }
 
-function trackDownload(downloadType) {
+function trackDownload(downloadType, mirrorRoute) {
   // You can add analytics tracking here
-  console.log(`Download started: ${downloadType}`);
+  console.log(
+    `Download started: ${downloadType} via mirror route ${mirrorRoute}`
+  );
 
   // Example: Google Analytics tracking
   if (typeof gtag !== "undefined") {
     gtag("event", "download", {
       event_category: "software",
       event_label: downloadType,
+      mirror_route: mirrorRoute,
       value: 1,
     });
   }
@@ -230,6 +265,7 @@ function trackDownload(downloadType) {
     analytics.track("Download Started", {
       downloadType: downloadType,
       platform: downloadType.split("-")[0],
+      mirrorRoute: mirrorRoute,
       timestamp: new Date().toISOString(),
     });
   }
@@ -270,4 +306,5 @@ window.AurelioDownloads = {
   getDownloadUrl,
   trackDownload,
   detectAndSetDefaultPlatform,
+  currentMirror,
 };
