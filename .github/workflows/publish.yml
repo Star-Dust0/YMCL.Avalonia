@@ -162,7 +162,7 @@ jobs:
           retention-days: 1
 
   mac:
-    needs: [linux-appimage, linux-macos, win, time]
+    needs: [linux-macos]
     runs-on: macos-latest
     steps:
       - name: Download macOS App
