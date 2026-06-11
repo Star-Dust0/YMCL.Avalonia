@@ -563,16 +563,6 @@ namespace YMCL.Public.Langs
             }
         }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 自动更新.
-        /// </summary>
-        public static string AutoUpdate
-        {
-            get
-            {
-                return ResourceManager.GetString("AutoUpdate", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 背景图.
@@ -684,16 +674,6 @@ namespace YMCL.Public.Langs
             }
         }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 更新已取消.
-        /// </summary>
-        public static string CanceledUpdate
-        {
-            get
-            {
-                return ResourceManager.GetString("CanceledUpdate", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 取消中.
@@ -794,27 +774,7 @@ namespace YMCL.Public.Langs
             }
         }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 检查更新.
-        /// </summary>
-        public static string CheckUpdate
-        {
-            get
-            {
-                return ResourceManager.GetString("CheckUpdate", resourceCulture);
-            }
-        }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 检查更新失败.
-        /// </summary>
-        public static string CheckUpdateFail
-        {
-            get
-            {
-                return ResourceManager.GetString("CheckUpdateFail", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 检查版本资源.
@@ -982,17 +942,6 @@ namespace YMCL.Public.Langs
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to 当前系统不支持自动更新
-        ///可前往 设置-下载 关闭自动更新
-        ///可手动下载最新版本并替换程序文件.
-        /// </summary>
-        public static string CurrectSystemNoSupportAutoUpdateTip
-        {
-            get
-            {
-                return ResourceManager.GetString("CurrectSystemNoSupportAutoUpdateTip", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 当前列表为空.
@@ -1005,16 +954,6 @@ namespace YMCL.Public.Langs
             }
         }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 当前是最新版本.
-        /// </summary>
-        public static string CurrentlyTheLatestVersion
-        {
-            get
-            {
-                return ResourceManager.GetString("CurrentlyTheLatestVersion", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 当前版本不支持此操作.
@@ -1104,16 +1043,6 @@ namespace YMCL.Public.Langs
             }
         }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 自定义更新Url.
-        /// </summary>
-        public static string CustomUpdateUrl
-        {
-            get
-            {
-                return ResourceManager.GetString("CustomUpdateUrl", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 深色.
@@ -1863,16 +1792,6 @@ namespace YMCL.Public.Langs
             }
         }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 发现新版本.
-        /// </summary>
-        public static string FoundNewVersion
-        {
-            get
-            {
-                return ResourceManager.GetString("FoundNewVersion", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 游戏已退出.
@@ -1985,16 +1904,6 @@ namespace YMCL.Public.Langs
             }
         }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 获取更新统一资源定位器.
-        /// </summary>
-        public static string GetUpdateUrl
-        {
-            get
-            {
-                return ResourceManager.GetString("GetUpdateUrl", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to YMCL 以 GPL 3.0 License 协议开放源代码，可以修改且分发，但软件必须包含原始代码的版权声明和许可声明，以及一个包含许可信息的通知文件。.
@@ -2727,17 +2636,6 @@ namespace YMCL.Public.Langs
 
         /// <summary>
         ///   Looks up a localized string similar to 发现新版本 : {version}
-        ///MacOs 不支持自动更新
-        ///前往以下链接下载新版本 :  “{url}”
-        ///前往 设置-下载-自动更新 可关闭自动检查更新.
-        /// </summary>
-        public static string MacOsUpdateTip
-        {
-            get
-            {
-                return ResourceManager.GetString("MacOsUpdateTip", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 手动添加.
@@ -4224,28 +4122,7 @@ namespace YMCL.Public.Langs
             }
         }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 跳过此版本.
-        /// </summary>
-        public static string SkipThisVersion
-        {
-            get
-            {
-                return ResourceManager.GetString("SkipThisVersion", resourceCulture);
-            }
-        }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 已跳过版本 : {version}
-        ///前往 设置-启动器-检查更新 可再次获取此版本.
-        /// </summary>
-        public static string SkipVersionTip
-        {
-            get
-            {
-                return ResourceManager.GetString("SkipVersionTip", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 赞助.
@@ -4423,16 +4300,6 @@ namespace YMCL.Public.Langs
             }
         }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 此平台不支持自动更新，打开以下路径手动替换.
-        /// </summary>
-        public static string ThisArchitectureCannotAutoUpdate
-        {
-            get
-            {
-                return ResourceManager.GetString("ThisArchitectureCannotAutoUpdate", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 此功能正在开发中.
@@ -4666,16 +4533,6 @@ namespace YMCL.Public.Langs
             }
         }
 
-        /// <summary>
-        ///   Looks up a localized string similar to 更新失败.
-        /// </summary>
-        public static string UpdateFail
-        {
-            get
-            {
-                return ResourceManager.GetString("UpdateFail", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 提升至管理员权限.
@@ -4900,17 +4757,6 @@ namespace YMCL.Public.Langs
 
         /// <summary>
         ///   Looks up a localized string similar to 发现新版本 : {version}
-        ///win10 以下系统(不包括10)不支持自动更新
-        ///前往以下链接下载新版本 :  “{url}”
-        ///前往 设置-下载-自动更新 可关闭自动检查更新.
-        /// </summary>
-        public static string WinSevenAutoUpdateTip
-        {
-            get
-            {
-                return ResourceManager.GetString("WinSevenAutoUpdateTip", resourceCulture);
-            }
-        }
 
         /// <summary>
         ///   Looks up a localized string similar to 写入.

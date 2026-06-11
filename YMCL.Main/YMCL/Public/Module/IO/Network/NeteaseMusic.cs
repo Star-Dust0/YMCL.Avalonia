@@ -28,14 +28,13 @@ public class NeteaseMusic
     public static async Task<(string show, string real)> GetDefaultKeyword()
     {
         var json = await Http.Get.GetStringAsync(
-            $"{Value.Converter.StandardizeUrl(Const.Data.SettingEntry.MusicApi)}search/default?realIP={realIP}");
+            $"{Value.Converter.StandardizeUrl(Const.Data.SettingEntry.MusicApi)}search/default?realIP={realIP}", false);
         if (string.IsNullOrWhiteSpace(json))
         {
             return (string.Empty, string.Empty);
         }
         var entry = JsonConvert.DeserializeObject<DefaultKeyword.Root>(json);
         if (entry is { code: 200 }) return (entry.data.showKeyword, entry.data.realkeyword);
-        Notice(MainLang.ApiError, NotificationType.Error);
         return (string.Empty, string.Empty);
     }
 

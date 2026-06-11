@@ -1,7 +1,7 @@
 ﻿<u:UrsaWindow
     FontFamily="{DynamicResource Font}"
     FontWeight="{DynamicResource FontWeight}"
-    Height="450"
+    Height="500"
     IsCloseButtonVisible="False"
     IsFullScreenButtonVisible="False"
     IsHitTestVisible="True"
@@ -11,7 +11,7 @@
     IsVisible="True"
     SystemDecorations="Full"
     Title="Yu Minecraft Launcher"
-    Width="860"
+    Width="800"
     WindowStartupLocation="CenterScreen"
     d:DesignHeight="0"
     d:DesignWidth="0"

@@ -8,7 +8,7 @@ namespace YMCL.Public.Module.IO.Network.Http;
 
 public class Get
 {
-    public static async Task<string?> GetStringAsync(string url)
+    public static async Task<string?> GetStringAsync(string url, bool showNotice = true)
     {
         try
         {
@@ -21,10 +21,13 @@ public class Get
         catch (Exception e)
         {
             Console.WriteLine(e);
-            Dispatcher.UIThread.Invoke(() =>
+            if (showNotice)
             {
-                Notice(MainLang.NetWorkError, NotificationType.Error);
-            });
+                Dispatcher.UIThread.Invoke(() =>
+                {
+                    Notice(MainLang.NetWorkError, NotificationType.Error);
+                });
+            }
             return null!;
         }
     }

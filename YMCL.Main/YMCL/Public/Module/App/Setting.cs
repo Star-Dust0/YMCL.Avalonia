@@ -18,10 +18,8 @@ public class Setting
             NetworkSettings = net
                 ? new ExchangeSettingEntry.NetworkSettings()
                 {
-                    EnableAutoCheckUpdate = s.EnableAutoCheckUpdate,
                     MaxDownloadThread = s.MaxDownloadThread,
                     CustomUpdateUrl = s.CustomUpdateUrl,
-                    EnableCustomUpdateUrl = s.EnableCustomUpdateUrl,
                     MusicApiWithIPAddress = s.MusicApiWithIPAddress,
                     DownloadSource = s.DownloadSource,
                     MusicApi = s.MusicApi,

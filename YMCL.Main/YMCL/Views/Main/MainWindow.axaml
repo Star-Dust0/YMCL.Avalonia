@@ -11,6 +11,8 @@
     IsTitleBarVisible="False"
     MinHeight="310"
     MinWidth="450"
+    Height="640"
+    Width="960"
     SystemDecorations="Full"
     Title="Yu Minecraft Launcher"
     WindowStartupLocation="CenterScreen"

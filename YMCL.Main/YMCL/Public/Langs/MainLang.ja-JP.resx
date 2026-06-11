@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -478,38 +478,17 @@
   <data name="CustomHomePageSourceCodeError" xml:space="preserve">
     <value>メインページのソースの編集エラー</value>
   </data>
-  <data name="CheckUpdate" xml:space="preserve">
-    <value>更新を確認</value>
-  </data>
   <data name="ChooseArchitecture" xml:space="preserve">
     <value>プラットフォームを選ぶ</value>
   </data>
-  <data name="CheckUpdateFail" xml:space="preserve">
-    <value>更新のチェックに失敗しました</value>
-  </data>
-  <data name="FoundNewVersion" xml:space="preserve">
-    <value>新しいバージョンが利用可能</value>
-  </data>
-  <data name="GetUpdateUrl" xml:space="preserve">
-    <value>統一リソースの位置を更新</value>
-  </data>
   <data name="BeginDownload" xml:space="preserve">
     <value>ダウンロードを開始中</value>
-  </data>
-  <data name="UpdateFail" xml:space="preserve">
-    <value>更新に失敗しました</value>
-  </data>
-  <data name="ThisArchitectureCannotAutoUpdate" xml:space="preserve">
-    <value>このプラットフォームは自動的に更新されません。次のパスを手動で置き換えてください</value>
   </data>
   <data name="Update" xml:space="preserve">
     <value>アップデート</value>
   </data>
   <data name="DownloadFinish" xml:space="preserve">
     <value>ダウンロード完了</value>
-  </data>
-  <data name="CurrentlyTheLatestVersion" xml:space="preserve">
-    <value>お使いのバージョンは最新です</value>
   </data>
   <data name="OpenSourceProjectUsageTable" xml:space="preserve">
     <value>オープンソースプロジェクト用テーブル</value>
@@ -778,9 +757,6 @@
   <data name="SaveAudioFile" xml:space="preserve">
     <value>音声ファイルの保存</value>
   </data>
-  <data name="CustomUpdateUrl" xml:space="preserve">
-    <value>カスタムアップデートURL</value>
-  </data>
   <data name="LyricTip" xml:space="preserve">
     <value>私が歌詞 ヾ(≧▽≦*)o</value>
   </data>
@@ -872,22 +848,6 @@
   <data name="DeskLyricSize" xml:space="preserve">
     <value>デスクトップの歌詞のサイズ</value>
   </data>
-  <data name="AutoUpdate" xml:space="preserve">
-    <value>自動更新</value>
-  </data>
-  <data name="SkipThisVersion" xml:space="preserve">
-    <value>このバージョンをスキップ</value>
-  </data>
-  <data name="SkipVersionTip" xml:space="preserve">
-    <value>スキップされたバージョン : {version}
-      設定へ移動-イニシエータ-更新をチェックしてこのバージョンを再取得します</value>
-  </data>
-  <data name="WinSevenAutoUpdateTip" xml:space="preserve">
-    <value>新しいバージョンが見つかりました: {version}
-      win 10以下のシステム（10を除く）は自動更新をサポートしていない
-      次のリンクに移動して新しいバージョンをダウンロードします:「{url}」
-      設定へ移動-ダウンロード-自動更新により自動チェック更新をオフにする</value>
-  </data>
   <data name="OpenBrowser" xml:space="preserve">
     <value>ブラウザーを開く</value>
   </data>
@@ -944,12 +904,6 @@
   </data>
   <data name="SponsorsTip" xml:space="preserve">
     <value>以下はローンチされた運営者です。YuMinecraft ランチャーへの感謝の意しを持ちます！</value>
-  </data>
-  <data name="MacOsUpdateTip" xml:space="preserve">
-    <value>新しいバージョンが見つかりました : {version}
-      MacOsは自動更新をサポートしていません
-      次のリンクに移動して新しいバージョンをダウンロードします:「{url}」
-      設定へ移動-ダウンロード-自動更新により自動チェック更新をオフにする</value>
   </data>
   <data name="AlreadyCopyToClipBoard" xml:space="preserve">
     <value>クリップボードにコピーしました</value>
@@ -1201,10 +1155,6 @@
     <value>インポート日時</value>
     <comment>#TODO#_</comment>
   </data>
-  <data name="CanceledUpdate" xml:space="preserve">
-    <value>更新がキャンセルされました</value>
-    <comment>#TODO#_</comment>
-  </data>
   <data name="ApiError" xml:space="preserve">
     <value>APIエラー</value>
     <comment>#TODO#_</comment>
@@ -1432,12 +1382,6 @@
   </data>
   <data name="Favourites" xml:space="preserve">
     <value>お気に入り</value>
-    <comment>#TODO#_</comment>
-  </data>
-  <data name="CurrectSystemNoSupportAutoUpdateTip" xml:space="preserve">
-    <value>自動更新は現在のシステムではサポートされていません
-      [設定] - [ダウンロード]に移動して自動更新をオフにします
-      最新バージョンを手動でダウンロードして、プログラムファイルを置き換えることができます</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="DependencyItems" xml:space="preserve">
