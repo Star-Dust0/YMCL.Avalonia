@@ -37,6 +37,11 @@
                     FontFamily="{DynamicResource Font}"
                     Margin="0,0,5,0"
                     Name="RefreshListBtn" />
+                <Button
+                    Content="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.AddFolder}"
+                    FontFamily="{DynamicResource Font}"
+                    Margin="0,0,5,0"
+                    x:Name="AddMinecraftFolderBtn" />
                 <ComboBox
                     FontFamily="{DynamicResource Font}"
                     HorizontalAlignment="Stretch"

@@ -19,6 +19,7 @@ public partial class GameList : UserControl
         DataContext = Data.Instance;
         CloseBtn.Click += (_, _) => { _ = YMCL.App.UiRoot.ViewModel.Launch.CloseGameList(); };
         RefreshListBtn.Click += (_, _) => { LaunchUi.LoadGames(); };
+        AddMinecraftFolderBtn.Click += (_, _) => { _ = Public.Module.Op.MinecraftFolder.AddByUi(this); };
         GameListView.PointerEntered += (_, _) => CanCloseGameList = true;
         GameListView.PointerExited += (_, _) => CanCloseGameList = false;
         OpenSelectedMinecraftFolderBtn.Click+= (_, _) =>
