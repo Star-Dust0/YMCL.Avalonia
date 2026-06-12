@@ -65,7 +65,7 @@
           </Image>
           <Grid Margin="50,0,0,0">
             <TextBlock FontFamily="{StaticResource Font}" FontSize="17" FontWeight="Thin" Foreground="{DynamicResource TextColor}" HorizontalAlignment="Left" Margin="0,-15,0,0" VerticalAlignment="Center" x:Name="Version" />
-            <Label Content=" - By DaiYu" FontFamily="{DynamicResource Font}" FontSize="12" Foreground="{DynamicResource GrayColor}" HorizontalAlignment="Left" Margin="0,20,0,0" Name="AuthorLabel" VerticalAlignment="Center" />
+            <Label Content=" - By DaiYu &amp; Star-Dust0" FontFamily="{DynamicResource Font}" FontSize="12" Foreground="{DynamicResource GrayColor}" HorizontalAlignment="Left" Margin="0,20,0,0" Name="AuthorLabel" VerticalAlignment="Center" />
           </Grid>
           <Button Classes="Primary" Content="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.CheckUpdate}" FontFamily="{DynamicResource Font}" Foreground="White" Height="30.5" HorizontalAlignment="Right" Margin="200,0,9,0" Theme="{DynamicResource SolidButton}" x:Name="CheckUpdateBtn" />
         </Grid>
