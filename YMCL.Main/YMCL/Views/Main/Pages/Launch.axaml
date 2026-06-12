@@ -133,6 +133,13 @@
                                 </MenuFlyout>
                             </Border.ContextFlyout>
                         </Border>
+                        <TextBlock
+                            FontFamily="{DynamicResource Font}"
+                            FontSize="14"
+                            Foreground="{DynamicResource TextColor}"
+                            HorizontalAlignment="Center"
+                            Margin="0,5,0,0"
+                            Text="{Binding SettingEntry.Account.Name}" />
                     </DockPanel>
                 </Border>
                 <DockPanel>
@@ -199,7 +206,7 @@
                                                         Height="44"
                                                         Width="44">
                                                         <Image Source="{Binding Bitmap}" />
-                                                    </Border>
+                        </Border>
                                                     <TextBlock
                                                         DockPanel.Dock="Bottom"
                                                         Margin="0,3,0,0"

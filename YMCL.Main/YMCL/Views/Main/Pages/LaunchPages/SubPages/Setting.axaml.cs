@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.Notifications;
 using Avalonia.Controls.Shapes;
 using Avalonia.Layout;
 using Avalonia.Markup.Xaml;
@@ -131,6 +132,26 @@ public partial class Setting : UserControl
             });
             await File.WriteAllTextAsync(ConfigPath.FavouriteMinecraftDataPath,
                 JsonConvert.SerializeObject(Public.Const.Data.FavouriteMinecraft, Formatting.Indented));
+        };
+        DeleteVersionBtn.Click += async (_, _) =>
+        {
+            var entry = _model.MinecraftEntry;
+            if (entry == null) return;
+            var cr = await ShowDialogAsync(MainLang.Delete,
+                entry.Id, b_primary: MainLang.Delete, b_cancel: MainLang.Cancel);
+            if (cr != ContentDialogResult.Primary) return;
+            try
+            {
+                var versionPath = System.IO.Path.Combine(entry.MinecraftFolderPath, "versions", entry.Id);
+                if (Directory.Exists(versionPath))
+                    Directory.Delete(versionPath, true);
+                YMCL.Public.Module.Ui.Special.LaunchUi.LoadGames();
+                Notice(MainLang.SuccessRemove, NotificationType.Success);
+            }
+            catch (Exception ex)
+            {
+                ShowShortException(MainLang.Delete, ex);
+            }
         };
     }
 

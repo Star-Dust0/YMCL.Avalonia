@@ -172,6 +172,30 @@
                         Name="FastLaunchButton" />
                 </DockPanel>
             </Border>
+            <Border
+                Background="{DynamicResource 1x}"
+                CornerRadius="{DynamicResource MainCornerRadius}"
+                Height="45">
+                <DockPanel>
+                    <Label
+                        Content="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.Delete}"
+                        FontFamily="{DynamicResource Font}"
+                        FontSize="15"
+                        Foreground="{DynamicResource TextColor}"
+                        HorizontalAlignment="Left"
+                        Margin="18,0,0,0"
+                        VerticalAlignment="Center" />
+                    <Button
+                        Content="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.Delete}"
+                        Classes="danger"
+                        DockPanel.Dock="Right"
+                        FontFamily="{DynamicResource Font}"
+                        Foreground="Red"
+                        HorizontalAlignment="Right"
+                        Margin="18,0,6.5,0"
+                        x:Name="DeleteVersionBtn" />
+                </DockPanel>
+            </Border>
         </StackPanel>
     </ScrollViewer>
 </UserControl>
