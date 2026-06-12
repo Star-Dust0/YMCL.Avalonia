@@ -37,7 +37,7 @@ public static class InitConfig
                 JsonConvert.SerializeObject(new List<FavouriteResourceEntry>(), Formatting.Indented));
         if (!File.Exists(ConfigPath.MinecraftFolderDataPath))
         {
-            var exeDir = Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule!.FileName)!;
+            var exeDir = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly()!.Location)!;
             var path = Path.Combine(exeDir, ".minecraft");
             IO.Disk.Setter.TryCreateFolder(path);
             File.WriteAllText(ConfigPath.MinecraftFolderDataPath,
