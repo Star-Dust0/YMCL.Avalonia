@@ -28,6 +28,8 @@ public sealed record AccountInfo : INotifyPropertyChanged
     {
         if (data == null) return;
         Skin = Convert.ToBase64String(data);
+        OnPropertyChanged(nameof(Skin));
+        OnPropertyChanged(nameof(Bitmap));
     }
 
     private Bitmap HandleHeadSkin()

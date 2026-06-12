@@ -22,5 +22,9 @@ public partial class Account : UserControl
         {
             _ = Public.Module.Op.Account.RefreshSelectedMicrosoftAccountSkin();
         };
+        ChangeSkinBtn.Click += (_, _) =>
+        {
+            _ = Public.Module.Op.Account.ChangeOfflineAccountSkin(this);
+        };
     }
 }

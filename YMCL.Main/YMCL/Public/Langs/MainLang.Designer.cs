@@ -687,6 +687,17 @@ namespace YMCL.Public.Langs
         }
 
         /// <summary>
+        ///   Looks up a localized string similar to 更换皮肤.
+        /// </summary>
+        public static string ChangeSkin
+        {
+            get
+            {
+                return ResourceManager.GetString("ChangeSkin", resourceCulture);
+            }
+        }
+
+        /// <summary>
         ///   Looks up a localized string similar to 无法找到合适Java.
         /// </summary>
         public static string CannotFandRightJava

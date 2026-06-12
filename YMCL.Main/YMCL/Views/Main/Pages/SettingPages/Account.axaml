@@ -15,6 +15,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <UserControl.Resources>
         <converters:AccountTypeIsMicrosoftConverter x:Key="AccountTypeIsMicrosoftConverter" />
+        <converters:AccountTypeIsNotMicrosoftConverter x:Key="AccountTypeIsNotMicrosoftConverter" />
     </UserControl.Resources>
     <Border
         Background="{DynamicResource 1x}"
@@ -42,6 +43,12 @@
                     IsVisible="{Binding SettingEntry.Account, Converter={StaticResource AccountTypeIsMicrosoftConverter}}"
                     Margin="6.5,0,0,0"
                     x:Name="RefreshMicrosoftSkinBtn" />
+                <Button
+                    Content="{Binding Source={x:Static properties:LangHelper.Current}, Path=Resources.ChangeSkin}"
+                    FontFamily="{DynamicResource Font}"
+                    IsVisible="{Binding SettingEntry.Account, Converter={StaticResource AccountTypeIsNotMicrosoftConverter}}"
+                    Margin="6.5,0,0,0"
+                    x:Name="ChangeSkinBtn" />
             </DockPanel>
             <ListBox
                 ItemsSource="{Binding Accounts}"

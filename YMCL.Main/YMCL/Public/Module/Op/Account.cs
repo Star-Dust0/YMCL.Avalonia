@@ -5,6 +5,7 @@ using Avalonia.Controls.Notifications;
 using Avalonia.Layout;
 using Avalonia.Media;
 using Avalonia.Threading;
+using Avalonia.Platform.Storage;
 using FluentAvalonia.UI.Controls;
 using MinecraftLaunch.Base.Models.Authentication;
 using MinecraftLaunch.Components.Authenticator;
@@ -401,6 +402,42 @@ public class Account
             MicrosoftSkinFetcher skinFetcher = new(uuid);
             var skin = await skinFetcher.GetSkinAsync();
             Data.SettingEntry.Account.UpdateSkin(skin);
+        }
+    }
+
+    public static async Task ChangeOfflineAccountSkin(Control sender)
+    {
+        var account = Data.SettingEntry.Account;
+        if (account == null || account.AccountType == Setting.AccountType.Microsoft) return;
+
+        var topLevel = TopLevel.GetTopLevel(sender);
+        if (topLevel == null) return;
+
+        var files = await topLevel.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
+        {
+            Title = MainLang.SelectSkinFile,
+            AllowMultiple = false,
+            FileTypeFilter = new List<FilePickerFileType>
+            {
+                new("PNG Image") { Patterns = new List<string> { "*.png" } }
+            }
+        });
+
+        if (files.Count == 0) return;
+
+        var path = files[0].Path.LocalPath;
+        try
+        {
+            var bytes = await File.ReadAllBytesAsync(path);
+            if (bytes.Length == 0) return;
+            account.UpdateSkin(bytes);
+            await File.WriteAllTextAsync(ConfigPath.AccountDataPath,
+                JsonConvert.SerializeObject(Data.Accounts, Formatting.Indented));
+            Notice(MainLang.ModifySuccess, NotificationType.Success);
+        }
+        catch (Exception ex)
+        {
+            ShowShortException(MainLang.ModifyFail, ex);
         }
     }
 }
