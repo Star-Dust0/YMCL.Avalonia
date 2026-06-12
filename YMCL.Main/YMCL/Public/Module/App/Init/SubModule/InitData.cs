@@ -86,6 +86,11 @@ public class InitData
             Data.SettingEntry.MinecraftFolder = Data.MinecraftFolders[0];
         }
 
+        if (Data.SettingEntry.MinecraftFolder != null)
+        {
+            IO.Disk.Setter.TryCreateFolder(Data.SettingEntry.MinecraftFolder.Path);
+        }
+
         if (!Data.Accounts.Contains(Data.SettingEntry.Account))
         {
             Data.SettingEntry.Account = Data.Accounts[0];
