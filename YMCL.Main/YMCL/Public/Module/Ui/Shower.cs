@@ -130,34 +130,6 @@ public class Shower
         await ShowDialogAsync(MainLang.GetException, p_content: textBox, b_primary: MainLang.Ok);
     }
 
-    public static async Task ShowAutoUpdateDialog(CheckUpdateInfo info)
-    {
-        if (Const.Data.SettingEntry.SkipUpdateVersion == info.NewVersion) return;
-        var dialog = ContentDialogResult.None;
-
-        await Dispatcher.UIThread.Invoke(async () =>
-        {
-            dialog = await ShowDialogAsync(MainLang.FoundNewVersion,
-                $"{info.NewVersion}\n\n{info.GithubUrl}"
-                , b_cancel: MainLang.Cancel, b_secondary: MainLang.SkipThisVersion,
-                b_primary: MainLang.Update);
-        });
-
-        if (dialog == ContentDialogResult.Primary)
-        {
-            var updateAppAsync = await IO.Network.Update.UpdateAppAsync();
-            if (!updateAppAsync) Notice(MainLang.UpdateFail, NotificationType.Error);
-        }
-        else if (dialog == ContentDialogResult.Secondary)
-        {
-            Dispatcher.UIThread.Invoke(() =>
-            {
-                Const.Data.SettingEntry.SkipUpdateVersion = info.NewVersion;
-                Notice(MainLang.SkipVersionTip.Replace("{version}", info.NewVersion), NotificationType.Success);
-            });
-        }
-    }
-
     public static async Task<int> ShowDialogWithComboBox(string[] items, string title = "Title", string? msg = null,
         TopLevel? p_host = null)
     {

@@ -17,10 +17,8 @@ public record ExchangeSettingEntry
 
     public record NetworkSettings
     {
-        public bool EnableAutoCheckUpdate { get; set; }
         public int MaxDownloadThread { get; set; }
         public string? CustomUpdateUrl { get; set; }
-        public bool EnableCustomUpdateUrl { get; set; }
         public string? MusicApiWithIPAddress { get; set; }
         public Enum.Setting.DownloadSource DownloadSource { get; set; }
         public string? MusicApi { get; set; }

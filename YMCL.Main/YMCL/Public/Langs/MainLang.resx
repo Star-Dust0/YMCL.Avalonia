@@ -380,38 +380,17 @@
   <data name="CustomHomePageSourceCodeError" xml:space="preserve">
     <value>自定义主页面源代码错误</value>
   </data>
-  <data name="CheckUpdate" xml:space="preserve">
-    <value>检查更新</value>
-  </data>
   <data name="ChooseArchitecture" xml:space="preserve">
     <value>选择平台</value>
   </data>
-  <data name="CheckUpdateFail" xml:space="preserve">
-    <value>检查更新失败</value>
-  </data>
-  <data name="FoundNewVersion" xml:space="preserve">
-    <value>发现新版本</value>
-  </data>
-  <data name="GetUpdateUrl" xml:space="preserve">
-    <value>获取更新统一资源定位器</value>
-  </data>
   <data name="BeginDownload" xml:space="preserve">
     <value>开始下载</value>
-  </data>
-  <data name="UpdateFail" xml:space="preserve">
-    <value>更新失败</value>
-  </data>
-  <data name="ThisArchitectureCannotAutoUpdate" xml:space="preserve">
-    <value>此平台不支持自动更新，打开以下路径手动替换</value>
   </data>
   <data name="Update" xml:space="preserve">
     <value>更新</value>
   </data>
   <data name="DownloadFinish" xml:space="preserve">
     <value>下载完成</value>
-  </data>
-  <data name="CurrentlyTheLatestVersion" xml:space="preserve">
-    <value>当前是最新版本</value>
   </data>
   <data name="OpenSourceProjectUsageTable" xml:space="preserve">
     <value>开源项目使用表</value>
@@ -680,9 +659,6 @@
   <data name="SaveAudioFile" xml:space="preserve">
     <value>保存音频文件</value>
   </data>
-  <data name="CustomUpdateUrl" xml:space="preserve">
-    <value>自定义更新Url</value>
-  </data>
   <data name="LyricTip" xml:space="preserve">
     <value>我是歌词 ヾ(≧▽≦*)o</value>
   </data>
@@ -774,22 +750,6 @@
   <data name="DeskLyricSize" xml:space="preserve">
     <value>桌面歌词大小</value>
   </data>
-  <data name="AutoUpdate" xml:space="preserve">
-    <value>自动更新</value>
-  </data>
-  <data name="SkipThisVersion" xml:space="preserve">
-    <value>跳过此版本</value>
-  </data>
-  <data name="SkipVersionTip" xml:space="preserve">
-    <value>已跳过版本 : {version}
-      前往 设置-启动器-检查更新 可再次获取此版本</value>
-  </data>
-  <data name="WinSevenAutoUpdateTip" xml:space="preserve">
-    <value>发现新版本 : {version}
-      win10 以下系统(不包括10)不支持自动更新
-      前往以下链接下载新版本 : “{url}”
-      前往 设置-下载-自动更新 可关闭自动检查更新</value>
-  </data>
   <data name="OpenBrowser" xml:space="preserve">
     <value>打开浏览器</value>
   </data>
@@ -846,18 +806,6 @@
   </data>
   <data name="SponsorsTip" xml:space="preserve">
     <value>以下是发电的赞助者，感谢对 Yu Minecraft Launcher 的支持 ！</value>
-  </data>
-  <data name="MacOsUpdateTip" xml:space="preserve">
-    <value>发现新版本 : {version}
-      MacOs 不支持自动更新
-      前往以下链接下载新版本 : “{url}”
-      前往 设置-下载-自动更新 可关闭自动检查更新</value>
-  </data>
-  <data name="CurrectSystemNoSupportAutoUpdateTip" xml:space="preserve">
-    <value>当前系统不支持自动更新
-      可前往 设置-下载 关闭自动更新
-      可手动下载最新版本并替换程序文件</value>
-    <comment>#TODO#_</comment>
   </data>
   <data name="AlreadyCopyToClipBoard" xml:space="preserve">
     <value>已复制到剪切板</value>
@@ -1107,10 +1055,6 @@
   </data>
   <data name="ImportTime" xml:space="preserve">
     <value>导入时间</value>
-    <comment>#TODO#_</comment>
-  </data>
-  <data name="CanceledUpdate" xml:space="preserve">
-    <value>更新已取消</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="ApiError" xml:space="preserve">
