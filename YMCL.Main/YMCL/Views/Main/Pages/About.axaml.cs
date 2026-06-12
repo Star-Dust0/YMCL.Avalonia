@@ -15,6 +15,7 @@ using Newtonsoft.Json;
 using YMCL.Public.Classes;
 using YMCL.Public.Classes.Json;
 using YMCL.Public.Langs;
+using YMCL.Public.Module;
 using YMCL.Public.Module.IO.Disk;
 
 namespace YMCL.Views.Main.Pages;
@@ -42,7 +43,57 @@ public partial class About : UserControl
         {
             _ = Opener.OpenFolder(ConfigPath.UserDataRootPath);
         };
+        CheckUpdateBtn.Click += async (_, _) =>
+        {
+            CheckUpdateBtn.IsEnabled = false;
+            var ring = new ProgressRing();
+            CheckUpdateBtn.Width = CheckUpdateBtn.Bounds.Width;
+            CheckUpdateBtn.Content = ring;
+            ring.Height = 17;
+            ring.Width = 17;
+            var info = await Public.Module.IO.Network.Update.CheckUpdateAsync();
+            if (!info.Success)
+            {
+                CheckUpdateBtn.IsEnabled = true;
+                CheckUpdateBtn.Content = MainLang.CheckUpdate;
+                Notice(MainLang.CheckUpdateFail, NotificationType.Error);
+                return;
+            }
 
+            if (!info.IsNeedUpdate)
+            {
+                CheckUpdateBtn.IsEnabled = true;
+                CheckUpdateBtn.Content = MainLang.CheckUpdate;
+                Notice(MainLang.CurrentlyTheLatestVersion, NotificationType.Success);
+                return;
+            }
+
+            CheckUpdateBtn.IsEnabled = true;
+            CheckUpdateBtn.Content = MainLang.CheckUpdate;
+            var dialog = ContentDialogResult.None;
+
+            await Dispatcher.UIThread.Invoke(async () =>
+            {
+                dialog = await ShowDialogAsync(MainLang.FoundNewVersion,
+                    $"{info.NewVersion}\n\n{info.GithubUrl}"
+                    , b_cancel: MainLang.Cancel, b_secondary: MainLang.SkipThisVersion,
+                    b_primary: MainLang.Update);
+            });
+
+            if (dialog == ContentDialogResult.Primary)
+            {
+                var updateAppAsync = await Public.Module.IO.Network.Update.UpdateAppAsync();
+                if (!updateAppAsync) Notice(MainLang.UpdateFail, NotificationType.Error);
+            }
+            else if (dialog == ContentDialogResult.Secondary)
+            {
+                Dispatcher.UIThread.Invoke(() =>
+                {
+                    Public.Const.Data.SettingEntry.SkipUpdateVersion = info.NewVersion;
+                    Notice(MainLang.SkipVersionTip.Replace("{version}", info.NewVersion), NotificationType.Success);
+                });
+            }
+        };
     }
 
     private async void InitViewData()

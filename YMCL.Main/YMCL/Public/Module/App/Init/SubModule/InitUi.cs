@@ -25,6 +25,14 @@ public class InitUi
         Application.Current.ActualThemeVariantChanged += (_, _) => { UpdateTheme(); };
         Ui.Setter.ToggleTheme(Data.SettingEntry.Theme);
         // YMCL.App.UiRoot.ViewModel.Download.CurseForgeFetcher.SearchAction();
+        if (Data.SettingEntry.EnableAutoCheckUpdate)
+        {
+            var result = await IO.Network.Update.CheckUpdateAsync();
+            if (result is { Success: true, IsNeedUpdate: true })
+            {
+                _ = ShowAutoUpdateDialog(result);
+            }
+        }
     }
 
     public static void UpdateTheme()

@@ -19,7 +19,8 @@ namespace YMCL.Public.Classes.Setting;
 
 public class SettingEntry : ReactiveObject
 {
-
+    [Reactive] [JsonProperty] public string SkipUpdateVersion { get; set; } = string.Empty;
+    [Reactive] [JsonProperty] public bool EnableAutoCheckUpdate { get; set; } = true;
     [Reactive] [JsonProperty] public int MaxDownloadThread { get; set; } = 64;
     [Reactive] [JsonProperty] public double TranslucentBackgroundOpacity { get; set; } = 0.68;
     [Reactive] [JsonProperty] public bool IsCompleteJavaInitialize { get; set; }
@@ -47,9 +48,10 @@ public class SettingEntry : ReactiveObject
     [Reactive] [JsonProperty] public TextAlignment DeskLyricAlignment { get; set; } = TextAlignment.Center;
     [Reactive] [JsonProperty] public string? SelectedMinecraftId { get; set; }
     [Reactive] [JsonProperty] public bool EnableIndependencyCore { get; set; } = true;
+    [Reactive] [JsonProperty] public bool EnableCustomUpdateUrl { get; set; }
     [Reactive] [JsonProperty] public bool EnableAutoAllocateMem { get; set; }
     [Reactive] [JsonProperty] public bool EnableIndependencyWindowNotification { get; set; } = true;
-    [Reactive] [JsonProperty] public string? CustomUpdateUrl { get; set; } = string.Empty;
+    [Reactive] [JsonProperty] public string? CustomUpdateUrl { get; set; } = "https://github.moeyy.xyz/{%url%}";
     [Reactive] [JsonProperty] public string? MusicApi { get; set; } = "http://music.api.yik.at/";
 
     [Reactive]

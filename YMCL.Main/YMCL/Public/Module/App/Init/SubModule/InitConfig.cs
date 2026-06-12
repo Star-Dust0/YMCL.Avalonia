@@ -23,6 +23,7 @@ public static class InitConfig
         IO.Disk.Setter.TryCreateFolder(ConfigPath.UserDataRootPath);
         IO.Disk.Setter.TryCreateFolder(ConfigPath.PluginFolderPath);
         IO.Disk.Setter.TryCreateFolder(ConfigPath.TempFolderPath);
+        IO.Disk.Setter.TryCreateFolder(ConfigPath.UpdateFolderPath);
     }
 
     public static void CreateFile()

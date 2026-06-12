@@ -481,17 +481,38 @@
   <data name="CustomHomePageSourceCodeError" xml:space="preserve">
     <value>Custom main page source code error</value>
   </data>
+  <data name="CheckUpdate" xml:space="preserve">
+    <value>Check for updates</value>
+  </data>
   <data name="ChooseArchitecture" xml:space="preserve">
     <value>Select platform</value>
   </data>
+  <data name="CheckUpdateFail" xml:space="preserve">
+    <value>Unable to check for updates</value>
+  </data>
+  <data name="FoundNewVersion" xml:space="preserve">
+    <value>Detect a newer version</value>
+  </data>
+  <data name="GetUpdateUrl" xml:space="preserve">
+    <value>Get Updated Uniform Resource Locator</value>
+  </data>
   <data name="BeginDownload" xml:space="preserve">
     <value>Start Download</value>
+  </data>
+  <data name="UpdateFail" xml:space="preserve">
+    <value>Update Failed</value>
+  </data>
+  <data name="ThisArchitectureCannotAutoUpdate" xml:space="preserve">
+    <value>This platform does not support automatic updates, open the following path to manually replace it</value>
   </data>
   <data name="Update" xml:space="preserve">
     <value>Updated</value>
   </data>
   <data name="DownloadFinish" xml:space="preserve">
     <value>Download completed</value>
+  </data>
+  <data name="CurrentlyTheLatestVersion" xml:space="preserve">
+    <value>The current version is up to date</value>
   </data>
   <data name="OpenSourceProjectUsageTable" xml:space="preserve">
     <value>Open Source Project Usage Sheet</value>
@@ -760,6 +781,9 @@
   <data name="SaveAudioFile" xml:space="preserve">
     <value>Save the audio file</value>
   </data>
+  <data name="CustomUpdateUrl" xml:space="preserve">
+    <value>Custom Update Url</value>
+  </data>
   <data name="LyricTip" xml:space="preserve">
     <value>I am the lyrics (≧▽ ≦ *) o</value>
   </data>
@@ -851,6 +875,22 @@
   <data name="DeskLyricSize" xml:space="preserve">
     <value>Desktop Lyrics Size</value>
   </data>
+  <data name="AutoUpdate" xml:space="preserve">
+    <value>Auto Update</value>
+  </data>
+  <data name="SkipThisVersion" xml:space="preserve">
+    <value>Skip This Version</value>
+  </data>
+  <data name="SkipVersionTip" xml:space="preserve">
+    <value>Skip version:{version}.
+      Go to Settings-Launcher-Check Updates download this version</value>
+  </data>
+  <data name="WinSevenAutoUpdateTip" xml:space="preserve">
+    <value>New version:{version}
+      Above Windows 10 can't auto updates.
+      Go to "{url}" download new version.
+      Go to Settings-Download-Auto Update can disable auto check update</value>
+  </data>
   <data name="OpenBrowser" xml:space="preserve">
     <value>Open Browser</value>
   </data>
@@ -907,6 +947,12 @@
   </data>
   <data name="SponsorsTip" xml:space="preserve">
     <value>Below are sponsors. Thank you for your support to Yu Minecraft Launcher!</value>
+  </data>
+  <data name="MacOsUpdateTip" xml:space="preserve">
+    <value>New version:{version}
+      macOS can't auto updates.
+      Go to "{url}" download new version.
+      Go to Settings-Download-Auto Update can disable auto check update</value>
   </data>
   <data name="AlreadyCopyToClipBoard" xml:space="preserve">
     <value>Copied to clipboard</value>
@@ -1158,6 +1204,10 @@
     <value>Import Time</value>
     <comment>#TODO#_</comment>
   </data>
+  <data name="CanceledUpdate" xml:space="preserve">
+    <value>Update was canceled</value>
+    <comment>#TODO#_</comment>
+  </data>
   <data name="ApiError" xml:space="preserve">
     <value>Api Error</value>
     <comment>#TODO#_</comment>
@@ -1385,6 +1435,12 @@
   </data>
   <data name="Favourites" xml:space="preserve">
     <value>Favorites</value>
+    <comment>#TODO#_</comment>
+  </data>
+  <data name="CurrectSystemNoSupportAutoUpdateTip" xml:space="preserve">
+    <value>Automatic updates are not supported on the current system
+      Go to Settings - Downloads to turn off automatic updates
+      You can manually download the latest version and replace the program file</value>
     <comment>#TODO#_</comment>
   </data>
   <data name="DependencyItems" xml:space="preserve">
