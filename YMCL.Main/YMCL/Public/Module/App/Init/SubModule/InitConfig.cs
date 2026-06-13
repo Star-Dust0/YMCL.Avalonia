@@ -3,6 +3,7 @@ using System.IO;
 using System.Reflection;
 using MinecraftLaunch.Components.Authenticator;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using YMCL.Public.Classes.Data;
 using YMCL.Public.Classes.Netease;
 using YMCL.Public.Classes.Operate;
@@ -37,8 +38,7 @@ public static class InitConfig
                 JsonConvert.SerializeObject(new List<FavouriteResourceEntry>(), Formatting.Indented));
         if (!File.Exists(ConfigPath.MinecraftFolderDataPath))
         {
-            var exeDir = AppContext.BaseDirectory;
-            var path = Path.Combine(exeDir, ".minecraft");
+            var path = GetDefaultMinecraftPath();
             IO.Disk.Setter.TryCreateFolder(path);
             File.WriteAllText(ConfigPath.MinecraftFolderDataPath,
                 JsonConvert.SerializeObject(
@@ -49,26 +49,6 @@ public static class InitConfig
             setting1.MinecraftFolder = new MinecraftFolder { Name = "Minecraft Folder", Path = path };
             File.WriteAllText(ConfigPath.SettingDataPath,
                 JsonConvert.SerializeObject(setting1, Formatting.Indented));
-        }
-        else
-        {
-            var folders = JsonConvert.DeserializeObject<List<MinecraftFolder>>(
-                File.ReadAllText(ConfigPath.MinecraftFolderDataPath))!;
-            var exeDir = AppContext.BaseDirectory;
-            var expectedPath = Path.Combine(exeDir, ".minecraft");
-            if (folders.Count > 0 && folders[0].Name == "Minecraft Folder" &&
-                folders[0].Path != expectedPath)
-            {
-                IO.Disk.Setter.TryCreateFolder(expectedPath);
-                folders[0] = new MinecraftFolder { Name = folders[0].Name, Path = expectedPath };
-                File.WriteAllText(ConfigPath.MinecraftFolderDataPath,
-                    JsonConvert.SerializeObject(folders, Formatting.Indented));
-                var setting1 =
-                    JsonConvert.DeserializeObject<SettingEntry>(File.ReadAllText(ConfigPath.SettingDataPath));
-                setting1!.MinecraftFolder = folders[0];
-                File.WriteAllText(ConfigPath.SettingDataPath,
-                    JsonConvert.SerializeObject(setting1, Formatting.Indented));
-            }
         }
 
         if (!File.Exists(ConfigPath.JavaDataPath))
@@ -102,5 +82,23 @@ public static class InitConfig
         using var reader = new StreamReader(stream!);
         var result = reader.ReadToEnd();
         File.WriteAllText(ConfigPath.CustomHomePageXamlDataPath, result);
+    }
+
+    public static string GetDefaultMinecraftPath()
+    {
+        var localConfigPath = Path.Combine(AppContext.BaseDirectory, "ymcl_local.json");
+        if (File.Exists(localConfigPath))
+        {
+            try
+            {
+                var obj = JObject.Parse(File.ReadAllText(localConfigPath));
+                if (obj["useLocalMinecraft"]?.Value<bool>() == true)
+                    return Path.Combine(AppContext.BaseDirectory, ".minecraft");
+            }
+            catch
+            {
+            }
+        }
+        return Path.Combine(ConfigPath.UserDataRootPath, ".minecraft");
     }
 }

@@ -87,8 +87,7 @@ public class MinecraftFolder
         Data.MinecraftFolders.Remove(item);
         if (Data.MinecraftFolders.Count == 0)
         {
-            var exeDir = AppContext.BaseDirectory;
-            var path = Path.Combine(exeDir, ".minecraft");
+            var path = App.Init.SubModule.InitConfig.GetDefaultMinecraftPath();
             IO.Disk.Setter.TryCreateFolder(path);
             var folder = new Classes.Data.MinecraftFolder { Name = "Minecraft Folder", Path = path };
             Data.MinecraftFolders.Add(folder);
