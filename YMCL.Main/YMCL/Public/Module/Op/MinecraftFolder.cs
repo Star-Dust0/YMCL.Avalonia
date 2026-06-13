@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Reflection;
 using Avalonia.Media;
 using Avalonia.Platform.Storage;
 using FluentAvalonia.UI.Controls;
@@ -88,7 +87,7 @@ public class MinecraftFolder
         Data.MinecraftFolders.Remove(item);
         if (Data.MinecraftFolders.Count == 0)
         {
-            var exeDir = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly()!.Location)!;
+            var exeDir = AppContext.BaseDirectory;
             var path = Path.Combine(exeDir, ".minecraft");
             IO.Disk.Setter.TryCreateFolder(path);
             var folder = new Classes.Data.MinecraftFolder { Name = "Minecraft Folder", Path = path };
