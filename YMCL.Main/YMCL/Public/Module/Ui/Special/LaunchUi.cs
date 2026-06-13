@@ -39,7 +39,8 @@ public class LaunchUi
             }
         });
         Data.CurrentFolderGames.Clear();
-        games.OrderBy(entry => !entry.IsFavourite).ToList().ForEach(a => { Data.CurrentFolderGames.Add(a); });
+        foreach (var a in games.OrderBy(entry => !entry.IsFavourite))
+            Data.CurrentFolderGames.Add(a);
         if (Data.DesktopType == DesktopRunnerType.Windows && Environment.OSVersion.Version.Major >= 10)
         {
             var bedrock = new MinecraftDataEntry(null, true, true) { IsSettingVisible = false, Type = "bedrock" };

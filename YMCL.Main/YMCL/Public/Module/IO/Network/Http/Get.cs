@@ -8,12 +8,13 @@ namespace YMCL.Public.Module.IO.Network.Http;
 
 public class Get
 {
+    private static readonly HttpClient _client = new();
+
     public static async Task<string?> GetStringAsync(string url, bool showNotice = true)
     {
         try
         {
-            using var client = new HttpClient();
-            var response = await client.GetAsync(url);
+            var response = await _client.GetAsync(url);
             response.EnsureSuccessStatusCode();
             var json = await response.Content.ReadAsStringAsync();
             return json;

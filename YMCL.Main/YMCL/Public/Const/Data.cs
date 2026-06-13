@@ -49,6 +49,12 @@ public sealed class Data : ReactiveObject
         get { return _instance ??= new Data(); }
     }
 
+    private readonly Module.Debouncer _favouriteSaveDebouncer = new(() =>
+    {
+        File.WriteAllText(ConfigPath.FavouriteResourceDataPath,
+            JsonConvert.SerializeObject(FavouriteResources, Formatting.Indented));
+    }, 500);
+
     public Data()
     {
         UiProperty.PropertyChanged += (_, e) =>
@@ -71,8 +77,7 @@ public sealed class Data : ReactiveObject
         };
         FavouriteResources.CollectionChanged += (_, _) =>
         {
-            File.WriteAllText(ConfigPath.FavouriteResourceDataPath,
-                JsonConvert.SerializeObject(FavouriteResources, Formatting.Indented));
+            _favouriteSaveDebouncer.Trigger();
         };
         SettingEntry.PropertyChanged += (_, e) =>
         {

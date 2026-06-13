@@ -41,13 +41,19 @@ public sealed class UiProperty : ReactiveObject
     [Reactive] public RecordSongEntry? SelectedRecordSong { get; set; } 
     [Reactive] public RecordSongEntry? SelectedSearchSong { get; set; }
 
+    private readonly YMCL.Public.Module.Debouncer _searchDebouncer;
+
     public UiProperty()
     {
+        _searchDebouncer = new YMCL.Public.Module.Debouncer(() =>
+        {
+            YMCL.Public.Module.Ui.Special.AggregateSearchUi.Filter(AggregateSearchFilter);
+        }, 200);
         PropertyChanged += (_, e) =>
         {
             if (e.PropertyName == nameof(AggregateSearchFilter))
             {
-                YMCL.Public.Module.Ui.Special.AggregateSearchUi.Filter(AggregateSearchFilter);
+                _searchDebouncer.Trigger();
             }
         };
     }

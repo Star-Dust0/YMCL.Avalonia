@@ -104,10 +104,12 @@ public class AggregateSearchUi
                 });
         }
 
-        Data.AllAggregateSearchEntries.Where(item =>
-                item.Text.ToLower().Contains(filter.ToLower(), StringComparison.OrdinalIgnoreCase))
-            .ToList().OrderBy(x => x.Order).ToList()
-            .ForEach(item => UiProperty.Instance.FilteredAggregateSearchEntries.Add(item));
+        var lowerFilter = filter.ToLowerInvariant();
+        foreach (var item in Data.AllAggregateSearchEntries)
+        {
+            if (item.Text.ToLowerInvariant().Contains(lowerFilter))
+                UiProperty.Instance.FilteredAggregateSearchEntries.Add(item);
+        }
     }
 
     public static void HandleSelectedEntry(AggregateSearchEntry entry)
