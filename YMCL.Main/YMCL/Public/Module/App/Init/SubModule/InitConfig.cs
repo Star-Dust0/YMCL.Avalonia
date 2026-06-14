@@ -50,6 +50,25 @@ public static class InitConfig
             File.WriteAllText(ConfigPath.SettingDataPath,
                 JsonConvert.SerializeObject(setting1, Formatting.Indented));
         }
+        else
+        {
+            var folders = JsonConvert.DeserializeObject<List<MinecraftFolder>>(
+                File.ReadAllText(ConfigPath.MinecraftFolderDataPath))!;
+            var expectedPath = GetDefaultMinecraftPath();
+            if (folders.Count > 0 && folders[0].Name == "Minecraft Folder" &&
+                folders[0].Path != expectedPath)
+            {
+                IO.Disk.Setter.TryCreateFolder(expectedPath);
+                folders[0] = new MinecraftFolder { Name = folders[0].Name, Path = expectedPath };
+                File.WriteAllText(ConfigPath.MinecraftFolderDataPath,
+                    JsonConvert.SerializeObject(folders, Formatting.Indented));
+                var setting1 =
+                    JsonConvert.DeserializeObject<SettingEntry>(File.ReadAllText(ConfigPath.SettingDataPath));
+                setting1!.MinecraftFolder = folders[0];
+                File.WriteAllText(ConfigPath.SettingDataPath,
+                    JsonConvert.SerializeObject(setting1, Formatting.Indented));
+            }
+        }
 
         if (!File.Exists(ConfigPath.JavaDataPath))
             File.WriteAllText(ConfigPath.JavaDataPath,
