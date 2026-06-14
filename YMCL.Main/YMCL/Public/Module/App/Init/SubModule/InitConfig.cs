@@ -86,14 +86,15 @@ public static class InitConfig
 
     public static string GetDefaultMinecraftPath()
     {
-        var localConfigPath = Path.Combine(AppContext.BaseDirectory, "ymcl_local.json");
+        var exeDir = Path.GetDirectoryName(Environment.ProcessPath)!;
+        var localConfigPath = Path.Combine(exeDir, "ymcl_local.json");
         if (File.Exists(localConfigPath))
         {
             try
             {
                 var obj = JObject.Parse(File.ReadAllText(localConfigPath));
                 if (obj["useLocalMinecraft"]?.Value<bool>() == true)
-                    return Path.Combine(AppContext.BaseDirectory, ".minecraft");
+                    return Path.Combine(exeDir, ".minecraft");
             }
             catch
             {
